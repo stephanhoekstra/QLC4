@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.0</Version>
@@ -10,7 +10,10 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2"/>
+    <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2">
+     <PluginParameters MIDISendNoteOff="false"/>
+    </Input>
+    <Output Plugin="DMX USB" UID="FT232R USB UART - DMX Output 1 - (S/N: AU04BSFQ)" Line="0"/>
     <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1">
      <PluginParameters UniverseChannels="3"/>
     </Feedback>
@@ -25,6 +28,26 @@
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Techno Derby V1</Model>
+   <Mode>7 channel</Mode>
+   <ID>1</ID>
+   <Name>Techno Derby V1 #1</Name>
+   <Universe>0</Universe>
+   <Address>59</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Techno Derby V1</Model>
+   <Mode>7 channel</Mode>
+   <ID>2</ID>
+   <Name>Techno Derby V1 #2</Name>
+   <Universe>0</Universe>
+   <Address>63</Address>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -139,7 +162,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="75" Width="315" Height="190"/>
+    <WindowState Visible="False" X="0" Y="75" Width="315" Height="190"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -148,7 +171,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Green Simple Fixture" ID="0" Icon="">
-     <WindowState Visible="True" X="30" Y="75" Width="50" Height="50"/>
+     <WindowState Visible="False" X="30" Y="75" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -162,7 +185,7 @@
      <Input Universe="0" Channel="184" LowerValue="38" UpperValue="42" MonitorValue="36" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Purple" ID="2" Icon="">
-     <WindowState Visible="True" X="90" Y="75" Width="50" Height="50"/>
+     <WindowState Visible="False" X="90" Y="75" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -176,7 +199,7 @@
      <Input Universe="0" Channel="185" LowerValue="110" UpperValue="106" MonitorValue="108" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="White" ID="6" Icon="">
-     <WindowState Visible="True" X="145" Y="75" Width="50" Height="50"/>
+     <WindowState Visible="False" X="145" Y="75" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -190,7 +213,7 @@
      <Input Universe="0" Channel="186" LowerValue="1" UpperValue="6" MonitorValue="4" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Red" ID="7" Icon="">
-     <WindowState Visible="True" X="200" Y="75" Width="50" Height="50"/>
+     <WindowState Visible="False" X="200" Y="75" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -205,7 +228,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Duration" ID="3">
-    <WindowState Visible="True" X="1300" Y="0" Width="245" Height="290"/>
+    <WindowState Visible="False" X="1300" Y="0" Width="245" Height="290"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -221,7 +244,7 @@
     <Function FadeIn="1" FadeOut="0" Duration="2">3</Function>
    </SpeedDial>
    <CueList Caption="Cue list" ID="4">
-    <WindowState Visible="True" X="320" Y="80" Width="300" Height="220"/>
+    <WindowState Visible="False" X="320" Y="80" Width="300" Height="220"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -237,7 +260,7 @@
     <Stop/>
    </CueList>
    <AudioTriggers BarsNumber="6" Caption="Audio Trigger (BPM Detector)" ID="5">
-    <WindowState Visible="True" X="1040" Y="330" Width="300" Height="200"/>
+    <WindowState Visible="False" X="1040" Y="330" Width="300" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -248,7 +271,7 @@
     <SpectrumBar Name="#2 (833Hz - 1666Hz)" Type="3" MinThreshold="76" MaxThreshold="127" Divisor="1" Index="1" WidgetID="3"/>
    </AudioTriggers>
    <Button Caption="Strobe 4/4" ID="8" Icon="">
-    <WindowState Visible="True" X="640" Y="325" Width="50" Height="50"/>
+    <WindowState Visible="False" X="640" Y="325" Width="50" Height="50"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -262,7 +285,7 @@
     <Input Universe="0" Channel="241" LowerValue="1" UpperValue="3"/>
    </Button>
    <CueList Caption="Cue list" ID="9">
-    <WindowState Visible="True" X="315" Y="310" Width="300" Height="220"/>
+    <WindowState Visible="False" X="315" Y="310" Width="300" Height="220"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -278,7 +301,7 @@
     <Stop/>
    </CueList>
    <Button Caption="Beats 4/4" ID="10" Icon="">
-    <WindowState Visible="True" X="640" Y="125" Width="50" Height="50"/>
+    <WindowState Visible="False" X="640" Y="125" Width="50" Height="50"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -292,7 +315,7 @@
     <Input Universe="0" Channel="240" LowerValue="1" UpperValue="3"/>
    </Button>
    <Button Caption="Strobe" ID="11" Icon="">
-    <WindowState Visible="True" X="100" Y="375" Width="50" Height="50"/>
+    <WindowState Visible="False" X="100" Y="375" Width="50" Height="50"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
