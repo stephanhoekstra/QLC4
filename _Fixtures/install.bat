@@ -1,0 +1,1 @@
+robocopy "C:\QLC4\_Fixtures" "C:\Users\steph\QLC+\Fixtures" /xf *.bat

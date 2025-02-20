@@ -6,6 +6,10 @@
 - Go to [QLC Downloads](https://www.qlcplus.org/download) and get the latest version installer (currently 4.14), install it on top of this repo. 
 - That's it -> open Hidden-Workspace.qxw in QLC4
 
+
+# Install Fixtures (Windows)
+Use _Fixtures/install.bat to copy downloaded fixtures to the folder where QLC expects them
+
 # Ideas for PIX
 - Kitt effect that mimics the offset derbys
 - Dynamic color washes
