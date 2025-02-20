@@ -26,6 +26,22 @@ effects - cool things that go flash flash, on top of a mood
 - discoball solo
 - bee eye go crazy
 
+Movements [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI) 
+- Random
+- Slow
+- up n down
+- left n right
+- Spotlight
+
+Colors [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI) 
+- Mexico
+- Police
+- Orange
+- Color Sweep/rainbow
+
+   
+
+
 Questions
 - how to organize moods and effects on the AKAI pad (matrix)?
 
