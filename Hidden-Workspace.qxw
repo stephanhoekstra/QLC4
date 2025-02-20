@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.0</Version>
@@ -21,10 +21,50 @@
    <Model>Generic RGB</Model>
    <Mode>RGB</Mode>
    <ID>0</ID>
-   <Name>Generic RGB</Name>
+   <Name>Generic RGB #0</Name>
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>4</ID>
+   <Name>Generic RGB #1</Name>
+   <Universe>0</Universe>
+   <Address>3</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>5</ID>
+   <Name>Generic RGB #2</Name>
+   <Universe>0</Universe>
+   <Address>6</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>6</ID>
+   <Name>Generic RGB #3</Name>
+   <Universe>0</Universe>
+   <Address>9</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED Strobe PRO DMX</Model>
+   <Mode>2 Channel</Mode>
+   <ID>7</ID>
+   <Name>LED Strobe PRO DMX</Name>
+   <Universe>0</Universe>
+   <Address>12</Address>
+   <Channels>2</Channels>
   </Fixture>
   <Function ID="0" Type="Scene" Name="Green Simple Fixture">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -32,14 +72,54 @@
   </Function>
   <Function ID="1" Type="Scene" Name="Purple Simple Fixture">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="4">0,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="2" Type="Scene" Name="White Simple Fixture">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Chaser" Name="Loop Simple Colors">
+   <Speed FadeIn="0" FadeOut="0" Duration="2378"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">0</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">1</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">2</Step>
+   <Step Number="3" FadeIn="0" Hold="830" FadeOut="0">4</Step>
+  </Function>
+  <Function ID="4" Type="Scene" Name="Red Simple Fixture">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,255</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Scene" Name="Strobe">
+   <Speed FadeIn="0" FadeOut="0" Duration="999"/>
+   <FixtureVal ID="7">0,0,1,255</FixtureVal>
+  </Function>
+  <Function ID="6" Type="Scene" Name="Strobe (Off)">
+   <Speed FadeIn="0" FadeOut="0" Duration="999"/>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Chaser" Name="Strobe 4/4">
+   <Speed FadeIn="0" FadeOut="0" Duration="2378"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">5</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">6</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">6</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">6</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="5" Height="3" Depth="5" Units="0"/>
-   <FxItem ID="0" XPos="221.374" YPos="206.107"/>
+   <FxItem ID="0" XPos="1012.28" YPos="769.743"/>
+   <FxItem ID="4" XPos="1981.82" YPos="736.364"/>
+   <FxItem ID="5" XPos="3822.42" YPos="720.819"/>
+   <FxItem ID="6" XPos="3011.66" YPos="718.945"/>
+   <FxItem ID="7" XPos="2409.09" YPos="1527.27"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -59,7 +139,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="235" Y="260" Width="200" Height="200"/>
+    <WindowState Visible="True" X="0" Y="75" Width="315" Height="190"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -67,8 +147,8 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Green" ID="0" Icon="">
-     <WindowState Visible="False" X="30" Y="75" Width="50" Height="50"/>
+    <Button Caption="Green Simple Fixture" ID="0" Icon="">
+     <WindowState Visible="True" X="30" Y="75" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -79,10 +159,10 @@
      <Function ID="0"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="184" UpperValue="10" MonitorValue="12"/>
+     <Input Universe="0" Channel="184" LowerValue="38" UpperValue="42" MonitorValue="36" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Purple" ID="2" Icon="">
-     <WindowState Visible="False" X="105" Y="75" Width="50" Height="50"/>
+     <WindowState Visible="True" X="90" Y="75" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -93,9 +173,138 @@
      <Function ID="1"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="185"/>
+     <Input Universe="0" Channel="185" LowerValue="110" UpperValue="106" MonitorValue="108" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="White" ID="6" Icon="">
+     <WindowState Visible="True" X="145" Y="75" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="2"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="186" LowerValue="1" UpperValue="6" MonitorValue="4" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Red" ID="7" Icon="">
+     <WindowState Visible="True" X="200" Y="75" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="187" LowerValue="14" UpperValue="10" MonitorValue="12" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
    </SoloFrame>
+   <SpeedDial Caption="Duration" ID="3">
+    <WindowState Visible="True" X="1300" Y="0" Width="245" Height="290"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294967295</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>127</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
+    <Time>2378</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">7</Function>
+    <Function FadeIn="1" FadeOut="0" Duration="2">3</Function>
+   </SpeedDial>
+   <CueList Caption="Cue list" ID="4">
+    <WindowState Visible="True" X="320" Y="80" Width="300" Height="220"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>3</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next/>
+    <Previous/>
+    <Playback/>
+    <Stop/>
+   </CueList>
+   <AudioTriggers BarsNumber="6" Caption="Audio Trigger (BPM Detector)" ID="5">
+    <WindowState Visible="True" X="1040" Y="330" Width="300" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SpectrumBar Name="#2 (833Hz - 1666Hz)" Type="3" MinThreshold="76" MaxThreshold="127" Divisor="1" Index="1" WidgetID="3"/>
+   </AudioTriggers>
+   <Button Caption="Strobe 4/4" ID="8" Icon="">
+    <WindowState Visible="True" X="640" Y="325" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="7"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="241" LowerValue="1" UpperValue="3"/>
+   </Button>
+   <CueList Caption="Cue list" ID="9">
+    <WindowState Visible="True" X="315" Y="310" Width="300" Height="220"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>7</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next/>
+    <Previous/>
+    <Playback/>
+    <Stop/>
+   </CueList>
+   <Button Caption="Beats 4/4" ID="10" Icon="">
+    <WindowState Visible="True" X="640" Y="125" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="3"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="240" LowerValue="1" UpperValue="3"/>
+   </Button>
+   <Button Caption="Strobe" ID="11" Icon="">
+    <WindowState Visible="True" X="100" Y="375" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="5"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="176" LowerValue="1" UpperValue="26" UpperParams="6"/>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
