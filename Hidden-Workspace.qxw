@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.0</Version>
@@ -89,6 +89,18 @@
    <Head X="0" Y="1" Fixture="2">0</Head>
    <Head X="1" Y="1" Fixture="2">1</Head>
    <Head X="0" Y="2" Fixture="0">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="1">
+   <Name>Linear Group PIX bar</Name>
+   <Size X="8" Y="1"/>
+   <Head X="0" Y="0" Fixture="3">0</Head>
+   <Head X="1" Y="0" Fixture="3">1</Head>
+   <Head X="2" Y="0" Fixture="3">2</Head>
+   <Head X="3" Y="0" Fixture="3">3</Head>
+   <Head X="4" Y="0" Fixture="3">4</Head>
+   <Head X="5" Y="0" Fixture="3">5</Head>
+   <Head X="6" Y="0" Fixture="3">6</Head>
+   <Head X="7" Y="0" Fixture="3">7</Head>
   </FixtureGroup>
   <Function ID="0" Type="Scene" Name="Green Simple Fixture">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -188,20 +200,363 @@
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Stripes</Algorithm>
-   <Color Index="0">4294901760</Color>
+   <Algorithm Type="Script">One By One</Algorithm>
+   <Color Index="0">4294901887</Color>
    <Color Index="1">4278190080</Color>
    <Color Index="2">4278190080</Color>
    <Color Index="3">4278190080</Color>
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
-   <FixtureGroup>4294967295</FixtureGroup>
+   <FixtureGroup>1</FixtureGroup>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="0">
+  <Function ID="20" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="21" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="20">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:8,255,20,255,32,255,44,255</Step>
+  </Function>
+  <Function ID="22" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="23" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="22">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:8,255,20,255,32,255,44,255</Step>
+  </Function>
+  <Function ID="24" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="25" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="24">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:8,255,20,255,32,255,44,255</Step>
+  </Function>
+  <Function ID="26" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="27" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="26">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="28" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="28">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="30" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="31" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="30">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="32" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="33" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="32">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="34" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="34">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="36" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="37" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="36">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="38" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="39" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="38">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="40" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="41" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="40">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="42" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="43" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="42">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="44" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="45" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="44">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="46" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="46">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="48" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="49" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="48">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="50" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="51" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="50">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="52" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="52">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="54" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="55" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="54">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="56" Type="Scene" Name="Linear Group PIX bar" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,0,3,0,4,0,8,0,9,0,10,0,14,0,15,0,16,0,20,0,21,0,22,0,26,0,27,0,28,0,32,0,33,0,34,0,38,0,39,0,40,0,44,0,45,0,46,0</FixtureVal>
+  </Function>
+  <Function ID="57" Type="Sequence" Name="New RGB Matrix 19 Sequence" BoundScene="56">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:2,255,14,255,26,255,38,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="24">3:10,255,22,255,34,255,46,255</Step>
+  </Function>
+  <Function ID="58" Type="Scene" Name="BEYE Position - Spotlight" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,11,2,56</FixtureVal>
+  </Function>
+  <Function ID="59" Type="Scene" Name="BEYE Position - Discoball" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,35,1,66,2,65,3,10,5,255</FixtureVal>
+  </Function>
+  <Function ID="60" Type="Scene" Name="BEYE Position - Discoball (Strobe)" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,35,1,66,2,65,3,10,5,255,7,255,8,98,12,255</FixtureVal>
+  </Function>
+  <Function ID="61" Type="Scene" Name="BEYE Position - Crowd" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,166,1,83,2,42,3,10,5,0</FixtureVal>
+  </Function>
+  <Function ID="62" Type="Scene" Name="BEYE Kaleidoscope 1" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,103,6,123,16,0</FixtureVal>
+  </Function>
+  <Function ID="64" Type="Scene" Name="BEYE Static Effect 1" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">16,54</FixtureVal>
+  </Function>
+  <Function ID="65" Type="Scene" Name="BEYE Static Effect 2" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">16,106</FixtureVal>
+  </Function>
+  <Function ID="66" Type="Scene" Name="BEYE Static Effect 4" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">16,159</FixtureVal>
+  </Function>
+  <Function ID="67" Type="Scene" Name="BEYE Static Effect 3" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">16,209</FixtureVal>
+  </Function>
+  <Function ID="68" Type="Scene" Name="BEYE Static Effect 5" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">16,255</FixtureVal>
+  </Function>
+  <Function ID="69" Type="Chaser" Name="Beye Loop Static Effects">
+   <Speed FadeIn="0" FadeOut="0" Duration="2400"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">64</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">65</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">67</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">66</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">68</Step>
+  </Function>
+  <Function ID="70" Type="Scene" Name="BEYE Rotate 1" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,0,6,0</FixtureVal>
+  </Function>
+  <Function ID="71" Type="Scene" Name="BEYE Rotate 3" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,0,6,196</FixtureVal>
+  </Function>
+  <Function ID="72" Type="Scene" Name="BEYE Rotate 4" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,0,6,207</FixtureVal>
+  </Function>
+  <Function ID="73" Type="Scene" Name="BEYE Rotate 5" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,0,6,234</FixtureVal>
+  </Function>
+  <Function ID="74" Type="Scene" Name="BEYE Rotate 2" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,186,6,0</FixtureVal>
+  </Function>
+  <Function ID="75" Type="Scene" Name="BEYE Rotate 6" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">6,255</FixtureVal>
+  </Function>
+  <Function ID="76" Type="Chaser" Name="Beye Loop Rotation and Zoom">
+   <Speed FadeIn="0" FadeOut="0" Duration="9600"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1200" FadeOut="0">71</Step>
+   <Step Number="1" FadeIn="0" Hold="1200" FadeOut="0">72</Step>
+   <Step Number="2" FadeIn="0" Hold="1200" FadeOut="0">73</Step>
+   <Step Number="3" FadeIn="0" Hold="1200" FadeOut="0">75</Step>
+  </Function>
+  <Function ID="77" Type="EFX" Name="New EFX 77">
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="83" FadeOut="1190" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>SquareTrue</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>143</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
-   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+   <Grid Width="2" Height="3" Depth="2" Units="0"/>
+   <FxItem ID="3" XPos="507.407" YPos="988.889"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -217,11 +572,11 @@
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundColor>4283387727</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="0" Width="825" Height="695"/>
+    <WindowState Visible="True" X="15" Y="70" Width="825" Height="695"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -229,7 +584,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="PIX White Strobe" ID="0" Icon="">
-     <WindowState Visible="False" X="545" Y="100" Width="105" Height="35"/>
+     <WindowState Visible="True" X="545" Y="100" Width="105" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -243,7 +598,7 @@
      <Input Universe="0" Channel="190" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Disco White Strobe" ID="3" Icon="">
-     <WindowState Visible="False" X="545" Y="140" Width="105" Height="35"/>
+     <WindowState Visible="True" X="545" Y="140" Width="105" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -256,8 +611,8 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="182" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
-    <Button Caption="BEYE White Strobe" ID="11" Icon="">
-     <WindowState Visible="False" X="545" Y="180" Width="105" Height="35"/>
+    <Button Caption="BEYE Disco Pos" ID="12" Icon="">
+     <WindowState Visible="True" X="655" Y="180" Width="105" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -265,10 +620,97 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="18"/>
+     <Function ID="59"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="174" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="175" LowerValue="30" UpperValue="26" MonitorValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="BEYE Spotlight Pos" ID="13" Icon="">
+     <WindowState Visible="True" X="655" Y="140" Width="105" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="58"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="183" LowerValue="30" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 14" ID="14" Icon="">
+     <WindowState Visible="True" X="450" Y="140" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="175" LowerValue="1" UpperValue="26" UpperParams="6"/>
+    </Button>
+    <SoloFrame Caption="" ID="15">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="505" Y="235" Width="200" Height="200"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="BEYE White Strobe 2" ID="11" Icon="">
+      <WindowState Visible="True" X="45" Y="140" Width="105" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="60"/>
+      <Action Override="0" ForceLTP="0">Flash</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="166" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="BEYE White Strobe" ID="16" Icon="">
+      <WindowState Visible="True" X="45" Y="100" Width="105" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="18"/>
+      <Action Override="0" ForceLTP="0">Flash</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="174" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+    </SoloFrame>
+    <Button Caption="New EFX 77" ID="33" Icon="">
+     <WindowState Visible="True" X="120" Y="455" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="77"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="184" LowerValue="1" UpperValue="26" UpperParams="6"/>
     </Button>
    </Frame>
    <SoloFrame Caption="Metronome" ID="5">
@@ -279,7 +721,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="835" Y="350" Width="135" Height="200"/>
+    <WindowState Visible="True" X="1600" Y="170" Width="135" Height="200"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -288,7 +730,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Metronome 1" ID="4" Icon="">
-     <WindowState Visible="False" X="5" Y="40" Width="125" Height="35"/>
+     <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -302,7 +744,7 @@
      <Input Universe="0" Channel="244" LowerValue="1" UpperValue="6" MonitorValue="24"/>
     </Button>
     <Button Caption="Metronome 2" ID="6" Icon="">
-     <WindowState Visible="False" X="5" Y="80" Width="125" Height="35"/>
+     <WindowState Visible="True" X="5" Y="80" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -316,7 +758,7 @@
      <Input Universe="0" Channel="245" LowerValue="1" UpperValue="6"/>
     </Button>
     <Button Caption="Metronome 3" ID="7" Icon="">
-     <WindowState Visible="False" X="5" Y="120" Width="125" Height="35"/>
+     <WindowState Visible="True" X="5" Y="120" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -330,7 +772,7 @@
      <Input Universe="0" Channel="246" LowerValue="1" UpperValue="6" MonitorValue="6"/>
     </Button>
     <Button Caption="Metronome 4" ID="8" Icon="">
-     <WindowState Visible="False" X="5" Y="160" Width="125" Height="35"/>
+     <WindowState Visible="True" X="5" Y="160" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -345,7 +787,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="Metronome On/Off" ID="9" Icon="">
-    <WindowState Visible="False" X="840" Y="555" Width="125" Height="35"/>
+    <WindowState Visible="True" X="1600" Y="555" Width="125" Height="35"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -359,7 +801,7 @@
     <Input Universe="0" Channel="250" LowerValue="1" UpperValue="6"/>
    </Button>
    <SpeedDial Caption="Duration" ID="10">
-    <WindowState Visible="False" X="975" Y="375" Width="200" Height="175"/>
+    <WindowState Visible="True" X="1600" Y="380" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -373,7 +815,242 @@
     </AbsoluteValue>
     <Time>600</Time>
     <Function FadeIn="0" FadeOut="0" Duration="6">17</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="8">69</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="10">76</Function>
    </SpeedDial>
+   <Button Caption="New RGB Matrix 19" ID="2" Icon="">
+    <WindowState Visible="True" X="90" Y="140" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="19"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Frame Caption="BEYE Static Effect Chaser" ID="18">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4282466625</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="285" Y="285" Width="215" Height="350"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Beye Static Effect Chaser" ID="19" Icon="">
+     <WindowState Visible="True" X="35" Y="295" Width="115" Height="40"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="69"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="233" LowerValue="1" UpperValue="3"/>
+    </Button>
+    <SoloFrame Caption="Beye Static Effects Solo" ID="20">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="5" Y="40" Width="210" Height="245"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="BEYE Static Effect 1" ID="21" Icon="">
+      <WindowState Visible="True" X="30" Y="45" Width="110" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="64"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="165" LowerValue="84" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="BEYE Static Effect 2" ID="22" Icon="">
+      <WindowState Visible="True" X="30" Y="85" Width="110" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="65"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="157" LowerValue="84" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="BEYE Static Effect 3" ID="23" Icon="">
+      <WindowState Visible="True" X="30" Y="125" Width="110" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="67"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="149" LowerValue="84" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="BEYE Static Effect 4" ID="24" Icon="">
+      <WindowState Visible="True" X="30" Y="165" Width="110" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="66"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="141" LowerValue="84" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="BEYE Static Effect 5" ID="25" Icon="">
+      <WindowState Visible="True" X="30" Y="205" Width="110" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="68"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="133" LowerValue="84" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+    </SoloFrame>
+   </Frame>
+   <Frame Caption="BEYE Zoom and Rotation" ID="26">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4282664004</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="930" Y="280" Width="225" Height="485"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="BEYE Kaleidoscopes" ID="27">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4281611316</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="15" Y="190" Width="145" Height="235"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Fast Kaleidoscope" ID="28" Icon="">
+      <WindowState Visible="True" X="15" Y="185" Width="120" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="75"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="135" LowerValue="108" UpperValue="104" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Medium Kaleidoscope" ID="29" Icon="">
+      <WindowState Visible="True" X="15" Y="140" Width="120" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="73"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="143" LowerValue="108" UpperValue="104" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Slow Kaleidoscope" ID="30" Icon="">
+      <WindowState Visible="True" X="15" Y="95" Width="120" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="72"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="151" LowerValue="108" UpperValue="104" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Very Slow Kaleidoscope" ID="31" Icon="">
+      <WindowState Visible="True" X="15" Y="50" Width="120" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="71"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="159" LowerValue="108" UpperValue="104" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+    </SoloFrame>
+    <Button Caption="Loop Kaleidoscopes" ID="32" Icon="">
+     <WindowState Visible="True" X="20" Y="140" Width="130" Height="40"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="76"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="167" LowerValue="106" UpperValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+   </Frame>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
