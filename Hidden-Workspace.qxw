@@ -227,7 +227,7 @@
      <Function ID="8"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="190" LowerValue="1" UpperValue="26" UpperParams="6"/>
+     <Input Universe="0" Channel="190" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Disco White Strobe" ID="3" Icon="">
      <WindowState Visible="True" X="545" Y="140" Width="105" Height="35"/>
@@ -241,7 +241,7 @@
      <Function ID="12"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="182" LowerValue="1" UpperValue="26" UpperParams="6"/>
+     <Input Universe="0" Channel="182" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="BEYE White Strobe" ID="11" Icon="">
      <WindowState Visible="True" X="545" Y="180" Width="105" Height="35"/>
@@ -255,7 +255,7 @@
      <Function ID="18"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="174" LowerValue="1" UpperValue="26" UpperParams="6"/>
+     <Input Universe="0" Channel="174" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
    </Frame>
    <SoloFrame Caption="Metronome" ID="5">
