@@ -6,9 +6,11 @@
 - Go to [QLC Downloads](https://www.qlcplus.org/download) and get the latest version installer (currently 4.14), install it on top of this repo. 
 - That's it -> open Hidden-Workspace.qxw in QLC4
 
-
 # Install Fixtures (Windows)
 Use _Fixtures/install.bat to copy downloaded fixtures to the folder where QLC expects them
+
+# Troubleshooting (Windows)
+USB Dongle will only work in PRO Output: Pro Rx / Tx
 
 # Ideas for PIX
 - Kitt effect that mimics the offset derbys

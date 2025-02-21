@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.0</Version>
@@ -14,13 +14,23 @@
      <PluginParameters MIDISendNoteOff="false"/>
     </Input>
     <Output Plugin="DMX USB" UID="FT232R USB UART - DMX Output 1 - (S/N: AU04BSFQ)" Line="0">
-     <PluginParameters UniverseChannels="140"/>
+     <PluginParameters UniverseChannels="147"/>
     </Output>
     <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1">
      <PluginParameters UniverseChannels="3"/>
     </Feedback>
    </Universe>
   </InputOutputMap>
+  <Fixture>
+   <Manufacturer>beamZ</Manufacturer>
+   <Model>PS10W</Model>
+   <Mode>7 Channel</Mode>
+   <ID>0</ID>
+   <Name>PS10W Discoball spot</Name>
+   <Universe>0</Universe>
+   <Address>140</Address>
+   <Channels>7</Channels>
+  </Fixture>
   <Fixture>
    <Manufacturer>Showtec</Manufacturer>
    <Model>Techno Derby V1</Model>
@@ -61,6 +71,25 @@
    <Address>115</Address>
    <Channels>25</Channels>
   </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>5</ID>
+   <Name>NOOP</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Techno Derbies</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="1">0</Head>
+   <Head X="1" Y="0" Fixture="1">1</Head>
+   <Head X="0" Y="1" Fixture="2">0</Head>
+   <Head X="1" Y="1" Fixture="2">1</Head>
+   <Head X="0" Y="2" Fixture="0">0</Head>
+  </FixtureGroup>
   <Function ID="0" Type="Scene" Name="Green Simple Fixture">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
@@ -99,6 +128,58 @@
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">6</Step>
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">6</Step>
   </Function>
+  <Function ID="8" Type="Scene" Name="PIX White Strobe" Path="PIX">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255,5,0,6,255,7,255,8,255,9,255,10,255,11,0,12,255,13,255,14,255,15,255,16,255,17,0,18,255,19,255,20,255,21,255,22,255,23,0,24,255,25,255,26,255,27,255,28,255,29,0,30,255,31,255,32,255,33,255,34,255,35,0,36,255,37,255,38,255,39,255,40,255,41,0,42,255,43,255,44,255,45,255,46,255,47,0</FixtureVal>
+  </Function>
+  <Function ID="9" Type="Scene" Name="Techno Derbies Strobe White" Path="Techno Derby">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,59,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="2">0,59,1,255,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="10" Type="Scene" Name="Techno Derbies Mute" Path="Techno Derby">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,255,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Chaser" Name="Techno Derbies Strobe-1s-then-mute">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">9</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">10</Step>
+  </Function>
+  <Function ID="12" Type="Scene" Name="Disco White Strobe" Path="PS10W Discoball Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,255,3,255,4,255,5,226</FixtureVal>
+  </Function>
+  <Function ID="13" Type="Scene" Name="Metronome State 1" Path="Metronome">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,255</FixtureVal>
+  </Function>
+  <Function ID="14" Type="Scene" Name="Metronome State 2" Path="Metronome">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,194</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Scene" Name="Metronome State 3" Path="Metronome">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,95</FixtureVal>
+  </Function>
+  <Function ID="16" Type="Scene" Name="Metronome State 4" Path="Metronome">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,25</FixtureVal>
+  </Function>
+  <Function ID="17" Type="Chaser" Name="Metronome Lights">
+   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">13</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">14</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">15</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">16</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -115,7 +196,65 @@
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
-   <SoloFrame Caption="" ID="1">
+   <Frame Caption="AKAI APC" ID="1">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="0" Y="0" Width="825" Height="695"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="PIX White Strobe" ID="0" Icon="">
+     <WindowState Visible="True" X="545" Y="100" Width="105" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="8"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="190" LowerValue="4" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Techno Derbies White Strobe" ID="2" Icon="">
+     <WindowState Visible="True" X="545" Y="140" Width="105" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="11"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="182" LowerValue="4" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Disco White Strobe" ID="3" Icon="">
+     <WindowState Visible="True" X="545" Y="180" Width="105" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="174" LowerValue="4" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+   </Frame>
+   <SoloFrame Caption="Metronome" ID="5">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -123,7 +262,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="75" Width="315" Height="190"/>
+    <WindowState Visible="True" X="895" Y="270" Width="85" Height="295"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -131,8 +270,8 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Green Simple Fixture" ID="0" Icon="">
-     <WindowState Visible="False" X="30" Y="75" Width="50" Height="50"/>
+    <Button Caption="Metronome 1" ID="4" Icon="">
+     <WindowState Visible="True" X="15" Y="55" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -140,13 +279,13 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="0"/>
+     <Function ID="13"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="184" LowerValue="38" UpperValue="42" MonitorValue="36" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="244" LowerValue="1" UpperValue="6" MonitorValue="24"/>
     </Button>
-    <Button Caption="Purple" ID="2" Icon="">
-     <WindowState Visible="False" X="90" Y="75" Width="50" Height="50"/>
+    <Button Caption="Metronome 2" ID="6" Icon="">
+     <WindowState Visible="True" X="15" Y="115" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -154,13 +293,13 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="1"/>
+     <Function ID="14"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="185" LowerValue="110" UpperValue="106" MonitorValue="108" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="245" LowerValue="1" UpperValue="6"/>
     </Button>
-    <Button Caption="White" ID="6" Icon="">
-     <WindowState Visible="False" X="145" Y="75" Width="50" Height="50"/>
+    <Button Caption="Metronome 3" ID="7" Icon="">
+     <WindowState Visible="True" X="15" Y="175" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -168,13 +307,13 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="2"/>
+     <Function ID="15"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="186" LowerValue="1" UpperValue="6" MonitorValue="4" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="246" LowerValue="1" UpperValue="6" MonitorValue="6"/>
     </Button>
-    <Button Caption="Red" ID="7" Icon="">
-     <WindowState Visible="False" X="200" Y="75" Width="50" Height="50"/>
+    <Button Caption="Metronome 4" ID="8" Icon="">
+     <WindowState Visible="True" X="15" Y="230" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -182,14 +321,28 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="4"/>
+     <Function ID="16"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="187" LowerValue="14" UpperValue="10" MonitorValue="12" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="247" LowerValue="1" UpperValue="6"/>
     </Button>
    </SoloFrame>
-   <SpeedDial Caption="Duration" ID="3">
-    <WindowState Visible="False" X="1300" Y="0" Width="245" Height="290"/>
+   <Button Caption="Metronome On/Off" ID="9" Icon="">
+    <WindowState Visible="True" X="835" Y="570" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="17"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="250" LowerValue="1" UpperValue="6"/>
+   </Button>
+   <SpeedDial Caption="Duration" ID="10">
+    <WindowState Visible="True" X="985" Y="385" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -198,97 +351,12 @@
      <Font>Default</Font>
     </Appearance>
     <Visibility>127</Visibility>
-    <AbsoluteValue Minimum="0" Maximum="10000"/>
-    <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
-    <Time>2378</Time>
-    <Function FadeIn="0" FadeOut="0" Duration="6">7</Function>
-    <Function FadeIn="1" FadeOut="0" Duration="2">3</Function>
+    <AbsoluteValue Minimum="600" Maximum="300">
+     <Input Universe="0" Channel="56"/>
+    </AbsoluteValue>
+    <Time>300</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">17</Function>
    </SpeedDial>
-   <CueList Caption="Cue list" ID="4">
-    <WindowState Visible="False" X="320" Y="80" Width="300" Height="220"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Chaser>3</Chaser>
-    <NextPrevBehavior>0</NextPrevBehavior>
-    <Next/>
-    <Previous/>
-    <Playback/>
-    <Stop/>
-   </CueList>
-   <AudioTriggers BarsNumber="6" Caption="Audio Trigger (BPM Detector)" ID="5">
-    <WindowState Visible="False" X="1040" Y="330" Width="300" Height="200"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <SpectrumBar Name="#2 (833Hz - 1666Hz)" Type="3" MinThreshold="76" MaxThreshold="127" Divisor="1" Index="1" WidgetID="3"/>
-   </AudioTriggers>
-   <Button Caption="Strobe 4/4" ID="8" Icon="">
-    <WindowState Visible="False" X="640" Y="325" Width="50" Height="50"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Function ID="7"/>
-    <Action>Toggle</Action>
-    <Intensity Adjust="False">100</Intensity>
-    <Input Universe="0" Channel="241" LowerValue="1" UpperValue="3"/>
-   </Button>
-   <CueList Caption="Cue list" ID="9">
-    <WindowState Visible="False" X="315" Y="310" Width="300" Height="220"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Chaser>7</Chaser>
-    <NextPrevBehavior>0</NextPrevBehavior>
-    <Next/>
-    <Previous/>
-    <Playback/>
-    <Stop/>
-   </CueList>
-   <Button Caption="Beats 4/4" ID="10" Icon="">
-    <WindowState Visible="False" X="640" Y="125" Width="50" Height="50"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Function ID="3"/>
-    <Action>Toggle</Action>
-    <Intensity Adjust="False">100</Intensity>
-    <Input Universe="0" Channel="240" LowerValue="1" UpperValue="3"/>
-   </Button>
-   <Button Caption="Strobe" ID="11" Icon="">
-    <WindowState Visible="False" X="100" Y="375" Width="50" Height="50"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Function ID="5"/>
-    <Action>Toggle</Action>
-    <Intensity Adjust="False">100</Intensity>
-    <Input Universe="0" Channel="176" LowerValue="1" UpperValue="26" UpperParams="6"/>
-   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
