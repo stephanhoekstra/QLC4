@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.0</Version>
@@ -184,6 +184,19 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">7,255,8,255,12,255</FixtureVal>
   </Function>
+  <Function ID="19" Type="RGBMatrix" Name="New RGB Matrix 19">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>4294967295</FixtureGroup>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -208,7 +221,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="825" Height="695"/>
+    <WindowState Visible="False" X="0" Y="0" Width="825" Height="695"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -216,7 +229,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="PIX White Strobe" ID="0" Icon="">
-     <WindowState Visible="True" X="545" Y="100" Width="105" Height="35"/>
+     <WindowState Visible="False" X="545" Y="100" Width="105" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -230,7 +243,7 @@
      <Input Universe="0" Channel="190" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Disco White Strobe" ID="3" Icon="">
-     <WindowState Visible="True" X="545" Y="140" Width="105" Height="35"/>
+     <WindowState Visible="False" X="545" Y="140" Width="105" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -244,7 +257,7 @@
      <Input Universe="0" Channel="182" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="BEYE White Strobe" ID="11" Icon="">
-     <WindowState Visible="True" X="545" Y="180" Width="105" Height="35"/>
+     <WindowState Visible="False" X="545" Y="180" Width="105" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -266,7 +279,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="835" Y="350" Width="135" Height="200"/>
+    <WindowState Visible="False" X="835" Y="350" Width="135" Height="200"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -275,7 +288,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Metronome 1" ID="4" Icon="">
-     <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
+     <WindowState Visible="False" X="5" Y="40" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -289,7 +302,7 @@
      <Input Universe="0" Channel="244" LowerValue="1" UpperValue="6" MonitorValue="24"/>
     </Button>
     <Button Caption="Metronome 2" ID="6" Icon="">
-     <WindowState Visible="True" X="5" Y="80" Width="125" Height="35"/>
+     <WindowState Visible="False" X="5" Y="80" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -303,7 +316,7 @@
      <Input Universe="0" Channel="245" LowerValue="1" UpperValue="6"/>
     </Button>
     <Button Caption="Metronome 3" ID="7" Icon="">
-     <WindowState Visible="True" X="5" Y="120" Width="125" Height="35"/>
+     <WindowState Visible="False" X="5" Y="120" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -317,7 +330,7 @@
      <Input Universe="0" Channel="246" LowerValue="1" UpperValue="6" MonitorValue="6"/>
     </Button>
     <Button Caption="Metronome 4" ID="8" Icon="">
-     <WindowState Visible="True" X="5" Y="160" Width="125" Height="35"/>
+     <WindowState Visible="False" X="5" Y="160" Width="125" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -332,7 +345,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="Metronome On/Off" ID="9" Icon="">
-    <WindowState Visible="True" X="840" Y="555" Width="125" Height="35"/>
+    <WindowState Visible="False" X="840" Y="555" Width="125" Height="35"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -346,7 +359,7 @@
     <Input Universe="0" Channel="250" LowerValue="1" UpperValue="6"/>
    </Button>
    <SpeedDial Caption="Duration" ID="10">
-    <WindowState Visible="True" X="975" Y="375" Width="200" Height="175"/>
+    <WindowState Visible="False" X="975" Y="375" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
