@@ -102,6 +102,27 @@
    <Head X="6" Y="0" Fixture="3">6</Head>
    <Head X="7" Y="0" Fixture="3">7</Head>
   </FixtureGroup>
+  <FixtureGroup ID="2">
+   <Name>Primary Wash</Name>
+   <Size X="3" Y="1"/>
+   <Head X="0" Y="0" Fixture="4">0</Head>
+   <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="2" Y="0" Fixture="1">1</Head>
+   <Head X="0" Y="1" Fixture="2">0</Head>
+   <Head X="1" Y="1" Fixture="2">1</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="3">
+   <Name>Secondary Wash</Name>
+   <Size X="3" Y="3"/>
+   <Head X="0" Y="0" Fixture="3">0</Head>
+   <Head X="1" Y="0" Fixture="3">1</Head>
+   <Head X="2" Y="0" Fixture="3">2</Head>
+   <Head X="0" Y="1" Fixture="3">3</Head>
+   <Head X="1" Y="1" Fixture="3">4</Head>
+   <Head X="2" Y="1" Fixture="3">5</Head>
+   <Head X="0" Y="2" Fixture="3">6</Head>
+   <Head X="1" Y="2" Fixture="3">7</Head>
+  </FixtureGroup>
   <Function ID="0" Type="Scene" Name="Green Simple Fixture">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
@@ -183,7 +204,7 @@
    <FixtureVal ID="5">0,25</FixtureVal>
   </Function>
   <Function ID="17" Type="Chaser" Name="Metronome Lights">
-   <Speed FadeIn="0" FadeOut="0" Duration="600"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="599"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -194,7 +215,7 @@
   </Function>
   <Function ID="18" Type="Scene" Name="BEYE White Strobe" Path="BEYE">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">7,255,8,255,12,255</FixtureVal>
+   <FixtureVal ID="4">7,255,8,255,9,0,10,0,11,0,12,255</FixtureVal>
   </Function>
   <Function ID="19" Type="RGBMatrix" Name="New RGB Matrix 19">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -457,6 +478,10 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">5,103,6,123,16,0</FixtureVal>
   </Function>
+  <Function ID="63" Type="Scene" Name="BEYE Red Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,255,10,0,11,0,12,0</FixtureVal>
+  </Function>
   <Function ID="64" Type="Scene" Name="BEYE Static Effect 1" Path="BEYE">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">16,54</FixtureVal>
@@ -478,7 +503,7 @@
    <FixtureVal ID="4">16,255</FixtureVal>
   </Function>
   <Function ID="69" Type="Chaser" Name="Beye Loop Static Effects">
-   <Speed FadeIn="0" FadeOut="0" Duration="2400"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2396"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -513,7 +538,7 @@
    <FixtureVal ID="4">6,255</FixtureVal>
   </Function>
   <Function ID="76" Type="Chaser" Name="Beye Loop Rotation and Zoom">
-   <Speed FadeIn="0" FadeOut="0" Duration="9600"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="9584"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -522,34 +547,90 @@
    <Step Number="2" FadeIn="0" Hold="1200" FadeOut="0">73</Step>
    <Step Number="3" FadeIn="0" Hold="1200" FadeOut="0">75</Step>
   </Function>
-  <Function ID="77" Type="EFX" Name="New EFX 77">
-   <Fixture>
-    <ID>4</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>0</StartOffset>
-   </Fixture>
-   <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="83" FadeOut="1190" Duration="20000"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm>SquareTrue</Algorithm>
-   <Width>127</Width>
-   <Height>127</Height>
-   <Rotation>0</Rotation>
-   <StartOffset>0</StartOffset>
-   <IsRelative>0</IsRelative>
-   <Axis Name="X">
-    <Offset>143</Offset>
-    <Frequency>2</Frequency>
-    <Phase>90</Phase>
-   </Axis>
-   <Axis Name="Y">
-    <Offset>127</Offset>
-    <Frequency>3</Frequency>
-    <Phase>0</Phase>
-   </Axis>
+  <Function ID="77" Type="Scene" Name="BEYE Purple Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,255,10,0,11,255,12,0</FixtureVal>
+  </Function>
+  <Function ID="78" Type="Collection" Name="Primary Red Wash">
+   <Step Number="0">63</Step>
+  </Function>
+  <Function ID="79" Type="Scene" Name="Techno Derby Red Wash" Path="Techno Derby/Techno Derby Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,10,1,3,2,136</FixtureVal>
+   <FixtureVal ID="2"/>
+  </Function>
+  <Function ID="80" Type="Scene" Name="Techno Derby Blue Wash" Path="Techno Derby/Techno Derby Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,40,1,3,2,136</FixtureVal>
+   <FixtureVal ID="2"/>
+  </Function>
+  <Function ID="81" Type="Scene" Name="Techno Derby Green Wash" Path="Techno Derby/Techno Derby Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,40,1,3,2,136</FixtureVal>
+   <FixtureVal ID="2"/>
+  </Function>
+  <Function ID="82" Type="Scene" Name="BEYE Blue Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,0,10,0,11,255,12,0</FixtureVal>
+  </Function>
+  <Function ID="83" Type="Collection" Name="Primary Blue Wash">
+   <Step Number="0">82</Step>
+  </Function>
+  <Function ID="84" Type="Collection" Name="Secondary Blue Wash">
+   <Step Number="0">80</Step>
+  </Function>
+  <Function ID="85" Type="Collection" Name="Secondary Red Wash">
+   <Step Number="0">79</Step>
+  </Function>
+  <Function ID="86" Type="Scene" Name="BEYE Green Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,0,10,255,11,0,12,0</FixtureVal>
+  </Function>
+  <Function ID="87" Type="Scene" Name="BEYE Yellow Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,255,10,255,11,0,12,0</FixtureVal>
+  </Function>
+  <Function ID="88" Type="Scene" Name="BEYE Cyan Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,0,10,255,11,255,12,0</FixtureVal>
+  </Function>
+  <Function ID="89" Type="Scene" Name="BEYE Pink Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,255,10,0,11,0,12,133</FixtureVal>
+  </Function>
+  <Function ID="90" Type="Scene" Name="BEYE Orange Primary wash" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,9,255,10,60,11,0,12,0</FixtureVal>
+  </Function>
+  <Function ID="91" Type="Scene" Name="BEYE Yellow Primary wash (Copy)" Path="BEYE/BEYE Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">5,43,7,79,9,255,10,255,11,255,12,0</FixtureVal>
+  </Function>
+  <Function ID="92" Type="Scene" Name="Kill All Strobes" Path="Utils">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">8,0</FixtureVal>
+   <FixtureVal ID="3">1,0,7,0,13,0,19,0,25,0,31,0,37,0,43,0</FixtureVal>
+   <FixtureVal ID="0">5,0</FixtureVal>
+   <FixtureVal ID="1">1,0,3,0</FixtureVal>
+   <FixtureVal ID="2">1,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="93" Type="Collection" Name="Primary Purple Wash">
+   <Step Number="0">77</Step>
+  </Function>
+  <Function ID="94" Type="Collection" Name="Primary Orange Wash">
+   <Step Number="0">90</Step>
+  </Function>
+  <Function ID="95" Type="Collection" Name="Primary Green Wash">
+   <Step Number="0">86</Step>
+  </Function>
+  <Function ID="96" Type="Collection" Name="Primary Yellow Wash">
+   <Step Number="0">87</Step>
+  </Function>
+  <Function ID="97" Type="Collection" Name="Primary Cyan Wash">
+   <Step Number="0">88</Step>
+  </Function>
+  <Function ID="98" Type="Collection" Name="Primary Pink Wash">
+   <Step Number="0">89</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -576,7 +657,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="15" Y="70" Width="825" Height="695"/>
+    <WindowState Visible="True" X="15" Y="70" Width="1305" Height="730"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -699,7 +780,7 @@
      </Button>
     </SoloFrame>
     <Button Caption="New EFX 77" ID="33" Icon="">
-     <WindowState Visible="True" X="120" Y="455" Width="50" Height="50"/>
+     <WindowState Visible="True" X="530" Y="620" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -707,7 +788,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="77"/>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="184" LowerValue="1" UpperValue="26" UpperParams="6"/>
@@ -813,13 +894,13 @@
     <AbsoluteValue Minimum="600" Maximum="300">
      <Input Universe="0" Channel="56"/>
     </AbsoluteValue>
-    <Time>600</Time>
+    <Time>599</Time>
     <Function FadeIn="0" FadeOut="0" Duration="6">17</Function>
     <Function FadeIn="0" FadeOut="0" Duration="8">69</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="10">76</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">76</Function>
    </SpeedDial>
    <Button Caption="New RGB Matrix 19" ID="2" Icon="">
-    <WindowState Visible="True" X="90" Y="140" Width="50" Height="50"/>
+    <WindowState Visible="True" X="865" Y="615" Width="50" Height="50"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -827,9 +908,10 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="19"/>
-    <Action>Toggle</Action>
+    <Function ID="92"/>
+    <Action Override="0" ForceLTP="0">Flash</Action>
     <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="134" LowerValue="12" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
    </Button>
    <Frame Caption="BEYE Static Effect Chaser" ID="18">
     <Appearance>
@@ -839,7 +921,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="285" Y="285" Width="215" Height="350"/>
+    <WindowState Visible="True" X="995" Y="265" Width="215" Height="350"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -956,7 +1038,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="930" Y="280" Width="225" Height="485"/>
+    <WindowState Visible="True" X="1625" Y="595" Width="225" Height="485"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1051,6 +1133,183 @@
      <Input Universe="0" Channel="167" LowerValue="106" UpperValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
    </Frame>
+   <Slider Caption="Slider 17" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="55" Y="510" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="48"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="32">
+     <Channel Fixture="4">7</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <SoloFrame Caption="Primary Washes" ID="34">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="25" Y="120" Width="130" Height="380"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Primary Red Wash" ID="35" Icon="">
+     <WindowState Visible="True" X="15" Y="85" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="78"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="176" LowerValue="14" UpperValue="10" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Primary Purple Wash" ID="36" Icon="">
+     <WindowState Visible="True" X="15" Y="125" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294902015</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="93"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="168" LowerValue="110" UpperValue="106" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Primary Blue Wash" ID="41" Icon="">
+     <WindowState Visible="True" X="15" Y="165" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278190335</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="83"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="160" LowerValue="94" UpperValue="90" MonitorValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Primary Green Wash" ID="43" Icon="">
+     <WindowState Visible="True" X="15" Y="245" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="95"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="144" LowerValue="46" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Primary Pink Wash" ID="44" Icon="">
+     <WindowState Visible="True" X="15" Y="45" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294945535</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="98"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="184" LowerValue="111" UpperValue="112" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Primary Orange Wash" ID="45" Icon="">
+     <WindowState Visible="True" X="15" Y="325" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294945280</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="94"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="128" LowerValue="22" UpperValue="18" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Primary Yellow Wash" ID="46" Icon="">
+     <WindowState Visible="True" X="15" Y="285" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294967040</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="96"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="136" LowerValue="30" UpperValue="28" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Primary Cyan Wash" ID="47" Icon="">
+     <WindowState Visible="True" X="15" Y="205" Width="100" Height="35"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255615</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="97"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="152" LowerValue="78" UpperValue="72" MonitorValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+   </SoloFrame>
+   <Button Caption="Kill All Strobes" ID="40" Icon="">
+    <WindowState Visible="True" X="1100" Y="710" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <SoloFrame Caption="Derby Wash" ID="48">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="230" Y="120" Width="200" Height="200"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+   </SoloFrame>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
