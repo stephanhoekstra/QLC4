@@ -194,7 +194,7 @@
    <FixtureVal ID="5">0,25</FixtureVal>
   </Function>
   <Function ID="17" Type="Chaser" Name="Metronome Lights">
-   <Speed FadeIn="0" FadeOut="0" Duration="1888"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -687,7 +687,7 @@
    <Step Number="0">108</Step>
   </Function>
   <Function ID="118" Type="Chaser" Name="Moods - Fade Red and Blue Combos">
-   <Speed FadeIn="472" FadeOut="472" Duration="1888"/>
+   <Speed FadeIn="400" FadeOut="400" Duration="1600"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -699,29 +699,35 @@
   <Function ID="119" Type="Collection" Name="Mood - Blue-Red">
    <Step Number="0">83</Step>
    <Step Number="1">111</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="120" Type="Collection" Name="Mood - Blue">
    <Step Number="0">106</Step>
    <Step Number="1">83</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="121" Type="Collection" Name="Mood - Red-Blue">
    <Step Number="0">78</Step>
    <Step Number="1">106</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="122" Type="Collection" Name="Mood - Red">
    <Step Number="0">78</Step>
    <Step Number="1">111</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="123" Type="Collection" Name="Mood - Green">
    <Step Number="0">95</Step>
    <Step Number="1">116</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="124" Type="Collection" Name="Mood - Purple">
    <Step Number="0">93</Step>
    <Step Number="1">113</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="125" Type="Chaser" Name="Moods Fade Green and Purple Combos">
-   <Speed FadeIn="472" FadeOut="472" Duration="1888"/>
+   <Speed FadeIn="400" FadeOut="400" Duration="1600"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -737,14 +743,18 @@
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">118</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">125</Step>
+   <Step Number="2" FadeIn="0" Hold="30000" FadeOut="0">102</Step>
+   <Step Number="3" FadeIn="0" Hold="30000" FadeOut="0">99</Step>
   </Function>
   <Function ID="127" Type="Collection" Name="Mood - Green-Purple">
    <Step Number="0">95</Step>
    <Step Number="1">113</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="128" Type="Collection" Name="Mood - Purple-Green">
    <Step Number="0">93</Step>
    <Step Number="1">116</Step>
+   <Step Number="2">10</Step>
   </Function>
   <Function ID="129" Type="Scene" Name="Position DJ" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -776,7 +786,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="944"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="800"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -817,7 +827,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="472"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Square</Algorithm>
@@ -1344,7 +1354,7 @@
      </Appearance>
      <Input Universe="0" Channel="48"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="22">
       <Channel Fixture="4">7</Channel>
      </Level>
      <Playback>
@@ -1539,7 +1549,7 @@
     <AbsoluteValue Minimum="600" Maximum="400">
      <Input Universe="0" Channel="56"/>
     </AbsoluteValue>
-    <Time>472</Time>
+    <Time>400</Time>
     <Function FadeIn="0" FadeOut="0" Duration="7">135</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">139</Function>
     <Function FadeIn="6" FadeOut="6" Duration="8">125</Function>
@@ -1710,7 +1720,7 @@
      </Appearance>
      <Input Universe="0" Channel="49"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="42">
       <Channel Fixture="3">0</Channel>
       <Channel Fixture="3">6</Channel>
       <Channel Fixture="3">12</Channel>
