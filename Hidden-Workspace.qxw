@@ -764,6 +764,10 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,204,1,255,2,64,3,24,5,255</FixtureVal>
   </Function>
+  <Function ID="131" Type="Scene" Name="PIX Kitt 1 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,2,255,3,255,4,255,6,0,12,0,18,0,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
   <Function ID="132" Type="Scene" Name="Position Crowd" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,165,1,255,2,42,3,24,5,255</FixtureVal>
@@ -851,6 +855,109 @@
    <Step Number="0">138</Step>
    <Step Number="1">139</Step>
   </Function>
+  <Function ID="141" Type="Scene" Name="PIX Kitt 2 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,255,8,255,9,255,10,255,12,0,18,0,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="142" Type="Scene" Name="PIX Kitt 3 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,255,14,255,15,255,16,255,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="144" Type="Scene" Name="PIX Kitt 4 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,255,20,255,21,255,22,255,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="145" Type="Scene" Name="PIX Kitt 5 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,255,26,255,27,255,28,255,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="146" Type="Scene" Name="PIX Kitt 7 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,255,38,255,39,255,40,255,42,0</FixtureVal>
+  </Function>
+  <Function ID="147" Type="Scene" Name="PIX Kitt 8" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,0,42,255</FixtureVal>
+  </Function>
+  <Function ID="148" Type="Chaser" Name="PIX Effect Kitt White Single" Path="PIX Effects">
+   <Speed FadeIn="0" FadeOut="0" Duration="35"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="20" FadeOut="0">131</Step>
+   <Step Number="1" FadeIn="0" Hold="20" FadeOut="0">141</Step>
+   <Step Number="2" FadeIn="0" Hold="20" FadeOut="0">142</Step>
+   <Step Number="3" FadeIn="0" Hold="20" FadeOut="0">144</Step>
+   <Step Number="4" FadeIn="0" Hold="20" FadeOut="0">145</Step>
+   <Step Number="5" FadeIn="0" Hold="20" FadeOut="0">158</Step>
+   <Step Number="6" FadeIn="0" Hold="20" FadeOut="0">146</Step>
+   <Step Number="7" FadeIn="0" Hold="20" FadeOut="0">159</Step>
+   <Step Number="8" FadeIn="0" Hold="4294967294" FadeOut="0">149</Step>
+  </Function>
+  <Function ID="149" Type="Scene" Name="NOOP" Path="Utils">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="150" Type="Scene" Name="PIX Kitt 1" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,6,0,12,0,18,0,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="151" Type="Scene" Name="PIX Kitt 2" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,255,12,0,18,0,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="152" Type="Scene" Name="PIX Kitt 3" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,255,14,0,15,0,16,0,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="153" Type="Scene" Name="PIX Kitt 4 " Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,255,20,0,21,0,22,0,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="154" Type="Scene" Name="PIX Kitt 5" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,255,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="155" Type="Scene" Name="PIX Kitt 7" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,255,42,0</FixtureVal>
+  </Function>
+  <Function ID="156" Type="Chaser" Name="PIX Effect Kitt Single" Path="PIX Effects">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="20" FadeOut="0">150</Step>
+   <Step Number="1" FadeIn="0" Hold="20" FadeOut="0">151</Step>
+   <Step Number="2" FadeIn="0" Hold="20" FadeOut="0">152</Step>
+   <Step Number="3" FadeIn="0" Hold="20" FadeOut="0">153</Step>
+   <Step Number="4" FadeIn="0" Hold="20" FadeOut="0">154</Step>
+   <Step Number="5" FadeIn="0" Hold="20" FadeOut="0">157</Step>
+   <Step Number="6" FadeIn="0" Hold="20" FadeOut="0">155</Step>
+   <Step Number="7" FadeIn="0" Hold="20" FadeOut="0">147</Step>
+   <Step Number="8" FadeIn="0" Hold="4294967294" FadeOut="0">149</Step>
+  </Function>
+  <Function ID="157" Type="Scene" Name="PIX Kitt 6" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,255,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="158" Type="Scene" Name="PIX Kitt 6 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,255,32,255,33,255,34,255,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="159" Type="Scene" Name="PIX Kitt 8 White" Path="PIC Effect Kitt">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,0,42,255,44,255,45,255,46,255</FixtureVal>
+  </Function>
+  <Function ID="160" Type="Chaser" Name="PIX Effect Loop Kitt 4/4">
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">156</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">156</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">156</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">148</Step>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -925,7 +1032,7 @@
       <Function ID="9"/>
       <Action Override="0" ForceLTP="0">Flash</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="181" LowerValue="4" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="181" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Mute Derby" ID="62" Icon="">
       <WindowState Visible="True" X="5" Y="120" Width="105" Height="30"/>
@@ -1228,7 +1335,7 @@
       <Function ID="80"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="186" LowerValue="94" UpperValue="90" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="186" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Blue Wash 2" ID="50" Icon="">
       <WindowState Visible="True" X="125" Y="45" Width="110" Height="30"/>
@@ -1242,7 +1349,7 @@
       <Function ID="104"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="187" LowerValue="94" UpperValue="90" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="187" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Green Wash" ID="51" Icon="">
       <WindowState Visible="True" X="10" Y="80" Width="110" Height="30"/>
@@ -1256,7 +1363,7 @@
       <Function ID="81"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="178" LowerValue="46" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="178" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Green Wash" ID="52" Icon="">
       <WindowState Visible="True" X="125" Y="80" Width="110" Height="30"/>
@@ -1270,7 +1377,7 @@
       <Function ID="105"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="179" LowerValue="46" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="179" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Red Wash" ID="53" Icon="">
       <WindowState Visible="True" X="10" Y="115" Width="110" Height="30"/>
@@ -1284,7 +1391,7 @@
       <Function ID="79"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="170" LowerValue="14" UpperValue="10" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="170" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Red Wash 2" ID="54" Icon="">
       <WindowState Visible="True" X="125" Y="115" Width="110" Height="30"/>
@@ -1298,7 +1405,7 @@
       <Function ID="103"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="171" LowerValue="14" UpperValue="10" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="171" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Red-Blue Wash" ID="55" Icon="">
       <WindowState Visible="True" X="240" Y="115" Width="110" Height="30"/>
@@ -1312,7 +1419,7 @@
       <Function ID="102"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="172" LowerValue="94" UpperValue="90" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="172" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Green-Blue Wash" ID="56" Icon="">
       <WindowState Visible="True" X="240" Y="45" Width="110" Height="30"/>
@@ -1326,7 +1433,7 @@
       <Function ID="99"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="188" LowerValue="46" UpperValue="42" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="188" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Techno Derby Red-Green Wash" ID="58" Icon="">
       <WindowState Visible="True" X="240" Y="80" Width="110" Height="30"/>
@@ -1340,7 +1447,7 @@
       <Function ID="101"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="180" LowerValue="14" UpperValue="10" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="180" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
     </SoloFrame>
     <Slider Caption="Primary Wash Dimmer" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1354,7 +1461,7 @@
      </Appearance>
      <Input Universe="0" Channel="48"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="22">
+     <Level LowLimit="0" HighLimit="255" Value="0">
       <Channel Fixture="4">7</Channel>
      </Level>
      <Playback>
@@ -1383,7 +1490,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="505" Y="195" Width="220" Height="410"/>
+     <WindowState Visible="True" X="635" Y="215" Width="220" Height="410"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1448,6 +1555,62 @@
       <Input Universe="0" Channel="159" LowerValue="1" UpperValue="26" UpperParams="6"/>
      </Button>
     </SoloFrame>
+    <Button Caption="PIX Effect Kitt Single" ID="31" Icon="">
+     <WindowState Visible="True" X="370" Y="315" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="148"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="162" LowerValue="1" UpperValue="26" UpperParams="6"/>
+    </Button>
+    <Button Caption="Blackout" ID="32" Icon="">
+     <WindowState Visible="True" X="660" Y="685" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Blackout</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="235" LowerValue="1" UpperValue="3"/>
+    </Button>
+    <Button Caption="PIX Effect Kitt Single" ID="33" Icon="">
+     <WindowState Visible="True" X="370" Y="370" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="156"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="154" LowerValue="1" UpperValue="26" UpperParams="6"/>
+    </Button>
+    <Button Caption="PIX Effect Kitt Single" ID="37" Icon="">
+     <WindowState Visible="True" X="370" Y="420" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="160"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="146" LowerValue="1" UpperValue="26" UpperParams="6"/>
+    </Button>
    </Frame>
    <SoloFrame Caption="Metronome" ID="5">
     <Appearance>
@@ -1551,6 +1714,7 @@
     </AbsoluteValue>
     <Time>400</Time>
     <Function FadeIn="0" FadeOut="0" Duration="7">135</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">160</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">139</Function>
     <Function FadeIn="6" FadeOut="6" Duration="8">125</Function>
     <Function FadeIn="6" FadeOut="6" Duration="8">118</Function>
@@ -1720,7 +1884,7 @@
      </Appearance>
      <Input Universe="0" Channel="49"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="42">
+     <Level LowLimit="0" HighLimit="255" Value="255">
       <Channel Fixture="3">0</Channel>
       <Channel Fixture="3">6</Channel>
       <Channel Fixture="3">12</Channel>
@@ -1738,7 +1902,9 @@
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
-   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="0" Channel="55"/>
+   </GrandMaster>
   </Properties>
  </VirtualConsole>
  <SimpleDesk>
