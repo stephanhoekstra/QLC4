@@ -1044,7 +1044,7 @@
       <Function ID="112"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="137" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="137" LowerValue="30" UpperValue="26" MonitorValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Secondary Orange Wash" ID="14" Icon="">
       <WindowState Visible="True" X="10" Y="325" Width="100" Height="35"/>
@@ -1173,7 +1173,7 @@
       <Function ID="96"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="136" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="136" LowerValue="30" UpperValue="26" MonitorValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Primary Cyan Wash" ID="47" Icon="">
       <WindowState Visible="True" X="15" Y="205" Width="100" Height="35"/>
