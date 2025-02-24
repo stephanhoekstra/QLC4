@@ -13,7 +13,7 @@
     <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2">
      <PluginParameters MIDISendNoteOff="false"/>
     </Input>
-    <Output Plugin="DMX USB" UID="FT232R USB UART - DMX Output 1 - (S/N: AU04BSFQ)" Line="0">
+    <Output Plugin="DMX USB" UID=" (S/N: )" Line="0">
      <PluginParameters UniverseChannels="147"/>
     </Output>
     <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1">
@@ -492,11 +492,19 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">16,255</FixtureVal>
   </Function>
-  <Function ID="69" Type="Chaser" Name="New Chaser 69">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  <Function ID="69" Type="Chaser" Name="Set Piece 1 Moving Beam Horizontally With Red Kaleidoscope" Path="Set Piece 1">
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">188</Step>
+   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0">169</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">185</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">185</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0">185</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">185</Step>
+   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">185</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">185</Step>
   </Function>
   <Function ID="70" Type="Scene" Name="BEYE Rotate 1" Path="BEYE">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -522,8 +530,8 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">6,255</FixtureVal>
   </Function>
-  <Function ID="76" Type="Collection" Name="Secondary Dimmer Low">
-   <Step Number="0">7</Step>
+  <Function ID="76" Type="Collection" Name="Secondary Dimmer Off">
+   <Step Number="0">170</Step>
   </Function>
   <Function ID="77" Type="Scene" Name="BEYE Purple Primary wash" Path="BEYE Washes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -745,6 +753,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">125</Step>
    <Step Number="2" FadeIn="0" Hold="30000" FadeOut="0">102</Step>
    <Step Number="3" FadeIn="0" Hold="30000" FadeOut="0">99</Step>
+   <Step Number="4" FadeIn="0" Hold="30000" FadeOut="0">161</Step>
   </Function>
   <Function ID="127" Type="Collection" Name="Mood - Green-Purple">
    <Step Number="0">95</Step>
@@ -863,6 +872,10 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,0,6,0,12,255,14,255,15,255,16,255,24,0,30,0,36,0,42,0</FixtureVal>
   </Function>
+  <Function ID="143" Type="Scene" Name="PIX Dimmer - High" Path="PIX Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,6,255,12,255,18,255,24,255,30,255,36,255,42,143</FixtureVal>
+  </Function>
   <Function ID="144" Type="Scene" Name="PIX Kitt 4 White" Path="PIC Effect Kitt">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,0,6,0,12,0,18,255,20,255,21,255,22,255,24,0,30,0,36,0,42,0</FixtureVal>
@@ -879,7 +892,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,0,42,255</FixtureVal>
   </Function>
-  <Function ID="148" Type="Chaser" Name="PIX Effect Kitt White Single" Path="PIX Effects">
+  <Function ID="148" Type="Chaser" Name="PIX Effect Kitt White Single" Path="Pix Effect Kitt">
    <Speed FadeIn="0" FadeOut="0" Duration="35"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -921,7 +934,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,255,42,0</FixtureVal>
   </Function>
-  <Function ID="156" Type="Chaser" Name="PIX Effect Kitt Single" Path="PIX Effects">
+  <Function ID="156" Type="Chaser" Name="PIX Effect Kitt Single" Path="Pix Effect Kitt">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -958,6 +971,134 @@
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">156</Step>
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">148</Step>
   </Function>
+  <Function ID="161" Type="Chaser" Name="Moods - Rainbow Fade">
+   <Speed FadeIn="5000" FadeOut="5000" Duration="5100"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="400" Hold="1200" FadeOut="400">164</Step>
+   <Step Number="1" FadeIn="400" Hold="1200" FadeOut="400">122</Step>
+   <Step Number="2" FadeIn="400" Hold="1200" FadeOut="400">124</Step>
+   <Step Number="3" FadeIn="400" Hold="1200" FadeOut="400">120</Step>
+   <Step Number="4" FadeIn="400" Hold="1200" FadeOut="400">162</Step>
+   <Step Number="5" FadeIn="400" Hold="1200" FadeOut="400">123</Step>
+   <Step Number="6" FadeIn="400" Hold="1200" FadeOut="400">165</Step>
+   <Step Number="7" FadeIn="400" Hold="1200" FadeOut="400">163</Step>
+  </Function>
+  <Function ID="162" Type="Collection" Name="Mood - Cyan">
+   <Step Number="0">10</Step>
+   <Step Number="1">97</Step>
+   <Step Number="2">117</Step>
+  </Function>
+  <Function ID="163" Type="Collection" Name="Mood - Orange">
+   <Step Number="0">10</Step>
+   <Step Number="1">94</Step>
+   <Step Number="2">115</Step>
+  </Function>
+  <Function ID="164" Type="Collection" Name="Mood - Pink">
+   <Step Number="0">10</Step>
+   <Step Number="1">98</Step>
+   <Step Number="2">114</Step>
+  </Function>
+  <Function ID="165" Type="Collection" Name="Mood - Yellow">
+   <Step Number="0">10</Step>
+   <Step Number="1">96</Step>
+   <Step Number="2">112</Step>
+  </Function>
+  <Function ID="166" Type="Scene" Name="BEYE Dimmer High" Path="BEYE Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">7,255</FixtureVal>
+  </Function>
+  <Function ID="167" Type="Scene" Name="BEYE Dimmer Low" Path="BEYE Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">7,46</FixtureVal>
+  </Function>
+  <Function ID="168" Type="Scene" Name="BEYE Dimmer Mid" Path="BEYE Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">7,138</FixtureVal>
+  </Function>
+  <Function ID="169" Type="Scene" Name="BEYE Dimmer Off" Path="BEYE Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">7,0</FixtureVal>
+  </Function>
+  <Function ID="170" Type="Scene" Name="PIX Dimmer - Off" Path="PIX Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,0,42,143</FixtureVal>
+  </Function>
+  <Function ID="171" Type="Collection" Name="Primary Dimmer High">
+   <Step Number="0">166</Step>
+  </Function>
+  <Function ID="172" Type="Collection" Name="Primary Dimmer Mid">
+   <Step Number="0">168</Step>
+  </Function>
+  <Function ID="173" Type="Collection" Name="Primary Dimmer Low">
+   <Step Number="0">167</Step>
+  </Function>
+  <Function ID="174" Type="Collection" Name="Primary Dimmer Off">
+   <Step Number="0">169</Step>
+  </Function>
+  <Function ID="175" Type="Collection" Name="Secondary Dimmer High">
+   <Step Number="0">143</Step>
+  </Function>
+  <Function ID="176" Type="Chaser" Name="Alternate 1/4" Path="Global Dimmer Chases ">
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="433" FadeOut="0">181</Step>
+   <Step Number="1" FadeIn="0" Hold="433" FadeOut="0">182</Step>
+  </Function>
+  <Function ID="177" Type="Collection" Name="Set Piece 1" Path="Set Piece 1">
+   <Step Number="0">103</Step>
+   <Step Number="1">69</Step>
+  </Function>
+  <Function ID="178" Type="Scene" Name="BEYE Kaleidoscope White Red" Path="BEYE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">6,221,7,255,17,185</FixtureVal>
+  </Function>
+  <Function ID="179" Type="Collection" Name="Secondary Dimmer Low">
+   <Step Number="0">7</Step>
+  </Function>
+  <Function ID="180" Type="Collection" Name="Dimmer Primary Secondary High-High">
+   <Step Number="0">175</Step>
+   <Step Number="1">171</Step>
+  </Function>
+  <Function ID="181" Type="Collection" Name="Dimmer Primary Secondary High-Off">
+   <Step Number="0">171</Step>
+   <Step Number="1">76</Step>
+  </Function>
+  <Function ID="182" Type="Collection" Name="Dimmer Primary Secondary Off-High">
+   <Step Number="0">175</Step>
+   <Step Number="1">174</Step>
+  </Function>
+  <Function ID="183" Type="Collection" Name="Dimmer Primary Secondary Off-Off">
+   <Step Number="0">76</Step>
+   <Step Number="1">174</Step>
+  </Function>
+  <Function ID="184" Type="Chaser" Name="Blink 1/4" Path="Global Dimmer Chases ">
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">180</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">183</Step>
+  </Function>
+  <Function ID="185" Type="Scene" Name="Position Left" Path="BEYE Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,197,1,255,2,54,3,24</FixtureVal>
+  </Function>
+  <Function ID="186" Type="Scene" Name="Position Right" Path="BEYE Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,162,1,255,2,37,3,24,7,243,9,252</FixtureVal>
+  </Function>
+  <Function ID="187" Type="Collection" Name="Set Piece 1 - Frame 1">
+   <Step Number="0">178</Step>
+   <Step Number="1">185</Step>
+  </Function>
+  <Function ID="188" Type="Collection" Name="Set Piece 1 - Frame 2">
+   <Step Number="0">178</Step>
+   <Step Number="1">186</Step>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -983,73 +1124,14 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="745" Y="25" Width="870" Height="775"/>
+    <WindowState Visible="True" X="0" Y="0" Width="980" Height="705"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
+    <ShowEnableButton>False</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <SoloFrame Caption="Derby Strobe Controls" ID="61">
-     <Appearance>
-      <FrameStyle>Raised</FrameStyle>
-      <ForegroundColor>4294967295</ForegroundColor>
-      <BackgroundColor>4281874488</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <WindowState Visible="True" X="640" Y="45" Width="120" Height="160"/>
-     <AllowChildren>True</AllowChildren>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>False</ShowEnableButton>
-     <Mixing>False</Mixing>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="Mute Derby" ID="59" Icon="">
-      <WindowState Visible="True" X="5" Y="45" Width="105" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="10"/>
-      <Action Override="0" ForceLTP="0">Flash</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="189" LowerValue="1" UpperValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Strobe Derby" ID="60" Icon="">
-      <WindowState Visible="True" X="5" Y="80" Width="105" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="9"/>
-      <Action Override="0" ForceLTP="0">Flash</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="181" LowerValue="2" UpperValue="6" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Mute Derby" ID="62" Icon="">
-      <WindowState Visible="True" X="5" Y="120" Width="105" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="10"/>
-      <Action Override="0" ForceLTP="0">Flash</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="173" LowerValue="1" UpperValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-    </SoloFrame>
-    <SoloFrame Caption="" ID="64">
+    <SoloFrame Caption="Set Pieces" ID="15">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1057,432 +1139,865 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="145" Y="45" Width="125" Height="380"/>
+     <WindowState Visible="True" X="235" Y="35" Width="685" Height="415"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Set Piece 1" ID="16" Icon="">
+      <WindowState Visible="True" X="15" Y="50" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="177"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="162" LowerValue="1" UpperValue="26" UpperParams="6"/>
+     </Button>
+     <Button Caption="Button 19" ID="19" Icon="">
+      <WindowState Visible="True" X="130" Y="50" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="20" Icon="">
+      <WindowState Visible="True" X="240" Y="50" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="21" Icon="">
+      <WindowState Visible="True" X="350" Y="50" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="22" Icon="">
+      <WindowState Visible="True" X="460" Y="50" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="24" Icon="">
+      <WindowState Visible="True" X="15" Y="95" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="25" Icon="">
+      <WindowState Visible="True" X="15" Y="140" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="26" Icon="">
+      <WindowState Visible="True" X="15" Y="185" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="27" Icon="">
+      <WindowState Visible="True" X="15" Y="230" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="28" Icon="">
+      <WindowState Visible="True" X="15" Y="275" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="29" Icon="">
+      <WindowState Visible="True" X="15" Y="320" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="30" Icon="">
+      <WindowState Visible="True" X="15" Y="365" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="31" Icon="">
+      <WindowState Visible="True" X="130" Y="95" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="33" Icon="">
+      <WindowState Visible="True" X="130" Y="140" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="37" Icon="">
+      <WindowState Visible="True" X="130" Y="185" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="38" Icon="">
+      <WindowState Visible="True" X="130" Y="230" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="39" Icon="">
+      <WindowState Visible="True" X="130" Y="275" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="40" Icon="">
+      <WindowState Visible="True" X="130" Y="320" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="42" Icon="">
+      <WindowState Visible="True" X="130" Y="365" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="57" Icon="">
+      <WindowState Visible="True" X="240" Y="95" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="59" Icon="">
+      <WindowState Visible="True" X="240" Y="140" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="60" Icon="">
+      <WindowState Visible="True" X="240" Y="185" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="61" Icon="">
+      <WindowState Visible="True" X="240" Y="230" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="62" Icon="">
+      <WindowState Visible="True" X="240" Y="275" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="63" Icon="">
+      <WindowState Visible="True" X="240" Y="320" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="65" Icon="">
+      <WindowState Visible="True" X="240" Y="365" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="67" Icon="">
+      <WindowState Visible="True" X="570" Y="50" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="71" Icon="">
+      <WindowState Visible="True" X="350" Y="95" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="72" Icon="">
+      <WindowState Visible="True" X="350" Y="140" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="73" Icon="">
+      <WindowState Visible="True" X="350" Y="185" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="74" Icon="">
+      <WindowState Visible="True" X="350" Y="230" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="75" Icon="">
+      <WindowState Visible="True" X="350" Y="275" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="76" Icon="">
+      <WindowState Visible="True" X="350" Y="320" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="77" Icon="">
+      <WindowState Visible="True" X="350" Y="365" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="78" Icon="">
+      <WindowState Visible="True" X="460" Y="95" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="79" Icon="">
+      <WindowState Visible="True" X="460" Y="140" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="80" Icon="">
+      <WindowState Visible="True" X="460" Y="185" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="81" Icon="">
+      <WindowState Visible="True" X="460" Y="230" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="82" Icon="">
+      <WindowState Visible="True" X="460" Y="275" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="83" Icon="">
+      <WindowState Visible="True" X="460" Y="320" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="84" Icon="">
+      <WindowState Visible="True" X="460" Y="365" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="85" Icon="">
+      <WindowState Visible="True" X="570" Y="95" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="86" Icon="">
+      <WindowState Visible="True" X="570" Y="140" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="87" Icon="">
+      <WindowState Visible="True" X="570" Y="185" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="88" Icon="">
+      <WindowState Visible="True" X="570" Y="230" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="89" Icon="">
+      <WindowState Visible="True" X="570" Y="275" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="90" Icon="">
+      <WindowState Visible="True" X="570" Y="320" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 19" ID="91" Icon="">
+      <WindowState Visible="True" X="570" Y="365" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Frame Caption="Live Busking" ID="92">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4283826047</ForegroundColor>
+      <BackgroundColor>4279715362</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="0" Y="35" Width="235" Height="415"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
-     <Mixing>False</Mixing>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Secondary Blue Wash" ID="66" Icon="">
-      <WindowState Visible="True" X="10" Y="165" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="93" Icon="">
+      <WindowState Visible="True" X="10" Y="50" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="106"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="161" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Secondary Pink Wash" ID="0" Icon="">
-      <WindowState Visible="True" X="10" Y="45" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="94" Icon="">
+      <WindowState Visible="True" X="125" Y="50" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294945535</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="114"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="185" LowerValue="111" UpperValue="112" MonitorValue="112" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Secondary Red Wash" ID="2" Icon="">
-      <WindowState Visible="True" X="10" Y="85" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="95" Icon="">
+      <WindowState Visible="True" X="10" Y="95" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="111"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="177" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Secondary Purple Wash" ID="3" Icon="">
-      <WindowState Visible="True" X="10" Y="125" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="96" Icon="">
+      <WindowState Visible="True" X="125" Y="95" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294902015</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="113"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="169" LowerValue="110" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Secondary Cyan Wash" ID="11" Icon="">
-      <WindowState Visible="True" X="10" Y="205" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="97" Icon="">
+      <WindowState Visible="True" X="10" Y="140" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278255615</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="117"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="153" LowerValue="78" UpperValue="72" MonitorValue="72" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Secondary Green Wash" ID="12" Icon="">
-      <WindowState Visible="True" X="10" Y="245" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="98" Icon="">
+      <WindowState Visible="True" X="125" Y="140" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="116"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="145" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Secondary Yellow Wash" ID="13" Icon="">
-      <WindowState Visible="True" X="10" Y="285" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="99" Icon="">
+      <WindowState Visible="True" X="10" Y="185" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294967040</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="112"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="137" LowerValue="30" UpperValue="26" MonitorValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Secondary Orange Wash" ID="14" Icon="">
-      <WindowState Visible="True" X="10" Y="325" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="100" Icon="">
+      <WindowState Visible="True" X="125" Y="185" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294945280</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="115"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="129" LowerValue="22" UpperValue="18" MonitorValue="18" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-    </SoloFrame>
-    <SoloFrame Caption="Primary Washes" ID="34">
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4279966491</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <WindowState Visible="True" X="10" Y="45" Width="130" Height="380"/>
-     <AllowChildren>True</AllowChildren>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>False</ShowEnableButton>
-     <Mixing>False</Mixing>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="Primary Red Wash" ID="35" Icon="">
-      <WindowState Visible="True" X="15" Y="85" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="101" Icon="">
+      <WindowState Visible="True" X="10" Y="230" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="78"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="176" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Primary Purple Wash" ID="36" Icon="">
-      <WindowState Visible="True" X="15" Y="125" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="102" Icon="">
+      <WindowState Visible="True" X="125" Y="230" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294902015</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="93"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="168" LowerValue="110" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Primary Blue Wash" ID="41" Icon="">
-      <WindowState Visible="True" X="15" Y="165" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="103" Icon="">
+      <WindowState Visible="True" X="10" Y="275" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="83"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="160" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Primary Green Wash" ID="43" Icon="">
-      <WindowState Visible="True" X="15" Y="245" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="104" Icon="">
+      <WindowState Visible="True" X="10" Y="320" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="95"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="144" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Primary Pink Wash" ID="44" Icon="">
-      <WindowState Visible="True" X="15" Y="45" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="105" Icon="">
+      <WindowState Visible="True" X="125" Y="275" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294945535</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="98"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="184" LowerValue="111" UpperValue="112" MonitorValue="112" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Primary Orange Wash" ID="45" Icon="">
-      <WindowState Visible="True" X="15" Y="325" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="106" Icon="">
+      <WindowState Visible="True" X="125" Y="320" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294945280</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="94"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="128" LowerValue="22" UpperValue="18" MonitorValue="18" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Primary Yellow Wash" ID="46" Icon="">
-      <WindowState Visible="True" X="15" Y="285" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="107" Icon="">
+      <WindowState Visible="True" X="125" Y="365" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294967040</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="96"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="136" LowerValue="30" UpperValue="26" MonitorValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Primary Cyan Wash" ID="47" Icon="">
-      <WindowState Visible="True" X="15" Y="205" Width="100" Height="35"/>
+     <Button Caption="Button 19" ID="108" Icon="">
+      <WindowState Visible="True" X="10" Y="365" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278255615</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="97"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="152" LowerValue="78" UpperValue="72" MonitorValue="72" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-    </SoloFrame>
-    <SoloFrame Caption="Derby Wash" ID="48">
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4279966491</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <WindowState Visible="True" X="275" Y="45" Width="360" Height="160"/>
-     <AllowChildren>True</AllowChildren>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>False</ShowEnableButton>
-     <Mixing>False</Mixing>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="Techno Derby Blue Wash" ID="49" Icon="">
-      <WindowState Visible="True" X="10" Y="45" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>4278190080</ForegroundColor>
-       <BackgroundColor>4278190335</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="80"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="186" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Blue Wash 2" ID="50" Icon="">
-      <WindowState Visible="True" X="125" Y="45" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278190335</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="104"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="187" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Green Wash" ID="51" Icon="">
-      <WindowState Visible="True" X="10" Y="80" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278255360</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="81"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="178" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Green Wash" ID="52" Icon="">
-      <WindowState Visible="True" X="125" Y="80" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278255360</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="105"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="179" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Red Wash" ID="53" Icon="">
-      <WindowState Visible="True" X="10" Y="115" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>4278190080</ForegroundColor>
-       <BackgroundColor>4294901760</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="79"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="170" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Red Wash 2" ID="54" Icon="">
-      <WindowState Visible="True" X="125" Y="115" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294901760</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="103"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="171" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Red-Blue Wash" ID="55" Icon="">
-      <WindowState Visible="True" X="240" Y="115" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278190335</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="102"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="172" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Green-Blue Wash" ID="56" Icon="">
-      <WindowState Visible="True" X="240" Y="45" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278255360</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="99"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="188" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Techno Derby Red-Green Wash" ID="58" Icon="">
-      <WindowState Visible="True" X="240" Y="80" Width="110" Height="30"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4294901760</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="101"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="180" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-    </SoloFrame>
-    <Slider Caption="Primary Wash Dimmer" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="45" Y="440" Width="60" Height="200"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Input Universe="0" Channel="48"/>
-     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
-      <Channel Fixture="4">7</Channel>
-     </Level>
-     <Playback>
-      <Function>4294967295</Function>
-     </Playback>
-    </Slider>
-    <Button Caption="Moods - Super" ID="18" Icon="">
-     <WindowState Visible="True" X="125" Y="655" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="126"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="229" LowerValue="1" UpperValue="3"/>
-    </Button>
-    <SoloFrame Caption="BEYE Positions" ID="23">
+    </Frame>
+    <SoloFrame Caption="Metronome" ID="109">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1490,16 +2005,16 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="635" Y="215" Width="220" Height="410"/>
-     <AllowChildren>True</AllowChildren>
+     <WindowState Visible="True" X="920" Y="265" Width="60" Height="185"/>
+     <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>False</ShowEnableButton>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
      <Mixing>False</Mixing>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Disco Ball" ID="24" Icon="">
-      <WindowState Visible="True" X="20" Y="315" Width="100" Height="35"/>
+     <Button Caption="" ID="110" Icon="">
+      <WindowState Visible="True" X="15" Y="140" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1507,13 +2022,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="130"/>
+      <Function ID="16"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="135" LowerValue="1" UpperValue="26" UpperParams="6"/>
+      <Input Universe="0" Channel="247" LowerValue="1" UpperValue="3"/>
      </Button>
-     <Button Caption="Crowd - Up Down" ID="26" Icon="">
-      <WindowState Visible="True" X="20" Y="235" Width="100" Height="35"/>
+     <Button Caption="" ID="111" Icon="">
+      <WindowState Visible="True" X="15" Y="95" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1521,13 +2036,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="136"/>
+      <Function ID="15"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="151" LowerValue="1" UpperValue="26" UpperParams="6"/>
+      <Input Universe="0" Channel="246" LowerValue="1" UpperValue="3"/>
      </Button>
-     <Button Caption="Crowd - Up Down" ID="27" Icon="">
-      <WindowState Visible="True" X="20" Y="275" Width="100" Height="35"/>
+     <Button Caption="" ID="112" Icon="">
+      <WindowState Visible="True" X="15" Y="50" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1535,13 +2050,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="137"/>
+      <Function ID="14"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="143" LowerValue="1" UpperValue="26" UpperParams="6"/>
+      <Input Universe="0" Channel="245" LowerValue="1" UpperValue="3"/>
      </Button>
-     <Button Caption="Crowd Pattern" ID="28" Icon="">
-      <WindowState Visible="True" X="20" Y="195" Width="100" Height="35"/>
+     <Button Caption="" ID="113" Icon="">
+      <WindowState Visible="True" X="15" Y="5" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1549,68 +2064,58 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="140"/>
+      <Function ID="13"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="159" LowerValue="1" UpperValue="26" UpperParams="6"/>
+      <Input Universe="0" Channel="244" LowerValue="1" UpperValue="3"/>
      </Button>
     </SoloFrame>
-    <Button Caption="PIX Effect Kitt Single" ID="31" Icon="">
-     <WindowState Visible="True" X="370" Y="315" Width="50" Height="50"/>
+    <Frame Caption="Metronome" ID="114">
      <Appearance>
-      <FrameStyle>None</FrameStyle>
+      <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundColor>4278190080</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="148"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="162" LowerValue="1" UpperValue="26" UpperParams="6"/>
-    </Button>
-    <Button Caption="Blackout" ID="32" Icon="">
-     <WindowState Visible="True" X="660" Y="685" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Blackout</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="235" LowerValue="1" UpperValue="3"/>
-    </Button>
-    <Button Caption="PIX Effect Kitt Single" ID="33" Icon="">
-     <WindowState Visible="True" X="370" Y="370" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="156"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="154" LowerValue="1" UpperValue="26" UpperParams="6"/>
-    </Button>
-    <Button Caption="PIX Effect Kitt Single" ID="37" Icon="">
-     <WindowState Visible="True" X="370" Y="420" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="160"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="146" LowerValue="1" UpperValue="26" UpperParams="6"/>
-    </Button>
+     <WindowState Visible="True" X="920" Y="450" Width="60" Height="255"/>
+     <AllowChildren>False</AllowChildren>
+     <AllowResize>False</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="" ID="115" Icon="">
+      <WindowState Visible="True" X="15" Y="10" Width="25" Height="25"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="17"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="250" LowerValue="1" UpperValue="3"/>
+     </Button>
+     <Slider Caption="Tempo Adjust" ID="116" WidgetStyle="Slider" InvertedAppearance="true">
+      <WindowState Visible="True" X="0" Y="45" Width="60" Height="200"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Input Universe="0" Channel="56"/>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+      <Level LowLimit="0" HighLimit="255" Value="0"/>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+    </Frame>
    </Frame>
    <SoloFrame Caption="Metronome" ID="5">
     <Appearance>
@@ -1620,7 +2125,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1120" Y="865" Width="135" Height="200"/>
+    <WindowState Visible="True" X="1085" Y="860" Width="135" Height="200"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1684,6 +2189,38 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="247" LowerValue="1" UpperValue="6"/>
     </Button>
+    <CueList Caption="Cue list" ID="68">
+     <WindowState Visible="True" X="-165" Y="-20" Width="300" Height="220"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>4294967295</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next/>
+     <Previous/>
+     <Playback/>
+     <Stop/>
+    </CueList>
+    <CueList Caption="Cue list" ID="69">
+     <WindowState Visible="True" X="-165" Y="-20" Width="300" Height="220"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>4294967295</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next/>
+     <Previous/>
+     <Playback/>
+     <Stop/>
+    </CueList>
    </SoloFrame>
    <Button Caption="Metronome On/Off" ID="9" Icon="">
     <WindowState Visible="True" X="1665" Y="510" Width="125" Height="35"/>
@@ -1699,95 +2236,151 @@
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="250" LowerValue="1" UpperValue="6"/>
    </Button>
-   <SpeedDial Caption="Duration" ID="10">
-    <WindowState Visible="True" X="1320" Y="875" Width="200" Height="175"/>
+   <Frame Caption="Viz" ID="17">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4294967295</BackgroundColor>
+     <BackgroundColor>4292138196</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Visibility>127</Visibility>
-    <AbsoluteValue Minimum="600" Maximum="400">
-     <Input Universe="0" Channel="56"/>
-    </AbsoluteValue>
-    <Time>400</Time>
-    <Function FadeIn="0" FadeOut="0" Duration="7">135</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">160</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">139</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="8">125</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="8">118</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="8">17</Function>
-   </SpeedDial>
-   <Button Caption="Kill All Strobes" ID="40" Icon="">
-    <WindowState Visible="True" X="1100" Y="710" Width="50" Height="50"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Function ID="4294967295"/>
-    <Action>Toggle</Action>
-    <Intensity Adjust="False">100</Intensity>
-   </Button>
-   <CueList Caption="Cue list" ID="16">
-    <WindowState Visible="True" X="150" Y="550" Width="300" Height="220"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Chaser>118</Chaser>
-    <NextPrevBehavior>0</NextPrevBehavior>
-    <Next/>
-    <Previous/>
-    <Playback/>
-    <Stop/>
-   </CueList>
-   <SoloFrame Caption="" ID="19">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="975" Y="595" Width="200" Height="200"/>
+    <WindowState Visible="True" X="1075" Y="5" Width="375" Height="755"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Moods - Fade Red and Blue Combos" ID="15" Icon="">
-     <WindowState Visible="True" X="45" Y="110" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="118"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="228" LowerValue="1" UpperValue="3"/>
-    </Button>
-    <SoloFrame Caption="" ID="22">
+    <SoloFrame Caption="Primary Washes" ID="34">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundColor>4279966491</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="0" Y="0" Width="200" Height="200"/>
+     <WindowState Visible="True" X="5" Y="40" Width="130" Height="380"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Primary Red Wash" ID="35" Icon="">
+      <WindowState Visible="True" X="15" Y="85" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="78"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Primary Purple Wash" ID="36" Icon="">
+      <WindowState Visible="True" X="15" Y="125" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294902015</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="93"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Primary Blue Wash" ID="41" Icon="">
+      <WindowState Visible="True" X="15" Y="165" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="83"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Primary Green Wash" ID="43" Icon="">
+      <WindowState Visible="True" X="15" Y="245" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="95"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Primary Pink Wash" ID="44" Icon="">
+      <WindowState Visible="True" X="15" Y="45" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294945535</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="98"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Primary Orange Wash" ID="45" Icon="">
+      <WindowState Visible="True" X="15" Y="325" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294945280</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="94"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Primary Yellow Wash" ID="46" Icon="">
+      <WindowState Visible="True" X="15" Y="285" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294967040</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="96"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Primary Cyan Wash" ID="47" Icon="">
+      <WindowState Visible="True" X="15" Y="205" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255615</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="97"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="" ID="64">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278190080</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="140" Y="40" Width="125" Height="380"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1795,110 +2388,270 @@
      <Mixing>False</Mixing>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
+     <Button Caption="Secondary Blue Wash" ID="66" Icon="">
+      <WindowState Visible="True" X="10" Y="165" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="106"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Secondary Pink Wash" ID="0" Icon="">
+      <WindowState Visible="True" X="10" Y="45" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294945535</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="114"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Secondary Red Wash" ID="2" Icon="">
+      <WindowState Visible="True" X="10" Y="85" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="111"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Secondary Purple Wash" ID="3" Icon="">
+      <WindowState Visible="True" X="10" Y="125" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294902015</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="113"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Secondary Cyan Wash" ID="11" Icon="">
+      <WindowState Visible="True" X="10" Y="205" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255615</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="117"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Secondary Green Wash" ID="12" Icon="">
+      <WindowState Visible="True" X="10" Y="245" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="116"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Secondary Yellow Wash" ID="13" Icon="">
+      <WindowState Visible="True" X="10" Y="285" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294967040</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="112"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Secondary Orange Wash" ID="14" Icon="">
+      <WindowState Visible="True" X="10" Y="325" Width="100" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294945280</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="115"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
     </SoloFrame>
-   </SoloFrame>
-   <CueList Caption="Cue list" ID="20">
-    <WindowState Visible="True" X="235" Y="315" Width="300" Height="220"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Chaser>126</Chaser>
-    <NextPrevBehavior>0</NextPrevBehavior>
-    <Next/>
-    <Previous/>
-    <Playback/>
-    <Stop/>
-   </CueList>
-   <CueList Caption="Cue list" ID="21">
-    <WindowState Visible="True" X="440" Y="550" Width="300" Height="220"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Chaser>125</Chaser>
-    <NextPrevBehavior>0</NextPrevBehavior>
-    <Next/>
-    <Previous/>
-    <Playback/>
-    <Stop/>
-   </CueList>
-   <SoloFrame Caption="Secondary Dimmer" ID="30">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4278190080</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="455" Y="75" Width="210" Height="260"/>
-    <AllowChildren>True</AllowChildren>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="Secondary Dimmer Medium" ID="29" Icon="">
-     <WindowState Visible="True" X="15" Y="45" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="91"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="138" LowerValue="1" UpperValue="26" UpperParams="6"/>
-    </Button>
-    <Button Caption="Secondary Dimmer Low" ID="25" Icon="">
-     <WindowState Visible="True" X="35" Y="125" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="76"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="130" LowerValue="1" UpperValue="26" UpperParams="6"/>
-    </Button>
-    <Slider Caption="Secondary Wash Dimmer" ID="63" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="115" Y="45" Width="60" Height="200"/>
+    <SoloFrame Caption="Derby Wash" ID="48">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4280821800</BackgroundColor>
+      <BackgroundColor>4279966491</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="49"/>
-     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="255">
-      <Channel Fixture="3">0</Channel>
-      <Channel Fixture="3">6</Channel>
-      <Channel Fixture="3">12</Channel>
-      <Channel Fixture="3">18</Channel>
-      <Channel Fixture="3">24</Channel>
-      <Channel Fixture="3">30</Channel>
-      <Channel Fixture="3">36</Channel>
-      <Channel Fixture="3">42</Channel>
-     </Level>
-     <Playback>
-      <Function>4294967295</Function>
-     </Playback>
-    </Slider>
-   </SoloFrame>
+     <WindowState Visible="True" X="5" Y="420" Width="360" Height="160"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Techno Derby Blue Wash" ID="49" Icon="">
+      <WindowState Visible="True" X="10" Y="45" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="80"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Blue Wash 2" ID="50" Icon="">
+      <WindowState Visible="True" X="125" Y="45" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="104"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Green Wash" ID="51" Icon="">
+      <WindowState Visible="True" X="10" Y="80" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="81"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Green Wash" ID="52" Icon="">
+      <WindowState Visible="True" X="125" Y="80" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="105"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Red Wash" ID="53" Icon="">
+      <WindowState Visible="True" X="10" Y="115" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="79"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Red Wash 2" ID="54" Icon="">
+      <WindowState Visible="True" X="125" Y="115" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="103"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Red-Blue Wash" ID="55" Icon="">
+      <WindowState Visible="True" X="240" Y="115" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="102"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Green-Blue Wash" ID="56" Icon="">
+      <WindowState Visible="True" X="240" Y="45" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="99"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Techno Derby Red-Green Wash" ID="58" Icon="">
+      <WindowState Visible="True" X="240" Y="80" Width="110" Height="30"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="101"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <SpeedDial Caption="Duration" ID="10">
+     <WindowState Visible="True" X="5" Y="580" Width="200" Height="175"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Visibility>127</Visibility>
+     <AbsoluteValue Minimum="400" Maximum="600">
+      <Input Universe="0" Channel="56"/>
+     </AbsoluteValue>
+     <Time>400</Time>
+     <Function FadeIn="0" FadeOut="0" Duration="7">135</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">69</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">160</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">139</Function>
+     <Function FadeIn="6" FadeOut="6" Duration="8">125</Function>
+     <Function FadeIn="6" FadeOut="6" Duration="8">118</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="8">17</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">184</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">176</Function>
+    </SpeedDial>
+   </Frame>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
