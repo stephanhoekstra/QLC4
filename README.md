@@ -10,7 +10,8 @@
 Use _Fixtures/install.bat to copy downloaded fixtures to the folder where QLC expects them
 
 # Troubleshooting (Windows)
-USB Dongle will only work in PRO Output: Pro Rx / Tx
+- Eurolite USB Dongle will only work in PRO Output: Pro Rx / Tx
+- Common problem: when midi controller buttons dont work, its usually because the same button maps to multiple virtual buttons
 
 # Ideas for PIX
 - Kitt effect that mimics the offset derbys
@@ -48,8 +49,6 @@ Colors [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI)
 - Nanalan - purple green
 - Finding Nemo - pulsing blue with a little surprise
 - A Galaxy far far away - no strobes but maximum white beams, and yellow text
-
-   
 
 
 Questions
