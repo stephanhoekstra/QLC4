@@ -42,8 +42,12 @@ Movements [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI)
 Colors [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI) 
 - Mexico
 - Police
-- Orange
+- Orange 
 - Color Sweep/rainbow
+- Viva Holandia - red white orange
+- Nanalan - purple green
+- Finding Nemo - pulsing blue with a little surprise
+- A Galaxy far far away - no strobes but maximum white beams, and yellow text
 
    
 
