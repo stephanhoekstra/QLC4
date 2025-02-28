@@ -22,16 +22,6 @@ Use _Fixtures/install.bat to copy downloaded fixtures to the folder where QLC ex
 - use slow scan to set a color based mood (other fixtures should have complementary colors)
 
 # general ideas
-- think about palettes
-
-moods - understated background set pieces that don't demand too much attention
-- think about palettes
-- use bee eye as a mood light that turns really slowly
-- discoball as part of a mood
-
-effects - cool things that go flash flash, on top of a mood
-- discoball solo
-- bee eye go crazy
 
 Movements [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI) 
 - Random
@@ -44,11 +34,9 @@ Colors [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI)
 - Mexico
 - Police
 - Orange 
-- Color Sweep/rainbow
+- Color Sweep/rainbow - discospot multicolor
 - Viva Holandia - red white orange
 - Nanalan - purple green
-- Finding Nemo - pulsing blue with a little surprise
-- A Galaxy far far away - no strobes but maximum white beams, and yellow text
 
 
 Questions
