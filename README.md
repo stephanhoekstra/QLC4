@@ -14,7 +14,7 @@ Use _Fixtures/install.bat to copy downloaded fixtures to the folder where QLC ex
 - Common problem: when midi controller buttons dont work, its usually because the same button maps to multiple virtual buttons
 
 # Ideas for PIX
-- Kitt effect that mimics the offset derbys
+- Color Slide
 - Dynamic color washes
 
 # Ideas for derby
@@ -22,16 +22,6 @@ Use _Fixtures/install.bat to copy downloaded fixtures to the folder where QLC ex
 - use slow scan to set a color based mood (other fixtures should have complementary colors)
 
 # general ideas
-- think about palettes
-
-moods - understated background set pieces that don't demand too much attention
-- think about palettes
-- use bee eye as a mood light that turns really slowly
-- discoball as part of a mood
-
-effects - cool things that go flash flash, on top of a mood
-- discoball solo
-- bee eye go crazy
 
 Movements [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI) 
 - Random
@@ -41,8 +31,10 @@ Movements [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI)
 - Spotlight
 
 Colors [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI) 
+- Night rider
 - Mexico
 - Police
 - Orange 
 - Color Sweep/rainbow
 - Nanalan - purple green
+- Color Sweep/rainbow - discospot multicolor
