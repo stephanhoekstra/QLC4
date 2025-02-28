@@ -14,7 +14,7 @@ Use _Fixtures/install.bat to copy downloaded fixtures to the folder where QLC ex
 - Common problem: when midi controller buttons dont work, its usually because the same button maps to multiple virtual buttons
 
 # Ideas for PIX
-- Kitt effect that mimics the offset derbys
+- Color Slide
 - Dynamic color washes
 
 # Ideas for derby
@@ -31,6 +31,7 @@ Movements [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI)
 - Spotlight
 
 Colors [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI) 
+- Night rider
 - Mexico
 - Police
 - Orange 
