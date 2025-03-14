@@ -741,7 +741,7 @@
    <Step Number="3" FadeIn="400" Hold="1200" FadeOut="400">128</Step>
   </Function>
   <Function ID="126" Type="Chaser" Name="Autopilot 1">
-   <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="40000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
