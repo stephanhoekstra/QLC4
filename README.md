@@ -43,6 +43,6 @@ Colors [DJ Fiezta](https://www.youtube.com/watch?v=d1wlBe-OofI)
 
 Ideas from Mezerg show
 - split cleanly in to three dimensions
-  -- left: preset color palettes (complimentary or adjacent)
-  -- middle: dimmer effects which can be combined. this includes specials (think about how to visually demark them on the controller)
-  -- right: set pieces, which are combinations of preset colors and dimmer effects
+-- left: preset color palettes (complimentary or adjacent)
+-- middle: dimmer effects which can be combined. this includes specials (think about how to visually demark them on the controller)
+-- right: set pieces, which are combinations of preset colors and dimmer effects
