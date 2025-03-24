@@ -1014,6 +1014,14 @@
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="150">143</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">170</Step>
   </Function>
+  <Function ID="163" Type="Chaser" Name="Special Chaser - Technoderby white strobe - mute after 1 bar" Path="Specials">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">9</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">10</Step>
+  </Function>
   <Function ID="164" Type="Chaser" Name="Flash Pixel Bar Dimmer 100 Every 4 Beats" Path="Pixel Bar Chasers">
    <Speed FadeIn="0" FadeOut="250" Duration="1000"/>
    <Direction>Forward</Direction>
@@ -2376,180 +2384,7 @@
       <Font>Default</Font>
      </Appearance>
     </Label>
-    <SoloFrame Caption="Palettes" ID="7">
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4278211840</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <WindowState Visible="True" X="0" Y="35" Width="220" Height="415"/>
-     <AllowChildren>True</AllowChildren>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>True</ShowEnableButton>
-     <Mixing>False</Mixing>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="Pale White" ID="92" Icon="">
-      <WindowState Visible="True" X="5" Y="40" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4290953922</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="318"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="184" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Palet Finding Nemo" ID="28" Icon="">
-      <WindowState Visible="True" X="5" Y="370" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4278190335</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="313"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="128" LowerValue="86" UpperValue="82" MonitorValue="82" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-    </SoloFrame>
-    <Frame Caption="Masks" ID="94">
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4281084928</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <WindowState Visible="True" X="225" Y="300" Width="445" Height="325"/>
-     <AllowChildren>True</AllowChildren>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>True</ShowEnableButton>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="Mask - Disco ON" ID="95" Icon="">
-      <WindowState Visible="True" X="215" Y="285" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="315"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="132" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Mask - Timber" ID="96" Icon="">
-      <WindowState Visible="True" X="210" Y="45" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="119"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="164" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Mask - Pixel Bar 50" ID="22" Icon="">
-      <WindowState Visible="True" X="110" Y="245" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="122"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="139" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Flash Pixel Bar Dimmer 50 Every 2 Beats" ID="24" Icon="">
-      <WindowState Visible="True" X="110" Y="205" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="124"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="147" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Flash Pixel Bar Dimmer 50 Every 2 Beats" ID="25" Icon="">
-      <WindowState Visible="True" X="110" Y="165" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="128"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="155" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Flash Pixel Bar Dimmer 100 Every 4 Beats" ID="26" Icon="">
-      <WindowState Visible="True" X="110" Y="125" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="164"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="163" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Fade Pixel Bar Dimmer Every 16 Beats" ID="27" Icon="">
-      <WindowState Visible="True" X="110" Y="85" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="165"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="171" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Mask - KITT" ID="29" Icon="">
-      <WindowState Visible="True" X="210" Y="85" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="317"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="172" LowerValue="30" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-    </Frame>
-    <Frame Caption="Manual Effects" ID="15">
+    <Frame Caption="Set Pieces" ID="15">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2557,56 +2392,56 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="225" Y="35" Width="455" Height="125"/>
+     <WindowState Visible="True" X="225" Y="40" Width="455" Height="125"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Manual Effect - Techno Derbies Strobe White" ID="16" Icon="">
-      <WindowState Visible="True" X="110" Y="40" Width="95" Height="35"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="9"/>
-      <Action Override="0" ForceLTP="0">Flash</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="187" LowerValue="2" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
     </Frame>
-    <Frame Caption="" ID="19">
+    <Frame Caption="Live Busking" ID="5">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4279184640</BackgroundColor>
+      <BackgroundColor>4278211840</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="225" Y="165" Width="455" Height="130"/>
+     <WindowState Visible="True" X="0" Y="40" Width="220" Height="345"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="RGB Pattern PIX Raimbow bar" ID="20" Icon="">
-      <WindowState Visible="True" X="5" Y="40" Width="95" Height="35"/>
+     <Button Caption="Strobe Derbies White for 2 bars max" ID="6" Icon="">
+      <WindowState Visible="True" X="5" Y="45" Width="120" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4284900966</BackgroundColor>
+       <BackgroundColor>Default</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="121"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="170" LowerValue="46" UpperValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="184" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Strobe PIX Bar" ID="7" Icon="">
+      <WindowState Visible="True" X="5" Y="95" Width="120" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="8"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="176" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
     </Frame>
    </Frame>
@@ -2618,7 +2453,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1005" Y="0" Width="375" Height="755"/>
+    <WindowState Visible="True" X="1005" Y="0" Width="520" Height="825"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3016,6 +2851,7 @@
      </AbsoluteValue>
      <Time>500</Time>
      <Function FadeIn="0" FadeOut="0" Duration="7">135</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="9">163</Function>
      <Function FadeIn="0" FadeOut="0" Duration="8">247</Function>
      <Function FadeIn="0" FadeOut="0" Duration="8">263</Function>
      <Function FadeIn="0" FadeOut="0" Duration="10">288</Function>
@@ -3045,6 +2881,22 @@
      <Function FadeIn="0" FadeOut="0" Duration="10">212</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">176</Function>
     </SpeedDial>
+    <CueList Caption="Cue list" ID="4">
+     <WindowState Visible="True" X="20" Y="125" Width="480" Height="210"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>163</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next/>
+     <Previous/>
+     <Playback/>
+     <Stop/>
+    </CueList>
    </Frame>
    <SoloFrame Caption="Autopilots" ID="32">
     <Appearance>
@@ -3060,7 +2912,7 @@
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
+    <Collapsed>True</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Autopilot 1" ID="68" Icon="">
      <WindowState Visible="True" X="15" Y="40" Width="100" Height="35"/>
