@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.14.0</Version>
+  <Version>4.14.1-2</Version>
   <Author>steph</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2"/>
-    <Output Plugin="DMX USB" UID="FT232R USB UART - DMX Output 1 - (S/N: AU04BSFQ)" Line="0">
-     <PluginParameters UniverseChannels="319"/>
-    </Output>
-    <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1"/>
+    <Input Plugin="MIDI" UID="None" Line="0" Profile="Akai APC Mini mk2"/>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Feedback Plugin="MIDI" UID="None" Line="1"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -1127,10 +1125,11 @@
    <FixtureVal ID="4">0,162,1,255,2,37,3,24</FixtureVal>
   </Function>
   <Function ID="187" Type="Collection" Name="Set Piece 1 - Frame 1" Path="Set Piece Club Holle">
-   <Step Number="0">69</Step>
-   <Step Number="1">10</Step>
-   <Step Number="2">269</Step>
-   <Step Number="3">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">69</Step>
+   <Step Number="2">10</Step>
+   <Step Number="3">269</Step>
+   <Step Number="4">312</Step>
   </Function>
   <Function ID="188" Type="Scene" Name="BEYE Kaleidoscope Ocean Yellow (Copy)" Path="BEYE Kaleidoscopes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1175,20 +1174,22 @@
    <Step Number="31" FadeIn="0" Hold="2400" FadeOut="0">187</Step>
   </Function>
   <Function ID="190" Type="Collection" Name="Set Piece 1 - Frame 2" Path="Set Piece Club Holle">
-   <Step Number="0">192</Step>
-   <Step Number="1">103</Step>
-   <Step Number="2">156</Step>
-   <Step Number="3">109</Step>
-   <Step Number="4">19</Step>
-   <Step Number="5">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">192</Step>
+   <Step Number="2">103</Step>
+   <Step Number="3">156</Step>
+   <Step Number="4">109</Step>
+   <Step Number="5">19</Step>
+   <Step Number="6">312</Step>
   </Function>
   <Function ID="191" Type="Collection" Name="Set Piece 1 - Frame 4" Path="Set Piece Club Holle">
-   <Step Number="0">169</Step>
-   <Step Number="1">185</Step>
-   <Step Number="2">111</Step>
-   <Step Number="3">148</Step>
-   <Step Number="4">9</Step>
-   <Step Number="5">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">169</Step>
+   <Step Number="2">185</Step>
+   <Step Number="3">111</Step>
+   <Step Number="4">148</Step>
+   <Step Number="5">9</Step>
+   <Step Number="6">312</Step>
   </Function>
   <Function ID="192" Type="Scene" Name="Position Ceiling" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1207,9 +1208,10 @@
    <Step Number="5">312</Step>
   </Function>
   <Function ID="195" Type="Collection" Name="Set Piece 1 - Frame 3" Path="Set Piece Club Holle">
-   <Step Number="0">10</Step>
-   <Step Number="1">203</Step>
-   <Step Number="2">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">10</Step>
+   <Step Number="2">203</Step>
+   <Step Number="3">312</Step>
   </Function>
   <Function ID="196" Type="Collection" Name="BEYE Red White Kaleidoscope On - Right" Path="Set Piece Club Holle">
    <Step Number="0">166</Step>
@@ -1226,37 +1228,41 @@
    <FixtureVal ID="4">4,20</FixtureVal>
   </Function>
   <Function ID="199" Type="Collection" Name="Set Piece 1 - Frame 5" Path="Set Piece Club Holle">
-   <Step Number="0">169</Step>
-   <Step Number="1">111</Step>
-   <Step Number="2">10</Step>
-   <Step Number="3">12</Step>
-   <Step Number="4">269</Step>
-   <Step Number="5">312</Step>
-  </Function>
-  <Function ID="200" Type="Collection" Name="Set Piece 1 - Frame 6" Path="Set Piece Club Holle">
-   <Step Number="0">169</Step>
-   <Step Number="1">111</Step>
-   <Step Number="2">10</Step>
-   <Step Number="3">204</Step>
-   <Step Number="4">156</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">169</Step>
+   <Step Number="2">111</Step>
+   <Step Number="3">10</Step>
+   <Step Number="4">12</Step>
    <Step Number="5">269</Step>
    <Step Number="6">312</Step>
   </Function>
+  <Function ID="200" Type="Collection" Name="Set Piece 1 - Frame 6" Path="Set Piece Club Holle">
+   <Step Number="0">314</Step>
+   <Step Number="1">169</Step>
+   <Step Number="2">111</Step>
+   <Step Number="3">10</Step>
+   <Step Number="4">204</Step>
+   <Step Number="5">156</Step>
+   <Step Number="6">269</Step>
+   <Step Number="7">312</Step>
+  </Function>
   <Function ID="201" Type="Collection" Name="Set Piece 1 - Frame 7" Path="Set Piece Club Holle">
-   <Step Number="0">169</Step>
-   <Step Number="1">111</Step>
-   <Step Number="2">79</Step>
-   <Step Number="3">204</Step>
-   <Step Number="4">19</Step>
-   <Step Number="5">268</Step>
-   <Step Number="6">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">169</Step>
+   <Step Number="2">111</Step>
+   <Step Number="3">79</Step>
+   <Step Number="4">204</Step>
+   <Step Number="5">19</Step>
+   <Step Number="6">268</Step>
+   <Step Number="7">312</Step>
   </Function>
   <Function ID="202" Type="Collection" Name="Set Piece 1 - Frame 8" Path="Set Piece Club Holle">
-   <Step Number="0">111</Step>
-   <Step Number="1">148</Step>
-   <Step Number="2">169</Step>
-   <Step Number="3">267</Step>
-   <Step Number="4">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">111</Step>
+   <Step Number="2">148</Step>
+   <Step Number="3">169</Step>
+   <Step Number="4">267</Step>
+   <Step Number="5">312</Step>
   </Function>
   <Function ID="203" Type="Chaser" Name="Strobe BEYE White Briefly">
    <Speed FadeIn="0" FadeOut="0" Duration="200"/>
@@ -1275,20 +1281,22 @@
    <FixtureVal ID="0">0,255,1,255,2,0,3,0,4,0,5,178</FixtureVal>
   </Function>
   <Function ID="205" Type="Collection" Name="Set Piece 1 - Bonus Frame" Path="Set Piece Club Holle">
-   <Step Number="0">169</Step>
-   <Step Number="1">185</Step>
-   <Step Number="2">111</Step>
-   <Step Number="3">12</Step>
-   <Step Number="4">10</Step>
-   <Step Number="5">148</Step>
-   <Step Number="6">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">169</Step>
+   <Step Number="2">185</Step>
+   <Step Number="3">111</Step>
+   <Step Number="4">12</Step>
+   <Step Number="5">10</Step>
+   <Step Number="6">148</Step>
+   <Step Number="7">312</Step>
   </Function>
   <Function ID="206" Type="Collection" Name="Set Piece 1 - Frame 9" Path="Set Piece Club Holle">
-   <Step Number="0">111</Step>
-   <Step Number="1">178</Step>
-   <Step Number="2">129</Step>
-   <Step Number="3">267</Step>
-   <Step Number="4">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">111</Step>
+   <Step Number="2">178</Step>
+   <Step Number="3">129</Step>
+   <Step Number="4">267</Step>
+   <Step Number="5">312</Step>
   </Function>
   <Function ID="207" Type="Scene" Name="BEYE Kaleidoscope Ocean Yellow (Copy) (Copy)" Path="BEYE Kaleidoscopes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1313,16 +1321,17 @@
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">208</Step>
   </Function>
   <Function ID="211" Type="Collection" Name="Set Piece Finding Nemo" Path="Set Piece Finding Nemo">
-   <Step Number="0">197</Step>
-   <Step Number="1">210</Step>
-   <Step Number="2">212</Step>
-   <Step Number="3">213</Step>
-   <Step Number="4">215</Step>
-   <Step Number="5">2</Step>
-   <Step Number="6">220</Step>
-   <Step Number="7">224</Step>
-   <Step Number="8">225</Step>
-   <Step Number="9">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">197</Step>
+   <Step Number="2">210</Step>
+   <Step Number="3">212</Step>
+   <Step Number="4">213</Step>
+   <Step Number="5">215</Step>
+   <Step Number="6">2</Step>
+   <Step Number="7">220</Step>
+   <Step Number="8">224</Step>
+   <Step Number="9">225</Step>
+   <Step Number="10">312</Step>
   </Function>
   <Function ID="212" Type="Chaser" Name="BEYE Move to Positions Randomly (on the phrase)" Path="BEYE Movements">
    <Speed FadeIn="0" FadeOut="0" Duration="7824"/>
@@ -1438,37 +1447,39 @@
    <Step Number="8" FadeIn="0" Hold="4000" FadeOut="0">245</Step>
   </Function>
   <Function ID="227" Type="Collection" Name="Set Piece Viva Hollandia Frame 1" Path="Set Piece Viva Hollandia">
-   <Step Number="0">132</Step>
-   <Step Number="1">90</Step>
-   <Step Number="2">168</Step>
-   <Step Number="3">248</Step>
-   <Step Number="4">246</Step>
-   <Step Number="5">223</Step>
-   <Step Number="6">251</Step>
-   <Step Number="7">249</Step>
-   <Step Number="8">225</Step>
-   <Step Number="9">253</Step>
-   <Step Number="10">224</Step>
-   <Step Number="11">197</Step>
-   <Step Number="12">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">132</Step>
+   <Step Number="2">90</Step>
+   <Step Number="3">168</Step>
+   <Step Number="4">248</Step>
+   <Step Number="5">246</Step>
+   <Step Number="6">223</Step>
+   <Step Number="7">251</Step>
+   <Step Number="8">249</Step>
+   <Step Number="9">225</Step>
+   <Step Number="10">253</Step>
+   <Step Number="11">224</Step>
+   <Step Number="12">197</Step>
+   <Step Number="13">312</Step>
   </Function>
   <Function ID="228" Type="Scene" Name="New Scene 228">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="229" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 1" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">231</Step>
-   <Step Number="1">230</Step>
-   <Step Number="2">100</Step>
-   <Step Number="3">232</Step>
-   <Step Number="4">130</Step>
-   <Step Number="5">110</Step>
-   <Step Number="6">224</Step>
-   <Step Number="7">215</Step>
-   <Step Number="8">169</Step>
-   <Step Number="9">236</Step>
-   <Step Number="10">197</Step>
-   <Step Number="11">255</Step>
-   <Step Number="12">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">231</Step>
+   <Step Number="2">230</Step>
+   <Step Number="3">100</Step>
+   <Step Number="4">232</Step>
+   <Step Number="5">130</Step>
+   <Step Number="6">110</Step>
+   <Step Number="7">224</Step>
+   <Step Number="8">215</Step>
+   <Step Number="9">169</Step>
+   <Step Number="10">236</Step>
+   <Step Number="11">197</Step>
+   <Step Number="12">255</Step>
+   <Step Number="13">312</Step>
   </Function>
   <Function ID="230" Type="Scene" Name="PS10W Discoball White" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1526,124 +1537,132 @@
    <Step Number="7" FadeIn="0" Hold="447" FadeOut="0">147</Step>
   </Function>
   <Function ID="238" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 2" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">231</Step>
-   <Step Number="1">230</Step>
-   <Step Number="2">100</Step>
-   <Step Number="3">232</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">231</Step>
+   <Step Number="2">230</Step>
+   <Step Number="3">100</Step>
+   <Step Number="4">232</Step>
+   <Step Number="5">130</Step>
+   <Step Number="6">235</Step>
+   <Step Number="7">110</Step>
+   <Step Number="8">236</Step>
+   <Step Number="9">224</Step>
+   <Step Number="10">148</Step>
+   <Step Number="11">223</Step>
+   <Step Number="12">255</Step>
+   <Step Number="13">312</Step>
+  </Function>
+  <Function ID="239" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 3" Path="Set Piece A Galaxy Far Away">
+   <Step Number="0">314</Step>
+   <Step Number="1">231</Step>
+   <Step Number="2">230</Step>
+   <Step Number="3">100</Step>
    <Step Number="4">130</Step>
    <Step Number="5">235</Step>
    <Step Number="6">110</Step>
-   <Step Number="7">236</Step>
-   <Step Number="8">224</Step>
-   <Step Number="9">148</Step>
-   <Step Number="10">223</Step>
+   <Step Number="7">237</Step>
+   <Step Number="8">148</Step>
+   <Step Number="9">233</Step>
+   <Step Number="10">169</Step>
    <Step Number="11">255</Step>
    <Step Number="12">312</Step>
   </Function>
-  <Function ID="239" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 3" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">231</Step>
-   <Step Number="1">230</Step>
-   <Step Number="2">100</Step>
-   <Step Number="3">130</Step>
-   <Step Number="4">235</Step>
-   <Step Number="5">110</Step>
-   <Step Number="6">237</Step>
-   <Step Number="7">148</Step>
-   <Step Number="8">233</Step>
-   <Step Number="9">169</Step>
-   <Step Number="10">255</Step>
-   <Step Number="11">312</Step>
-  </Function>
   <Function ID="240" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 4" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">231</Step>
-   <Step Number="1">230</Step>
-   <Step Number="2">100</Step>
-   <Step Number="3">232</Step>
-   <Step Number="4">130</Step>
-   <Step Number="5">235</Step>
-   <Step Number="6">110</Step>
-   <Step Number="7">236</Step>
-   <Step Number="8">237</Step>
-   <Step Number="9">224</Step>
-   <Step Number="10">148</Step>
-   <Step Number="11">215</Step>
-   <Step Number="12">10</Step>
-   <Step Number="13">255</Step>
-   <Step Number="14">266</Step>
-   <Step Number="15">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">231</Step>
+   <Step Number="2">230</Step>
+   <Step Number="3">100</Step>
+   <Step Number="4">232</Step>
+   <Step Number="5">130</Step>
+   <Step Number="6">235</Step>
+   <Step Number="7">110</Step>
+   <Step Number="8">236</Step>
+   <Step Number="9">237</Step>
+   <Step Number="10">224</Step>
+   <Step Number="11">148</Step>
+   <Step Number="12">215</Step>
+   <Step Number="13">10</Step>
+   <Step Number="14">255</Step>
+   <Step Number="15">266</Step>
+   <Step Number="16">312</Step>
   </Function>
   <Function ID="241" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 5" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">231</Step>
-   <Step Number="1">230</Step>
-   <Step Number="2">100</Step>
-   <Step Number="3">232</Step>
-   <Step Number="4">130</Step>
-   <Step Number="5">235</Step>
-   <Step Number="6">110</Step>
-   <Step Number="7">236</Step>
-   <Step Number="8">224</Step>
-   <Step Number="9">148</Step>
-   <Step Number="10">223</Step>
-   <Step Number="11">255</Step>
-   <Step Number="12">266</Step>
-   <Step Number="13">312</Step>
-  </Function>
-  <Function ID="242" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 6" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">231</Step>
-   <Step Number="1">230</Step>
-   <Step Number="2">100</Step>
-   <Step Number="3">232</Step>
-   <Step Number="4">130</Step>
-   <Step Number="5">235</Step>
-   <Step Number="6">110</Step>
-   <Step Number="7">236</Step>
-   <Step Number="8">224</Step>
-   <Step Number="9">215</Step>
-   <Step Number="10">223</Step>
-   <Step Number="11">255</Step>
-   <Step Number="12">266</Step>
-   <Step Number="13">312</Step>
-  </Function>
-  <Function ID="243" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 7" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">231</Step>
-   <Step Number="1">230</Step>
-   <Step Number="2">100</Step>
-   <Step Number="3">232</Step>
-   <Step Number="4">130</Step>
-   <Step Number="5">235</Step>
-   <Step Number="6">110</Step>
-   <Step Number="7">236</Step>
-   <Step Number="8">237</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">231</Step>
+   <Step Number="2">230</Step>
+   <Step Number="3">100</Step>
+   <Step Number="4">232</Step>
+   <Step Number="5">130</Step>
+   <Step Number="6">235</Step>
+   <Step Number="7">110</Step>
+   <Step Number="8">236</Step>
    <Step Number="9">224</Step>
    <Step Number="10">148</Step>
-   <Step Number="11">215</Step>
-   <Step Number="12">223</Step>
-   <Step Number="13">255</Step>
-   <Step Number="14">266</Step>
-   <Step Number="15">312</Step>
+   <Step Number="11">223</Step>
+   <Step Number="12">255</Step>
+   <Step Number="13">266</Step>
+   <Step Number="14">312</Step>
+  </Function>
+  <Function ID="242" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 6" Path="Set Piece A Galaxy Far Away">
+   <Step Number="0">314</Step>
+   <Step Number="1">231</Step>
+   <Step Number="2">230</Step>
+   <Step Number="3">100</Step>
+   <Step Number="4">232</Step>
+   <Step Number="5">130</Step>
+   <Step Number="6">235</Step>
+   <Step Number="7">110</Step>
+   <Step Number="8">236</Step>
+   <Step Number="9">224</Step>
+   <Step Number="10">215</Step>
+   <Step Number="11">223</Step>
+   <Step Number="12">255</Step>
+   <Step Number="13">266</Step>
+   <Step Number="14">312</Step>
+  </Function>
+  <Function ID="243" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 7" Path="Set Piece A Galaxy Far Away">
+   <Step Number="0">314</Step>
+   <Step Number="1">231</Step>
+   <Step Number="2">230</Step>
+   <Step Number="3">100</Step>
+   <Step Number="4">232</Step>
+   <Step Number="5">130</Step>
+   <Step Number="6">235</Step>
+   <Step Number="7">110</Step>
+   <Step Number="8">236</Step>
+   <Step Number="9">237</Step>
+   <Step Number="10">224</Step>
+   <Step Number="11">148</Step>
+   <Step Number="12">215</Step>
+   <Step Number="13">223</Step>
+   <Step Number="14">255</Step>
+   <Step Number="15">266</Step>
+   <Step Number="16">312</Step>
   </Function>
   <Function ID="244" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 8" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">110</Step>
-   <Step Number="1">236</Step>
-   <Step Number="2">237</Step>
-   <Step Number="3">148</Step>
-   <Step Number="4">215</Step>
-   <Step Number="5">10</Step>
-   <Step Number="6">169</Step>
-   <Step Number="7">255</Step>
-   <Step Number="8">312</Step>
-  </Function>
-  <Function ID="245" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 9" Path="Set Piece A Galaxy Far Away">
-   <Step Number="0">110</Step>
-   <Step Number="1">215</Step>
-   <Step Number="2">10</Step>
-   <Step Number="3">169</Step>
-   <Step Number="4">12</Step>
-   <Step Number="5">237</Step>
-   <Step Number="6">236</Step>
-   <Step Number="7">214</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">110</Step>
+   <Step Number="2">236</Step>
+   <Step Number="3">237</Step>
+   <Step Number="4">148</Step>
+   <Step Number="5">215</Step>
+   <Step Number="6">10</Step>
+   <Step Number="7">169</Step>
    <Step Number="8">255</Step>
    <Step Number="9">312</Step>
+  </Function>
+  <Function ID="245" Type="Collection" Name="Set Piece A Galaxy Far Away - Frame 9" Path="Set Piece A Galaxy Far Away">
+   <Step Number="0">314</Step>
+   <Step Number="1">110</Step>
+   <Step Number="2">215</Step>
+   <Step Number="3">10</Step>
+   <Step Number="4">169</Step>
+   <Step Number="5">12</Step>
+   <Step Number="6">237</Step>
+   <Step Number="7">236</Step>
+   <Step Number="8">214</Step>
+   <Step Number="9">255</Step>
+   <Step Number="10">312</Step>
   </Function>
   <Function ID="246" Type="EFX" Name="BEYE Movement Pattern 2 Relative">
    <Fixture>
@@ -1715,35 +1734,37 @@
    <FixtureVal ID="4">6,183</FixtureVal>
   </Function>
   <Function ID="256" Type="Collection" Name="Set Piece Viva Hollandia Frame 2" Path="Set Piece Viva Hollandia">
-   <Step Number="0">132</Step>
-   <Step Number="1">90</Step>
-   <Step Number="2">168</Step>
-   <Step Number="3">248</Step>
-   <Step Number="4">246</Step>
-   <Step Number="5">223</Step>
-   <Step Number="6">225</Step>
-   <Step Number="7">253</Step>
-   <Step Number="8">224</Step>
-   <Step Number="9">197</Step>
-   <Step Number="10">250</Step>
-   <Step Number="11">252</Step>
-   <Step Number="12">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">132</Step>
+   <Step Number="2">90</Step>
+   <Step Number="3">168</Step>
+   <Step Number="4">248</Step>
+   <Step Number="5">246</Step>
+   <Step Number="6">223</Step>
+   <Step Number="7">225</Step>
+   <Step Number="8">253</Step>
+   <Step Number="9">224</Step>
+   <Step Number="10">197</Step>
+   <Step Number="11">250</Step>
+   <Step Number="12">252</Step>
+   <Step Number="13">312</Step>
   </Function>
   <Function ID="257" Type="Scene" Name="New Scene 257">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="258" Type="Collection" Name="Set Piece Nightrider Frame 1" Path="Set Piece Nightrider">
-   <Step Number="0">170</Step>
-   <Step Number="1">109</Step>
-   <Step Number="2">237</Step>
-   <Step Number="3">260</Step>
-   <Step Number="4">231</Step>
-   <Step Number="5">259</Step>
-   <Step Number="6">10</Step>
-   <Step Number="7">169</Step>
-   <Step Number="8">156</Step>
-   <Step Number="9">192</Step>
-   <Step Number="10">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">170</Step>
+   <Step Number="2">109</Step>
+   <Step Number="3">237</Step>
+   <Step Number="4">260</Step>
+   <Step Number="5">231</Step>
+   <Step Number="6">259</Step>
+   <Step Number="7">10</Step>
+   <Step Number="8">169</Step>
+   <Step Number="9">156</Step>
+   <Step Number="10">192</Step>
+   <Step Number="11">312</Step>
   </Function>
   <Function ID="259" Type="Scene" Name="Disco Red" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1754,18 +1775,19 @@
    <FixtureVal ID="0">0,255</FixtureVal>
   </Function>
   <Function ID="261" Type="Collection" Name="Set Piece Nightrider Frame 2" Path="Set Piece Nightrider">
-   <Step Number="0">170</Step>
-   <Step Number="1">109</Step>
-   <Step Number="2">231</Step>
-   <Step Number="3">259</Step>
-   <Step Number="4">10</Step>
-   <Step Number="5">236</Step>
-   <Step Number="6">214</Step>
-   <Step Number="7">262</Step>
-   <Step Number="8">169</Step>
-   <Step Number="9">148</Step>
-   <Step Number="10">129</Step>
-   <Step Number="11">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">170</Step>
+   <Step Number="2">109</Step>
+   <Step Number="3">231</Step>
+   <Step Number="4">259</Step>
+   <Step Number="5">10</Step>
+   <Step Number="6">236</Step>
+   <Step Number="7">214</Step>
+   <Step Number="8">262</Step>
+   <Step Number="9">169</Step>
+   <Step Number="10">148</Step>
+   <Step Number="11">129</Step>
+   <Step Number="12">312</Step>
   </Function>
   <Function ID="262" Type="Scene" Name="Disco Dimmer Off" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1782,30 +1804,32 @@
    <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0">265</Step>
   </Function>
   <Function ID="264" Type="Collection" Name="Set Piece Nightrider Frame 3" Path="Set Piece Nightrider">
-   <Step Number="0">170</Step>
-   <Step Number="1">109</Step>
-   <Step Number="2">260</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">170</Step>
+   <Step Number="2">109</Step>
+   <Step Number="3">260</Step>
+   <Step Number="4">231</Step>
+   <Step Number="5">259</Step>
+   <Step Number="6">10</Step>
+   <Step Number="7">169</Step>
+   <Step Number="8">214</Step>
+   <Step Number="9">148</Step>
+   <Step Number="10">130</Step>
+   <Step Number="11">312</Step>
+  </Function>
+  <Function ID="265" Type="Collection" Name="Set Piece Nightrider Frame 4" Path="Set Piece Nightrider">
+   <Step Number="0">314</Step>
+   <Step Number="1">170</Step>
+   <Step Number="2">109</Step>
    <Step Number="3">231</Step>
    <Step Number="4">259</Step>
    <Step Number="5">10</Step>
    <Step Number="6">169</Step>
    <Step Number="7">214</Step>
-   <Step Number="8">148</Step>
-   <Step Number="9">130</Step>
-   <Step Number="10">312</Step>
-  </Function>
-  <Function ID="265" Type="Collection" Name="Set Piece Nightrider Frame 4" Path="Set Piece Nightrider">
-   <Step Number="0">170</Step>
-   <Step Number="1">109</Step>
-   <Step Number="2">231</Step>
-   <Step Number="3">259</Step>
-   <Step Number="4">10</Step>
-   <Step Number="5">169</Step>
-   <Step Number="6">214</Step>
-   <Step Number="7">262</Step>
-   <Step Number="8">148</Step>
-   <Step Number="9">137</Step>
-   <Step Number="10">312</Step>
+   <Step Number="8">262</Step>
+   <Step Number="9">148</Step>
+   <Step Number="10">137</Step>
+   <Step Number="11">312</Step>
   </Function>
   <Function ID="266" Type="Chaser" Name="Beye Pulsate Dimmer to the beat" Path="BEYE Dimmer Chases">
    <Speed FadeIn="0" FadeOut="50" Duration="244"/>
@@ -1828,16 +1852,17 @@
    <FixtureVal ID="6">0,0,18,0</FixtureVal>
   </Function>
   <Function ID="270" Type="Collection" Name="Set Piece Beatbox" Path="Set Piece Beatbox">
-   <Step Number="0">92</Step>
-   <Step Number="1">10</Step>
-   <Step Number="2">132</Step>
-   <Step Number="3">246</Step>
-   <Step Number="4">271</Step>
-   <Step Number="5">248</Step>
-   <Step Number="6">272</Step>
-   <Step Number="7">275</Step>
-   <Step Number="8">276</Step>
-   <Step Number="9">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">92</Step>
+   <Step Number="2">10</Step>
+   <Step Number="3">132</Step>
+   <Step Number="4">246</Step>
+   <Step Number="5">271</Step>
+   <Step Number="6">248</Step>
+   <Step Number="7">272</Step>
+   <Step Number="8">275</Step>
+   <Step Number="9">276</Step>
+   <Step Number="10">312</Step>
   </Function>
   <Function ID="271" Type="Chaser" Name="Beye Pulsate Dimmer to the beat (2)" Path="BEYE Dimmer Chases">
    <Speed FadeIn="0" FadeOut="50" Duration="244"/>
@@ -1889,18 +1914,19 @@
    <FixtureVal ID="4">5,0,6,0,7,255,8,193,12,250,13,0,15,255,16,0,17,0,18,0,19,0</FixtureVal>
   </Function>
   <Function ID="279" Type="Collection" Name="Set Piece Nanalan - Scene 1" Path="Set Piece Nanalan">
-   <Step Number="0">197</Step>
-   <Step Number="1">212</Step>
-   <Step Number="2">213</Step>
-   <Step Number="3">215</Step>
-   <Step Number="4">224</Step>
-   <Step Number="5">225</Step>
-   <Step Number="6">287</Step>
-   <Step Number="7">113</Step>
-   <Step Number="8">81</Step>
-   <Step Number="9">223</Step>
-   <Step Number="10">92</Step>
-   <Step Number="11">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">197</Step>
+   <Step Number="2">212</Step>
+   <Step Number="3">213</Step>
+   <Step Number="4">215</Step>
+   <Step Number="5">224</Step>
+   <Step Number="6">225</Step>
+   <Step Number="7">287</Step>
+   <Step Number="8">113</Step>
+   <Step Number="9">81</Step>
+   <Step Number="10">223</Step>
+   <Step Number="11">92</Step>
+   <Step Number="12">312</Step>
   </Function>
   <Function ID="280" Type="Scene" Name="BEYE MUTE dynamic and static effects and strobe (Copy)" Path="BEYE FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1949,53 +1975,56 @@
    <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0">291</Step>
   </Function>
   <Function ID="289" Type="Collection" Name="Set Piece Nanalan - Scene 2" Path="Set Piece Nanalan">
-   <Step Number="0">271</Step>
-   <Step Number="1">197</Step>
-   <Step Number="2">215</Step>
-   <Step Number="3">224</Step>
-   <Step Number="4">225</Step>
-   <Step Number="5">113</Step>
-   <Step Number="6">260</Step>
-   <Step Number="7">290</Step>
-   <Step Number="8">130</Step>
-   <Step Number="9">198</Step>
-   <Step Number="10">285</Step>
-   <Step Number="11">10</Step>
-   <Step Number="12">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">271</Step>
+   <Step Number="2">197</Step>
+   <Step Number="3">215</Step>
+   <Step Number="4">224</Step>
+   <Step Number="5">225</Step>
+   <Step Number="6">113</Step>
+   <Step Number="7">260</Step>
+   <Step Number="8">290</Step>
+   <Step Number="9">130</Step>
+   <Step Number="10">198</Step>
+   <Step Number="11">285</Step>
+   <Step Number="12">10</Step>
+   <Step Number="13">312</Step>
   </Function>
   <Function ID="290" Type="Scene" Name="Disco Green" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">1,0,2,255,3,0,4,0</FixtureVal>
   </Function>
   <Function ID="291" Type="Collection" Name="Set Piece Nanalan - Scene 3" Path="Set Piece Nanalan">
-   <Step Number="0">271</Step>
-   <Step Number="1">197</Step>
-   <Step Number="2">215</Step>
-   <Step Number="3">224</Step>
-   <Step Number="4">225</Step>
-   <Step Number="5">113</Step>
-   <Step Number="6">260</Step>
-   <Step Number="7">290</Step>
-   <Step Number="8">130</Step>
-   <Step Number="9">198</Step>
-   <Step Number="10">10</Step>
-   <Step Number="11">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">271</Step>
+   <Step Number="2">197</Step>
+   <Step Number="3">215</Step>
+   <Step Number="4">224</Step>
+   <Step Number="5">225</Step>
+   <Step Number="6">113</Step>
+   <Step Number="7">260</Step>
+   <Step Number="8">290</Step>
+   <Step Number="9">130</Step>
+   <Step Number="10">198</Step>
+   <Step Number="11">10</Step>
+   <Step Number="12">312</Step>
   </Function>
   <Function ID="292" Type="Scene" Name="New Scene 292">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="293" Type="Collection" Name="Set Piece Rainbow - Scene 1" Path="Set Piece Rainbow">
-   <Step Number="0">281</Step>
-   <Step Number="1">197</Step>
-   <Step Number="2">198</Step>
-   <Step Number="3">10</Step>
-   <Step Number="4">213</Step>
-   <Step Number="5">129</Step>
-   <Step Number="6">276</Step>
-   <Step Number="7">262</Step>
-   <Step Number="8">7</Step>
-   <Step Number="9">275</Step>
-   <Step Number="10">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">281</Step>
+   <Step Number="2">197</Step>
+   <Step Number="3">198</Step>
+   <Step Number="4">10</Step>
+   <Step Number="5">213</Step>
+   <Step Number="6">129</Step>
+   <Step Number="7">276</Step>
+   <Step Number="8">262</Step>
+   <Step Number="9">7</Step>
+   <Step Number="10">275</Step>
+   <Step Number="11">312</Step>
   </Function>
   <Function ID="294" Type="Scene" Name="BEYE Kaleidoscope Rainbow">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2031,14 +2060,15 @@
    <Step Number="1">262</Step>
   </Function>
   <Function ID="301" Type="Collection" Name="Set Piece Rainbow - Scene 3" Path="Set Piece Rainbow">
-   <Step Number="0">197</Step>
-   <Step Number="1">198</Step>
-   <Step Number="2">10</Step>
-   <Step Number="3">294</Step>
-   <Step Number="4">213</Step>
-   <Step Number="5">129</Step>
-   <Step Number="6">262</Step>
-   <Step Number="7">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">197</Step>
+   <Step Number="2">198</Step>
+   <Step Number="3">10</Step>
+   <Step Number="4">294</Step>
+   <Step Number="5">213</Step>
+   <Step Number="6">129</Step>
+   <Step Number="7">262</Step>
+   <Step Number="8">312</Step>
   </Function>
   <Function ID="302" Type="Chaser" Name="PIX10 Spot Flash Every Phrase" Path="PIX 10 Discobol chasers">
    <Speed FadeIn="0" FadeOut="0" Duration="1956"/>
@@ -2062,18 +2092,19 @@
    <Step Number="4" FadeIn="0" Hold="10000" FadeOut="0">301</Step>
   </Function>
   <Function ID="304" Type="Collection" Name="Set Piece Rainbow - Scene 2" Path="Set Piece Rainbow">
-   <Step Number="0">281</Step>
-   <Step Number="1">197</Step>
-   <Step Number="2">198</Step>
-   <Step Number="3">10</Step>
-   <Step Number="4">213</Step>
-   <Step Number="5">129</Step>
-   <Step Number="6">276</Step>
-   <Step Number="7">262</Step>
-   <Step Number="8">298</Step>
-   <Step Number="9">260</Step>
-   <Step Number="10">275</Step>
-   <Step Number="11">312</Step>
+   <Step Number="0">314</Step>
+   <Step Number="1">281</Step>
+   <Step Number="2">197</Step>
+   <Step Number="3">198</Step>
+   <Step Number="4">10</Step>
+   <Step Number="5">213</Step>
+   <Step Number="6">129</Step>
+   <Step Number="7">276</Step>
+   <Step Number="8">262</Step>
+   <Step Number="9">298</Step>
+   <Step Number="10">260</Step>
+   <Step Number="11">275</Step>
+   <Step Number="12">312</Step>
   </Function>
   <Function ID="305" Type="Collection" Name="PS10W Discoball Spot Blue Bright">
    <Step Number="0">260</Step>
@@ -2204,7 +2235,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="35" Width="1005" Height="770"/>
+    <WindowState Visible="False" X="0" Y="35" Width="1005" Height="770"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2219,7 +2250,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="925" Y="265" Width="70" Height="185"/>
+     <WindowState Visible="False" X="925" Y="265" Width="70" Height="185"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -2228,7 +2259,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="" ID="110" Icon="">
-      <WindowState Visible="True" X="25" Y="140" Width="25" Height="25"/>
+      <WindowState Visible="False" X="25" Y="140" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2242,7 +2273,7 @@
       <Input Universe="0" Channel="247" LowerValue="1" UpperValue="3"/>
      </Button>
      <Button Caption="" ID="111" Icon="">
-      <WindowState Visible="True" X="25" Y="95" Width="25" Height="25"/>
+      <WindowState Visible="False" X="25" Y="95" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2256,7 +2287,7 @@
       <Input Universe="0" Channel="246" LowerValue="1" UpperValue="3"/>
      </Button>
      <Button Caption="" ID="112" Icon="">
-      <WindowState Visible="True" X="25" Y="50" Width="25" Height="25"/>
+      <WindowState Visible="False" X="25" Y="50" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2270,7 +2301,7 @@
       <Input Universe="0" Channel="245" LowerValue="1" UpperValue="3"/>
      </Button>
      <Button Caption="" ID="113" Icon="">
-      <WindowState Visible="True" X="25" Y="10" Width="25" Height="25"/>
+      <WindowState Visible="False" X="25" Y="10" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2292,7 +2323,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="925" Y="450" Width="70" Height="280"/>
+     <WindowState Visible="False" X="925" Y="450" Width="70" Height="280"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -2300,7 +2331,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="" ID="115" Icon="">
-      <WindowState Visible="True" X="25" Y="45" Width="25" Height="25"/>
+      <WindowState Visible="False" X="25" Y="45" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2314,7 +2345,7 @@
       <Input Universe="0" Channel="250" LowerValue="1" UpperValue="3"/>
      </Button>
      <Slider Caption="Tempo Adjust" ID="116" WidgetStyle="Slider" InvertedAppearance="true">
-      <WindowState Visible="True" X="5" Y="80" Width="60" Height="200"/>
+      <WindowState Visible="False" X="5" Y="80" Width="60" Height="200"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -2338,7 +2369,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="805" Y="450" Width="100" Height="275"/>
+     <WindowState Visible="False" X="805" Y="450" Width="100" Height="275"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2346,7 +2377,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="" ID="23" Icon="">
-      <WindowState Visible="True" X="35" Y="45" Width="30" Height="30"/>
+      <WindowState Visible="False" X="35" Y="45" Width="30" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2360,7 +2391,7 @@
       <Input Universe="0" Channel="235" LowerValue="1" UpperValue="3"/>
      </Button>
      <Slider Caption="Grand Master" ID="18" WidgetStyle="Slider" InvertedAppearance="true">
-      <WindowState Visible="True" X="25" Y="75" Width="60" Height="200"/>
+      <WindowState Visible="False" X="25" Y="75" Width="60" Height="200"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -2377,7 +2408,7 @@
      </Slider>
     </Frame>
     <Label Caption="Metronome" ID="70">
-     <WindowState Visible="True" X="925" Y="455" Width="70" Height="30"/>
+     <WindowState Visible="False" X="925" Y="455" Width="70" Height="30"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
@@ -2394,7 +2425,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="225" Y="40" Width="455" Height="125"/>
+     <WindowState Visible="False" X="225" Y="40" Width="455" Height="125"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2410,7 +2441,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="0" Y="40" Width="260" Height="340"/>
+     <WindowState Visible="False" X="0" Y="40" Width="260" Height="340"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2418,7 +2449,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Strobe PIX Bar" ID="7" Icon="">
-      <WindowState Visible="True" X="15" Y="225" Width="120" Height="40"/>
+      <WindowState Visible="False" X="15" Y="225" Width="120" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2439,7 +2470,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <WindowState Visible="True" X="0" Y="40" Width="255" Height="90"/>
+      <WindowState Visible="False" X="0" Y="40" Width="255" Height="90"/>
       <AllowChildren>True</AllowChildren>
       <AllowResize>True</AllowResize>
       <ShowHeader>True</ShowHeader>
@@ -2448,7 +2479,7 @@
       <Collapsed>False</Collapsed>
       <Disabled>False</Disabled>
       <Button Caption="Strobe Derbies White for 2 bars max" ID="6" Icon="">
-       <WindowState Visible="True" X="5" Y="40" Width="120" Height="40"/>
+       <WindowState Visible="False" X="5" Y="40" Width="120" Height="40"/>
        <Appearance>
         <FrameStyle>None</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -2462,7 +2493,7 @@
        <Input Universe="0" Channel="184" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
       </Button>
       <Button Caption="Mute Techno Derbies" ID="9" Icon="">
-       <WindowState Visible="True" X="130" Y="40" Width="120" Height="40"/>
+       <WindowState Visible="False" X="130" Y="40" Width="120" Height="40"/>
        <Appearance>
         <FrameStyle>None</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -2486,7 +2517,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1005" Y="0" Width="520" Height="825"/>
+    <WindowState Visible="False" X="1005" Y="0" Width="520" Height="825"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2501,7 +2532,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="40" Width="130" Height="380"/>
+     <WindowState Visible="False" X="5" Y="40" Width="130" Height="380"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2510,7 +2541,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Primary Red Wash" ID="35" Icon="">
-      <WindowState Visible="True" X="15" Y="85" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="85" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2523,7 +2554,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Primary Purple Wash" ID="36" Icon="">
-      <WindowState Visible="True" X="15" Y="125" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="125" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2536,7 +2567,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Primary Blue Wash" ID="41" Icon="">
-      <WindowState Visible="True" X="15" Y="165" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="165" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2549,7 +2580,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Primary Green Wash" ID="43" Icon="">
-      <WindowState Visible="True" X="15" Y="245" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="245" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2562,7 +2593,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Primary Pink Wash" ID="44" Icon="">
-      <WindowState Visible="True" X="15" Y="45" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="45" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2575,7 +2606,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Primary Orange Wash" ID="45" Icon="">
-      <WindowState Visible="True" X="15" Y="325" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="325" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2588,7 +2619,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Primary Yellow Wash" ID="46" Icon="">
-      <WindowState Visible="True" X="15" Y="285" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="285" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2601,7 +2632,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Primary Cyan Wash" ID="47" Icon="">
-      <WindowState Visible="True" X="15" Y="205" Width="100" Height="35"/>
+      <WindowState Visible="False" X="15" Y="205" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2622,7 +2653,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="140" Y="40" Width="125" Height="380"/>
+     <WindowState Visible="False" X="140" Y="40" Width="125" Height="380"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2631,7 +2662,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Secondary Blue Wash" ID="66" Icon="">
-      <WindowState Visible="True" X="10" Y="165" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="165" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2644,7 +2675,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Secondary Pink Wash" ID="0" Icon="">
-      <WindowState Visible="True" X="10" Y="45" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="45" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2657,7 +2688,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Secondary Red Wash" ID="2" Icon="">
-      <WindowState Visible="True" X="10" Y="85" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="85" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2670,7 +2701,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Secondary Purple Wash" ID="3" Icon="">
-      <WindowState Visible="True" X="10" Y="125" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="125" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2683,7 +2714,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Secondary Cyan Wash" ID="11" Icon="">
-      <WindowState Visible="True" X="10" Y="205" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="205" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2696,7 +2727,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Secondary Green Wash" ID="12" Icon="">
-      <WindowState Visible="True" X="10" Y="245" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="245" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2709,7 +2740,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Secondary Yellow Wash" ID="13" Icon="">
-      <WindowState Visible="True" X="10" Y="285" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="285" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2722,7 +2753,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Secondary Orange Wash" ID="14" Icon="">
-      <WindowState Visible="True" X="10" Y="325" Width="100" Height="35"/>
+      <WindowState Visible="False" X="10" Y="325" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2743,7 +2774,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="420" Width="360" Height="160"/>
+     <WindowState Visible="False" X="5" Y="420" Width="360" Height="160"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2752,7 +2783,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Techno Derby Blue Wash" ID="49" Icon="">
-      <WindowState Visible="True" X="10" Y="45" Width="110" Height="30"/>
+      <WindowState Visible="False" X="10" Y="45" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4278190080</ForegroundColor>
@@ -2765,7 +2796,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Blue Wash 2" ID="50" Icon="">
-      <WindowState Visible="True" X="125" Y="45" Width="110" Height="30"/>
+      <WindowState Visible="False" X="125" Y="45" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2778,7 +2809,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Green Wash" ID="51" Icon="">
-      <WindowState Visible="True" X="10" Y="80" Width="110" Height="30"/>
+      <WindowState Visible="False" X="10" Y="80" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2791,7 +2822,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Green Wash" ID="52" Icon="">
-      <WindowState Visible="True" X="125" Y="80" Width="110" Height="30"/>
+      <WindowState Visible="False" X="125" Y="80" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2804,7 +2835,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Red Wash" ID="53" Icon="">
-      <WindowState Visible="True" X="10" Y="115" Width="110" Height="30"/>
+      <WindowState Visible="False" X="10" Y="115" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4278190080</ForegroundColor>
@@ -2817,7 +2848,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Red Wash 2" ID="54" Icon="">
-      <WindowState Visible="True" X="125" Y="115" Width="110" Height="30"/>
+      <WindowState Visible="False" X="125" Y="115" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2830,7 +2861,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Red-Blue Wash" ID="55" Icon="">
-      <WindowState Visible="True" X="240" Y="115" Width="110" Height="30"/>
+      <WindowState Visible="False" X="240" Y="115" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2843,7 +2874,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Green-Blue Wash" ID="56" Icon="">
-      <WindowState Visible="True" X="240" Y="45" Width="110" Height="30"/>
+      <WindowState Visible="False" X="240" Y="45" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2856,7 +2887,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Techno Derby Red-Green Wash" ID="58" Icon="">
-      <WindowState Visible="True" X="240" Y="80" Width="110" Height="30"/>
+      <WindowState Visible="False" X="240" Y="80" Width="110" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2870,7 +2901,7 @@
      </Button>
     </SoloFrame>
     <SpeedDial Caption="Duration" ID="10">
-     <WindowState Visible="True" X="5" Y="580" Width="200" Height="175"/>
+     <WindowState Visible="False" X="5" Y="580" Width="200" Height="175"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2914,22 +2945,6 @@
      <Function FadeIn="0" FadeOut="0" Duration="10">212</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">176</Function>
     </SpeedDial>
-    <CueList Caption="Cue list" ID="4">
-     <WindowState Visible="True" X="20" Y="125" Width="480" Height="210"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Chaser>163</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
-     <Next/>
-     <Previous/>
-     <Playback/>
-     <Stop/>
-    </CueList>
    </Frame>
    <SoloFrame Caption="Autopilots" ID="32">
     <Appearance>
@@ -2939,7 +2954,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="215" Y="670" Width="570" Height="80"/>
+    <WindowState Visible="False" X="215" Y="670" Width="570" Height="80"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2948,7 +2963,7 @@
     <Collapsed>True</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Autopilot 1" ID="68" Icon="">
-     <WindowState Visible="True" X="15" Y="40" Width="100" Height="35"/>
+     <WindowState Visible="False" X="15" Y="40" Width="100" Height="35"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
