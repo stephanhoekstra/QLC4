@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid of 6x8 Squares</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(8, 100px);
+            grid-template-rows: repeat(6, 100px);
+            gap: 5px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: white;
+            border-radius: 5px;
+        }
+        .blue { background-color: blue; }
+        .white { background-color: white; color: black; }
+        .green { background-color: green; }
+        .green-purple { background-color: purple; }
+        .blue-red { background: linear-gradient(to right, blue, red); }
+        .blue-orange { background: linear-gradient(to right, blue, orange); }
+        .red { background-color: red; }
+        .rainbow { background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <!-- Blue scenes -->
+        <div class="square blue">Scene 1</div>
+        <div class="square blue-red">Scene 2</div>
+        <div class="square blue-orange">Scene 3</div>
+        <div class="square blue">Scene 4</div>
+        <div class="square blue-red">Scene 5</div>
+        <div class="square blue-orange">Scene 6</div>
+        <div class="square blue">Scene 7</div>
+        <div class="square blue-red">Scene 8</div>
+
+        <!-- Green scenes -->
+        <div class="square green">Scene 9</div>
+        <div class="square green-purple">Scene 10</div>
+        <div class="square green">Scene 11</div>
+        <div class="square green-purple">Scene 12</div>
+        <div class="square green">Scene 13</div>
+        <div class="square green-purple">Scene 14</div>
+        <div class="square green">Scene 15</div>
+        <div class="square green-purple">Scene 16</div>
+
+        <!-- Red scenes -->
+        <div class="square red">Scene 17</div>
+        <div class="square red">Scene 18</div>
+        <div class="square blue-red">Scene 19</div>
+        <div class="square blue-orange">Scene 20</div>
+        <div class="square red">Scene 21</div>
+        <div class="square blue-red">Scene 22</div>
+        <div class="square blue-orange">Scene 23</div>
+        <div class="square red">Scene 24</div>
+
+        <!-- White scenes -->
+        <div class="square white">Scene 25</div>
+        <div class="square white">Scene 26</div>
+        <div class="square white">Scene 27</div>
+        <div class="square white">Scene 28</div>
+        <div class="square white">Scene 29</div>
+        <div class="square white">Scene 30</div>
+        <div class="square white">Scene 31</div>
+        <div class="square white">Scene 32</div>
+
+        <!-- Rainbow scenes -->
+        <div class="square rainbow">Scene 33</div>
+        <div class="square rainbow">Scene 34</div>
+        <div class="square rainbow">Scene 35</div>
+        <div class="square rainbow">Scene 36</div>
+        <div class="square rainbow">Scene 37</div>
+        <div class="square rainbow">Scene 38</div>
+        <div class="square rainbow">Scene 39</div>
+        <div class="square rainbow">Scene 40</div>
+
+        <!-- More Blue scenes to fill the grid -->
+        <div class="square blue">Scene 41</div>
+        <div class="square blue-red">Scene 42</div>
+        <div class="square blue-orange">Scene 43</div>
+        <div class="square blue">Scene 44</div>
+        <div class="square blue-red">Scene 45</div>
+        <div class="square blue-orange">Scene 46</div>
+        <div class="square blue">Scene 47</div>
+        <div class="square blue-red">Scene 48</div>
+    </div>
+
+</body>
+</html>
