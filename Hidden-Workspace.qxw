@@ -2237,6 +2237,19 @@
    <Step Number="0">314</Step>
    <Step Number="1">302</Step>
   </Function>
+  <Function ID="324" Type="Chaser" Name="Special Chaser - Fuck the Police (blink BEYE red and blue really fast)" Path="Specials">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">63</Step>
+  </Function>
+  <Function ID="325" Type="Collection" Name="Set Piece Fuck the Police Climax" Path="Set Piece  Fuck the Police">
+   <Step Number="0">314</Step>
+   <Step Number="1">324</Step>
+   <Step Number="2">166</Step>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -3163,6 +3176,20 @@
      <Input Universe="0" Channel="230" LowerValue="1" UpperValue="3"/>
     </Button>
    </SoloFrame>
+   <Button Caption="Fuck The Police" ID="31" Icon="">
+    <WindowState Visible="True" X="130" Y="210" Width="120" Height="40"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="325"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="168" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
