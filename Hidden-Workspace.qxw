@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.14.1-2</Version>
+  <Version>4.14.0</Version>
   <Author>steph</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="None" Line="0" Profile="Akai APC Mini mk2"/>
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
-    <Feedback Plugin="MIDI" UID="None" Line="1"/>
+    <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART - DMX Output 1 - (S/N: AU04BSFQ)" Line="0">
+     <PluginParameters UniverseChannels="319"/>
+    </Output>
+    <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -773,9 +775,12 @@
    <Step Number="5" FadeIn="0" Hold="30000" FadeOut="0">270</Step>
    <Step Number="6" FadeIn="0" Hold="30000" FadeOut="0">288</Step>
    <Step Number="7" FadeIn="0" Hold="60000" FadeOut="0">303</Step>
-   <Step Number="8" FadeIn="0" Hold="40000" FadeOut="0">309</Step>
-   <Step Number="9" FadeIn="0" Hold="40000" FadeOut="0">311</Step>
-   <Step Number="10" FadeIn="0" Hold="300000" FadeOut="0">322</Step>
+   <Step Number="8" FadeIn="0" Hold="40000" FadeOut="0">311</Step>
+   <Step Number="9" FadeIn="0" Hold="300000" FadeOut="0">322</Step>
+   <Step Number="10" FadeIn="0" Hold="300000" FadeOut="0">347</Step>
+   <Step Number="11" FadeIn="0" Hold="300000" FadeOut="0">354</Step>
+   <Step Number="12" FadeIn="0" Hold="300000" FadeOut="0">355</Step>
+   <Step Number="13" FadeIn="0" Hold="300000" FadeOut="0">345</Step>
   </Function>
   <Function ID="127" Type="Chaser" Name="Flash Pixel Bar Dimmer 50 Once" Path="Pixel Bar Chasers">
    <Speed FadeIn="0" FadeOut="0" Duration="150"/>
@@ -795,11 +800,11 @@
   </Function>
   <Function ID="129" Type="Scene" Name="Position DJ" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,180,1,0,2,53,3,24</FixtureVal>
+   <FixtureVal ID="4">0,174,1,0,2,65,3,24</FixtureVal>
   </Function>
   <Function ID="130" Type="Scene" Name="Position Disco Ball" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,162,1,255,2,96,3,24,5,255,7,0</FixtureVal>
+   <FixtureVal ID="4">0,149,1,255,2,90,3,24,5,255,7,0</FixtureVal>
   </Function>
   <Function ID="131" Type="Scene" Name="PIX Kitt 1 White" Path="PIC Effect Kitt">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -807,7 +812,7 @@
   </Function>
   <Function ID="132" Type="Scene" Name="Position Crowd" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,165,1,255,2,42,3,24,5,255</FixtureVal>
+   <FixtureVal ID="4">0,165,1,255,2,35,3,24,5,255</FixtureVal>
   </Function>
   <Function ID="133" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -853,7 +858,7 @@
   </Function>
   <Function ID="137" Type="Scene" Name="Position Crowd 2" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,165,1,255,2,42,3,24,5,255</FixtureVal>
+   <FixtureVal ID="4">0,186,1,255,2,42,3,24,5,255</FixtureVal>
   </Function>
   <Function ID="138" Type="Scene" Name="Position Crowd 3" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1047,11 +1052,11 @@
   </Function>
   <Function ID="168" Type="Scene" Name="BEYE Dimmer Mid" Path="BEYE Dimmer">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">7,138</FixtureVal>
+   <FixtureVal ID="4">7,133</FixtureVal>
   </Function>
   <Function ID="169" Type="Scene" Name="BEYE Dimmer Black" Path="BEYE Dimmer">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">9,0,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="4">7,0,9,0,10,0,11,0,12,0</FixtureVal>
   </Function>
   <Function ID="170" Type="Scene" Name="PIX Dimmer - Off" Path="PIX Dimmer">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1121,7 +1126,7 @@
   </Function>
   <Function ID="186" Type="Scene" Name="Position Right" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,162,1,255,2,37,3,24</FixtureVal>
+   <FixtureVal ID="4">0,127,1,255,2,73,3,24</FixtureVal>
   </Function>
   <Function ID="187" Type="Collection" Name="Set Piece 1 - Frame 1" Path="Set Piece Club Holle">
    <Step Number="0">314</Step>
@@ -1192,7 +1197,7 @@
   </Function>
   <Function ID="192" Type="Scene" Name="Position Ceiling" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,177,1,255,2,81,3,24</FixtureVal>
+   <FixtureVal ID="4">0,70,1,164,2,127,3,24</FixtureVal>
   </Function>
   <Function ID="193" Type="Scene" Name="BEYE Strobe White 1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2425,8 +2430,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="taillength" Value="40"/>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="direction" Value="Left"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="343" Type="RGBMatrix" Name="Police Bar 5">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
@@ -2440,8 +2445,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="tailfade" Value="No"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="No"/>
   </Function>
   <Function ID="344" Type="Collection" Name="Set Piece Fuck the Police Bar 2" Path="Set Piece  Fuck the Police">
    <Step Number="0">314</Step>
@@ -2460,7 +2465,104 @@
   </Function>
   <Function ID="346" Type="Scene" Name="Position Disco Ball (Copy)" Path="BEYE Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,162,1,255,2,96,3,24,5,255,7,91,10,202</FixtureVal>
+   <FixtureVal ID="4">0,146,1,0,2,101,3,24,5,255,7,91,9,226,10,202</FixtureVal>
+  </Function>
+  <Function ID="347" Type="Collection" Name="Set Piece - Warmup Red Complementary" Path="Set Piece - Warmup Red Complementary">
+   <Step Number="0">314</Step>
+   <Step Number="1">92</Step>
+   <Step Number="2">10</Step>
+   <Step Number="3">132</Step>
+   <Step Number="4">248</Step>
+   <Step Number="5">312</Step>
+   <Step Number="6">11</Step>
+   <Step Number="7">167</Step>
+   <Step Number="8">213</Step>
+   <Step Number="9">350</Step>
+  </Function>
+  <Function ID="348" Type="RGBMatrix" Name="Fire">
+   <Speed FadeIn="0" FadeOut="0" Duration="174"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Fill From Center</Algorithm>
+   <Color Index="0">4294923520</Color>
+   <Color Index="1">4294901760</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+  </Function>
+  <Function ID="349" Type="Scene" Name="BEYE Caleidoscope Warmup Red Complimentary" Path="BEYE Kaleidoscopes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">6,209,9,230,10,44,15,0,16,0,17,12,18,0,19,0,20,195,25,255,27,0,29,0,33,171,34,0</FixtureVal>
+  </Function>
+  <Function ID="350" Type="Chaser" Name="Fade Secondary Washes Red Complimentary" Path="Secondary Color Chases">
+   <Speed FadeIn="10000" FadeOut="10000" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="10000" Hold="10000" FadeOut="10000">115</Step>
+   <Step Number="1" FadeIn="10000" Hold="10000" FadeOut="10000">111</Step>
+  </Function>
+  <Function ID="351" Type="Chaser" Name="Sometimes Turn on Pixel Bar" Path="Pixel Bar Chasers">
+   <Speed FadeIn="0" FadeOut="0" Duration="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">143</Step>
+   <Step Number="1" FadeIn="0" Hold="5000" FadeOut="0">11</Step>
+   <Step Number="2" FadeIn="0" Hold="5000" FadeOut="0">143</Step>
+   <Step Number="3" FadeIn="0" Hold="5000" FadeOut="0">11</Step>
+   <Step Number="4" FadeIn="0" Hold="5000" FadeOut="0">143</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">11</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">170</Step>
+   <Step Number="7" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="8" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="9" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="10" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="11" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="12" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="13" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="14" FadeIn="0" Hold="5000" FadeOut="0">170</Step>
+   <Step Number="15" FadeIn="0" Hold="3000" FadeOut="0">170</Step>
+   <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0">170</Step>
+   <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0">170</Step>
+   <Step Number="18" FadeIn="0" Hold="3000" FadeOut="0">170</Step>
+   <Step Number="19" FadeIn="0" Hold="3000" FadeOut="0">170</Step>
+   <Step Number="20" FadeIn="0" Hold="3000" FadeOut="0">170</Step>
+  </Function>
+  <Function ID="352" Type="Chaser" Name="BEYE Randomly Seldomly Slowly Fade in and out Dimly" Path="BEYE Dimmer Chases">
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="5000" FadeOut="0">169</Step>
+   <Step Number="1" FadeIn="0" Hold="5000" FadeOut="0">167</Step>
+   <Step Number="2" FadeIn="0" Hold="5000" FadeOut="0">168</Step>
+  </Function>
+  <Function ID="354" Type="Collection" Name="Set Piece - Warmup Red Complementary With Seldom BEYE " Path="Set Piece - Warmup Red Complementary">
+   <Step Number="0">314</Step>
+   <Step Number="1">352</Step>
+   <Step Number="2">349</Step>
+   <Step Number="3">213</Step>
+   <Step Number="4">132</Step>
+   <Step Number="5">246</Step>
+   <Step Number="6">350</Step>
+   <Step Number="7">111</Step>
+   <Step Number="8">7</Step>
+   <Step Number="9">219</Step>
+   <Step Number="10">217</Step>
+  </Function>
+  <Function ID="355" Type="Collection" Name="Set Piece - Warmup Red Fire" Path="Set Piece - Warmup Red Complementary">
+   <Step Number="0">314</Step>
+   <Step Number="1">92</Step>
+   <Step Number="2">10</Step>
+   <Step Number="3">132</Step>
+   <Step Number="4">312</Step>
+   <Step Number="5">348</Step>
+   <Step Number="6">79</Step>
+   <Step Number="7">223</Step>
+   <Step Number="8">351</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -2821,7 +2923,7 @@
       <Input Universe="0" Channel="132" LowerValue="22" UpperValue="18" MonitorValue="18" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Nightrider" ID="24" Icon="">
-      <WindowState Visible="False" X="255" Y="100" Width="125" Height="40"/>
+      <WindowState Visible="False" X="420" Y="105" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2832,7 +2934,7 @@
       <Function ID="263"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="179" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="181" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Beatbox" ID="25" Icon="">
       <WindowState Visible="False" X="240" Y="50" Width="125" Height="40"/>
@@ -2932,7 +3034,65 @@
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="150" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
+     <Button Caption="Warmup Red Complementary" ID="37" Icon="">
+      <WindowState Visible="False" X="10" Y="110" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="347"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="178" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Warmup Red Complementary 2" ID="9" Icon="">
+      <WindowState Visible="False" X="140" Y="110" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="354"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="179" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Warmup Red Fire" ID="39" Icon="">
+      <WindowState Visible="False" X="275" Y="160" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="355"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="171" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
     </SoloFrame>
+    <CueList Caption="Cue list" ID="38">
+     <WindowState Visible="False" X="35" Y="455" Width="300" Height="220"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>352</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next/>
+     <Previous/>
+     <Playback/>
+     <Stop/>
+    </CueList>
    </Frame>
    <Frame Caption="Virtual Buttons" ID="17">
     <Appearance>
@@ -3403,7 +3563,7 @@
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <Mixing>False</Mixing>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Autopilot 1" ID="68" Icon="">
      <WindowState Visible="False" X="15" Y="40" Width="100" Height="35"/>
@@ -3433,20 +3593,6 @@
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="169" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-   </Button>
-   <Button Caption="Fuck The Police" ID="9" Icon="">
-    <WindowState Visible="False" X="130" Y="310" Width="120" Height="40"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4294901760</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Function ID="326"/>
-    <Action>Toggle</Action>
-    <Intensity Adjust="False">100</Intensity>
-    <Input Universe="0" Channel="161" LowerValue="1" UpperValue="26" UpperParams="6"/>
    </Button>
   </Frame>
   <Properties>
