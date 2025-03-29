@@ -2426,9 +2426,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="direction" Value="Left"/>
    <Property Name="taillength" Value="40"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="direction" Value="Left"/>
   </Function>
   <Function ID="343" Type="RGBMatrix" Name="Police Bar 5">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
@@ -2456,6 +2456,13 @@
    <Step Number="7">343</Step>
    <Step Number="8">342</Step>
    <Step Number="9">143</Step>
+  </Function>
+  <Function ID="345" Type="Collection" Name="Set Piece Blue Disco" Path="Set Piece Blue Disco">
+   <Step Number="0">309</Step>
+  </Function>
+  <Function ID="346" Type="Scene" Name="Position Disco Ball (Copy)" Path="BEYE Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,162,1,255,2,96,3,24,5,255,7,91,10,202</FixtureVal>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -2894,7 +2901,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="309"/>
+      <Function ID="345"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="146" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
@@ -2926,20 +2933,6 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="150" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-     </Button>
-     <Button Caption="Set Piece Fuck the Police Bar" ID="37" Icon="">
-      <WindowState Visible="False" X="520" Y="385" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="338"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="151" LowerValue="1" UpperValue="26" UpperParams="6"/>
      </Button>
     </SoloFrame>
    </Frame>
