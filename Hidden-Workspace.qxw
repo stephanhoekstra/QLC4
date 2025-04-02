@@ -2429,9 +2429,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="direction" Value="Left"/>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="40"/>
+   <Property Name="tailfade" Value="Yes"/>
+   <Property Name="direction" Value="Left"/>
   </Function>
   <Function ID="343" Type="RGBMatrix" Name="Police Bar 5">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
@@ -2445,8 +2445,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="tailfade" Value="No"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="No"/>
   </Function>
   <Function ID="344" Type="Collection" Name="Set Piece Fuck the Police Bar 2" Path="Set Piece  Fuck the Police">
    <Step Number="0">314</Step>
@@ -3197,7 +3197,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1325" Y="0" Width="610" Height="860"/>
+    <WindowState Visible="True" X="1165" Y="5" Width="610" Height="860"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3627,22 +3627,6 @@
      <Function FadeIn="0" FadeOut="0" Duration="7">212</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">176</Function>
     </SpeedDial>
-    <CueList Caption="Cue list" ID="33">
-     <WindowState Visible="True" X="25" Y="280" Width="530" Height="250"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Chaser>328</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
-     <Next/>
-     <Previous/>
-     <Playback/>
-     <Stop/>
-    </CueList>
    </Frame>
    <SoloFrame Caption="Autopilots" ID="32">
     <Appearance>
