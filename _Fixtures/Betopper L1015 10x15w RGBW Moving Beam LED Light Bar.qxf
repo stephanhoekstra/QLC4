@@ -8,11 +8,9 @@
  </Creator>
  <Manufacturer>Betopper</Manufacturer>
  <Model>Betopper L1015 10x15w RGBW Moving Beam LED Light Bar</Model>
- <Type>Other</Type>
+ <Type>LED Bar (Beams)</Type>
  <Channel Name="Y-axis Motor" Preset="PositionYAxis"/>
- <Channel Name="Y-axis Speed">
-  <Group Byte="0">Speed</Group>
- </Channel>
+ <Channel Name="Y-axis Speed" Preset="SpeedTiltSlowFast"/>
  <Channel Name="Red Dimmer">
   <Group Byte="0">Intensity</Group>
   <Colour>Red</Colour>
@@ -38,77 +36,64 @@
   <Capability Min="0" Max="149">No Function</Capability>
   <Capability Min="150" Max="255">Reset</Capability>
  </Channel>
- <Channel Name="Master Dimmer">
-  <Group Byte="0">Intensity</Group>
-  <Capability Min="0" Max="255">Master Dimmer</Capability>
- </Channel>
- <Channel Name="Channel 8 Feature">
+ <Channel Name="Master Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Modes">
   <Group Byte="0">Effect</Group>
-  <Capability Min="0" Max="255">Channel 8 Function</Capability>
+  <Capability Min="0" Max="255">Modes</Capability>
  </Channel>
- <Channel Name="Channel 9 Feature">
-  <Group Byte="0">Effect</Group>
-  <Capability Min="0" Max="255">Channel 9 Function</Capability>
- </Channel>
- <Channel Name="Channel 10 Feature">
+ <Channel Name="Speed">
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255">Channel 10 Function</Capability>
  </Channel>
- <Channel Name="Channel 11 Feature">
-  <Group Byte="0">Effect</Group>
-  <Capability Min="0" Max="255">Channel 11 Function</Capability>
- </Channel>
- <Channel Name="Channel 12 Feature">
-  <Group Byte="0">Effect</Group>
-  <Capability Min="0" Max="255">Channel 12 Function</Capability>
- </Channel>
- <Channel Name="Background Color">
-  <Group Byte="0">Nothing</Group>
-  <Capability Min="0" Max="255">Background Color</Capability>
- </Channel>
+ <Channel Name="Background dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Background Color" Preset="ColorMacro"/>
  <Mode Name="7CH">
   <Physical>
-   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
-   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Bulb Type="LED" Lumens="1500" ColourTemperature="2000"/>
+   <Dimensions Weight="6.35" Width="985" Height="73" Depth="153"/>
    <Lens Name="Generic" DegreesMin="0" DegreesMax="0"/>
    <Focus Type="Tilt" PanMax="0" TiltMax="180"/>
-   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+   <Layout Width="1" Height="10"/>
+   <Technical PowerConsumption="180" DmxConnector="3-pin"/>
   </Physical>
-  <Channel Number="0">Reset</Channel>
-  <Channel Number="1">White Dimmer</Channel>
-  <Channel Number="2">Blue Dimmer</Channel>
-  <Channel Number="3">Green Dimmer</Channel>
-  <Channel Number="4">Red Dimmer</Channel>
-  <Channel Number="5">Y-axis Speed</Channel>
-  <Channel Number="6">Y-axis Motor</Channel>
+  <Channel Number="0" ActsOn="0">Y-axis Motor</Channel>
+  <Channel Number="1" ActsOn="1">Y-axis Speed</Channel>
+  <Channel Number="2" ActsOn="2">Red Dimmer</Channel>
+  <Channel Number="3" ActsOn="3">Green Dimmer</Channel>
+  <Channel Number="4" ActsOn="4">Blue Dimmer</Channel>
+  <Channel Number="5" ActsOn="5">White Dimmer</Channel>
+  <Channel Number="6" ActsOn="6">Reset</Channel>
  </Mode>
  <Mode Name="13CH">
   <Physical>
-   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
-   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Bulb Type="LED" Lumens="1500" ColourTemperature="2000"/>
+   <Dimensions Weight="6.35" Width="985" Height="73" Depth="153"/>
    <Lens Name="Generic" DegreesMin="0" DegreesMax="0"/>
    <Focus Type="Tilt" PanMax="0" TiltMax="180"/>
-   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+   <Layout Width="1" Height="10"/>
+   <Technical PowerConsumption="180" DmxConnector="3-pin"/>
   </Physical>
-  <Channel Number="0">Background Color</Channel>
-  <Channel Number="1">Channel 12 Feature</Channel>
-  <Channel Number="2">Channel 11 Feature</Channel>
-  <Channel Number="3">Channel 10 Feature</Channel>
-  <Channel Number="4">Channel 9 Feature</Channel>
-  <Channel Number="5">Channel 8 Feature</Channel>
-  <Channel Number="6">White Dimmer</Channel>
-  <Channel Number="7">Blue Dimmer</Channel>
-  <Channel Number="8">Green Dimmer</Channel>
-  <Channel Number="9">Red Dimmer</Channel>
-  <Channel Number="10">Master Dimmer</Channel>
-  <Channel Number="11">Y-axis Speed</Channel>
-  <Channel Number="12">Y-axis Motor</Channel>
+  <Channel Number="0" ActsOn="0">Y-axis Motor</Channel>
+  <Channel Number="1" ActsOn="1">Y-axis Speed</Channel>
+  <Channel Number="2" ActsOn="2">Master Dimmer</Channel>
+  <Channel Number="3" ActsOn="3">Strobe</Channel>
+  <Channel Number="4" ActsOn="4">Red Dimmer</Channel>
+  <Channel Number="5" ActsOn="5">Green Dimmer</Channel>
+  <Channel Number="6" ActsOn="6">Blue Dimmer</Channel>
+  <Channel Number="7" ActsOn="7">White Dimmer</Channel>
+  <Channel Number="8" ActsOn="8">Modes</Channel>
+  <Channel Number="9" ActsOn="8">Speed</Channel>
+  <Channel Number="10" ActsOn="10">Background Color</Channel>
+  <Channel Number="11" ActsOn="11">Background dimmer</Channel>
  </Mode>
+ 
  <Physical>
-  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
-  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Bulb Type="LED" Lumens="1500" ColourTemperature="4000"/>
+  <Dimensions Weight="6.35" Width="985" Height="73" Depth="153"/>
   <Lens Name="Generic" DegreesMin="0" DegreesMax="0"/>
   <Focus Type="Tilt" PanMax="0" TiltMax="180"/>
-  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  <Layout Width="1" Height="10"/>
+  <Technical PowerConsumption="180" DmxConnector="3-pin"/>
  </Physical>
 </FixtureDefinition>
