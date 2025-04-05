@@ -57,13 +57,13 @@
    <Layout Width="1" Height="10"/>
    <Technical PowerConsumption="180" DmxConnector="3-pin"/>
   </Physical>
-  <Channel Number="0" >Y-axis Motor</Channel>
-  <Channel Number="1" >Y-axis Speed</Channel>
-  <Channel Number="2" >Red Dimmer</Channel>
-  <Channel Number="3" >Green Dimmer</Channel>
-  <Channel Number="4" >Blue Dimmer</Channel>
-  <Channel Number="5" >White Dimmer</Channel>
-  <Channel Number="6" >Reset</Channel>
+  <Channel Number="0">Y-axis Motor</Channel>
+  <Channel Number="1">Y-axis Speed</Channel>
+  <Channel Number="2">Red Dimmer</Channel>
+  <Channel Number="3">Green Dimmer</Channel>
+  <Channel Number="4">Blue Dimmer</Channel>
+  <Channel Number="5">White Dimmer</Channel>
+  <Channel Number="6">Reset</Channel>
  </Mode>
  <Mode Name="13CH">
   <Physical>
@@ -74,18 +74,19 @@
    <Layout Width="1" Height="10"/>
    <Technical PowerConsumption="180" DmxConnector="3-pin"/>
   </Physical>
-  <Channel Number="0" >Y-axis Motor</Channel>
-  <Channel Number="1" >Y-axis Speed</Channel>
-  <Channel Number="2" >Master Dimmer</Channel>
-  <Channel Number="3" >Strobe</Channel>
-  <Channel Number="4" >Red Dimmer</Channel>
-  <Channel Number="5" >Green Dimmer</Channel>
-  <Channel Number="6" >Blue Dimmer</Channel>
-  <Channel Number="7" >White Dimmer</Channel>
-  <Channel Number="8" >Modes</Channel>
-  <Channel Number="9" >Speed</Channel>
-  <Channel Number="10" >Background Color</Channel>
-  <Channel Number="11" >Background dimmer</Channel>
+  <Channel Number="0">Y-axis Motor</Channel>
+  <Channel Number="1">Y-axis Speed</Channel>
+  <Channel Number="2">Master Dimmer</Channel>
+  <Channel Number="3">Strobe</Channel>
+  <Channel Number="4">Red Dimmer</Channel>
+  <Channel Number="5">Green Dimmer</Channel>
+  <Channel Number="6">Blue Dimmer</Channel>
+  <Channel Number="7">White Dimmer</Channel>
+  <Channel Number="8">Modes</Channel>
+  <Channel Number="9">Speed</Channel>
+  <Channel Number="10">Background Color</Channel>
+  <Channel Number="11">Background dimmer</Channel>
+  <Channel Number="12">Reset</Channel>
  </Mode>
  <Mode Name="43CH">
   <Physical>
@@ -98,70 +99,36 @@
   </Physical>
   <Channel Number="0">Y-axis Motor</Channel>
   <Channel Number="1">Y-axis Speed</Channel>
-  <Channel Number="2">Red Dimmer</Channel>
-  <Channel Number="3">Green Dimmer</Channel>
-  <Channel Number="4">Blue Dimmer</Channel>
-  <Channel Number="5">White Dimmer</Channel>
-  <Channel Number="42">Reset</Channel>
+  <Channel Number="2">Reset</Channel>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
-    <Channel>2</Channel>
-    <Channel>3</Channel>
-    <Channel>4</Channel>
-    <Channel>5</Channel>
+   <Channel>0</Channel>
   </Head>
  </Mode>
  <Physical>
