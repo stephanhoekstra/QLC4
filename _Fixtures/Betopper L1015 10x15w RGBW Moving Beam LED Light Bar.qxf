@@ -43,7 +43,7 @@
   <Capability Min="0" Max="255">Modes</Capability>
  </Channel>
  <Channel Name="Speed">
-  <Group Byte="0">Effect</Group>
+  <Group Byte="0">Speed</Group>
   <Capability Min="0" Max="255">Channel 10 Function</Capability>
  </Channel>
  <Channel Name="Background dimmer" Preset="IntensityDimmer"/>
@@ -57,13 +57,13 @@
    <Layout Width="1" Height="10"/>
    <Technical PowerConsumption="180" DmxConnector="3-pin"/>
   </Physical>
-  <Channel Number="0" ActsOn="0">Y-axis Motor</Channel>
-  <Channel Number="1" ActsOn="1">Y-axis Speed</Channel>
-  <Channel Number="2" ActsOn="2">Red Dimmer</Channel>
-  <Channel Number="3" ActsOn="3">Green Dimmer</Channel>
-  <Channel Number="4" ActsOn="4">Blue Dimmer</Channel>
-  <Channel Number="5" ActsOn="5">White Dimmer</Channel>
-  <Channel Number="6" ActsOn="6">Reset</Channel>
+  <Channel Number="0" >Y-axis Motor</Channel>
+  <Channel Number="1" >Y-axis Speed</Channel>
+  <Channel Number="2" >Red Dimmer</Channel>
+  <Channel Number="3" >Green Dimmer</Channel>
+  <Channel Number="4" >Blue Dimmer</Channel>
+  <Channel Number="5" >White Dimmer</Channel>
+  <Channel Number="6" >Reset</Channel>
  </Mode>
  <Mode Name="13CH">
   <Physical>
@@ -74,20 +74,96 @@
    <Layout Width="1" Height="10"/>
    <Technical PowerConsumption="180" DmxConnector="3-pin"/>
   </Physical>
-  <Channel Number="0" ActsOn="0">Y-axis Motor</Channel>
-  <Channel Number="1" ActsOn="1">Y-axis Speed</Channel>
-  <Channel Number="2" ActsOn="2">Master Dimmer</Channel>
-  <Channel Number="3" ActsOn="3">Strobe</Channel>
-  <Channel Number="4" ActsOn="4">Red Dimmer</Channel>
-  <Channel Number="5" ActsOn="5">Green Dimmer</Channel>
-  <Channel Number="6" ActsOn="6">Blue Dimmer</Channel>
-  <Channel Number="7" ActsOn="7">White Dimmer</Channel>
-  <Channel Number="8" ActsOn="8">Modes</Channel>
-  <Channel Number="9" ActsOn="8">Speed</Channel>
-  <Channel Number="10" ActsOn="10">Background Color</Channel>
-  <Channel Number="11" ActsOn="11">Background dimmer</Channel>
+  <Channel Number="0" >Y-axis Motor</Channel>
+  <Channel Number="1" >Y-axis Speed</Channel>
+  <Channel Number="2" >Master Dimmer</Channel>
+  <Channel Number="3" >Strobe</Channel>
+  <Channel Number="4" >Red Dimmer</Channel>
+  <Channel Number="5" >Green Dimmer</Channel>
+  <Channel Number="6" >Blue Dimmer</Channel>
+  <Channel Number="7" >White Dimmer</Channel>
+  <Channel Number="8" >Modes</Channel>
+  <Channel Number="9" >Speed</Channel>
+  <Channel Number="10" >Background Color</Channel>
+  <Channel Number="11" >Background dimmer</Channel>
  </Mode>
- 
+ <Mode Name="43CH">
+  <Physical>
+   <Bulb Type="LED" Lumens="1500" ColourTemperature="2000"/>
+   <Dimensions Weight="6.35" Width="985" Height="73" Depth="153"/>
+   <Lens Name="Generic" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Tilt" PanMax="0" TiltMax="180"/>
+   <Layout Width="1" Height="10"/>
+   <Technical PowerConsumption="180" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Y-axis Motor</Channel>
+  <Channel Number="1">Y-axis Speed</Channel>
+  <Channel Number="2">Red Dimmer</Channel>
+  <Channel Number="3">Green Dimmer</Channel>
+  <Channel Number="4">Blue Dimmer</Channel>
+  <Channel Number="5">White Dimmer</Channel>
+  <Channel Number="42">Reset</Channel>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+  <Head>
+    <Channel>2</Channel>
+    <Channel>3</Channel>
+    <Channel>4</Channel>
+    <Channel>5</Channel>
+  </Head>
+ </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="1500" ColourTemperature="4000"/>
   <Dimensions Weight="6.35" Width="985" Height="73" Depth="153"/>
