@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.14.1-2</Version>
+  <Version>4.14.0</Version>
   <Author>steph</Author>
  </Creator>
  <Engine>
@@ -2546,9 +2546,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
+   <Property Name="taillength" Value="40"/>
    <Property Name="direction" Value="Left"/>
    <Property Name="tailfade" Value="Yes"/>
-   <Property Name="taillength" Value="40"/>
   </Function>
   <Function ID="343" Type="RGBMatrix" Name="Police Bar 5">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
@@ -2562,8 +2562,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="tailfade" Value="No"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="No"/>
   </Function>
   <Function ID="344" Type="Collection" Name="Set Piece Fuck the Police Bar 2" Path="Set Piece  Fuck the Police">
    <Step Number="0">387</Step>
@@ -3226,8 +3226,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>6</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="20"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="425" Type="Collection" Name="Set Piece Red Orange Chase">
    <Step Number="0">424</Step>
@@ -3259,11 +3259,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
-   <Width>10</Width>
-   <Height>2</Height>
+   <Width>30</Width>
+   <Height>20</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
-   <IsRelative>1</IsRelative>
+   <IsRelative>0</IsRelative>
    <Axis Name="X">
     <Offset>127</Offset>
     <Frequency>3</Frequency>
@@ -3306,7 +3306,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">5,115</FixtureVal>
   </Function>
-  <Function ID="435" Type="Scene" Name="Phantom 7 Open Shutter" Path="Phantoms">
+  <Function ID="435" Type="Scene" Name="Phantom 7 Shutter Open" Path="Phantoms">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">5,0,6,255,9,4,10,0</FixtureVal>
   </Function>
@@ -3375,6 +3375,86 @@
    <SpeedModes FadeIn="Common" FadeOut="PerStep" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">434</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="50">441</Step>
+  </Function>
+  <Function ID="443" Type="Collection" Name="Set Piece - Warmup Cosy Testbeeld on DJ" Path="Set Piece - Warmup Cosy Testbeeld on DJ">
+   <Step Number="0">445</Step>
+   <Step Number="1">437</Step>
+   <Step Number="2">434</Step>
+   <Step Number="3">447</Step>
+   <Step Number="4">449</Step>
+   <Step Number="5">448</Step>
+   <Step Number="6">435</Step>
+   <Step Number="7">446</Step>
+   <Step Number="8">451</Step>
+  </Function>
+  <Function ID="444" Type="Scene" Name="New Scene 444">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="445" Type="Scene" Name="Phantom 7 Position Behind DJ" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,182,1,47,2,0,5,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="446" Type="Scene" Name="Phantom 7 Color Red/Cyan" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">7,101</FixtureVal>
+  </Function>
+  <Function ID="447" Type="Scene" Name="Phantom 8 Position Behind DJ" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">0,168,1,65</FixtureVal>
+  </Function>
+  <Function ID="448" Type="Scene" Name="Phantom 8 Dimmer 50" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,127</FixtureVal>
+  </Function>
+  <Function ID="449" Type="Scene" Name="Phantom 8 Color Orange" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">7,37</FixtureVal>
+  </Function>
+  <Function ID="450" Type="Scene" Name="Phantom 8 Shutter Open" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">6,255</FixtureVal>
+  </Function>
+  <Function ID="451" Type="EFX" Name="Phantom 8 Slowdance relative to DJ">
+   <Fixture>
+    <ID>9</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>2</Width>
+   <Height>2</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>1</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="452" Type="RGBMatrix" Name="New RGB Matrix 452">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>4294967295</FixtureGroup>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -3865,6 +3945,20 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="171" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Warmup Cosy Testbeeld on DJ" ID="80" Icon="">
+      <WindowState Visible="False" X="10" Y="160" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="443"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="170" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
     </SoloFrame>
     <CueList Caption="Cue list" ID="38">
