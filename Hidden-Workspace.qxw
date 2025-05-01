@@ -270,7 +270,7 @@
    <FixtureVal ID="5">0,25</FixtureVal>
   </Function>
   <Function ID="17" Type="Chaser" Name="Metronome Lights">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -565,7 +565,7 @@
    <FixtureVal ID="4">16,255</FixtureVal>
   </Function>
   <Function ID="69" Type="Chaser" Name="Move Beam Left to Right" Path="Set Piece Club Holle">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
@@ -766,7 +766,7 @@
    <Step Number="0">108</Step>
   </Function>
   <Function ID="118" Type="Chaser" Name="Moods - Fade Red and Blue Combos">
-   <Speed FadeIn="809" FadeOut="809" Duration="3236"/>
+   <Speed FadeIn="500" FadeOut="500" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -810,7 +810,7 @@
    <Step Number="1">143</Step>
   </Function>
   <Function ID="124" Type="Chaser" Name="Flash Pixel Bar Dimmer 50 Every 2 Beats" Path="Pixel Bar Chasers">
-   <Speed FadeIn="0" FadeOut="404" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="250" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -818,7 +818,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">149</Step>
   </Function>
   <Function ID="125" Type="Chaser" Name="Moods Fade Green and Purple Combos">
-   <Speed FadeIn="809" FadeOut="809" Duration="3236"/>
+   <Speed FadeIn="500" FadeOut="500" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -853,7 +853,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">170</Step>
   </Function>
   <Function ID="128" Type="Chaser" Name="Flash Pixel Bar Dimmer 100 Every 2 Beats" Path="Pixel Bar Chasers">
-   <Speed FadeIn="0" FadeOut="404" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="250" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1006,7 +1006,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="12944"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1128,7 +1128,7 @@
    <FixtureVal ID="3">0,0,6,0,12,0,18,0,24,0,30,0,36,0,42,255,44,255,45,255,46,255</FixtureVal>
   </Function>
   <Function ID="160" Type="Chaser" Name="PIX Effect Loop Kitt 4/4" Path="Pix Effect Kitt">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1152,7 +1152,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">170</Step>
   </Function>
   <Function ID="163" Type="Chaser" Name="Special Chaser - Technoderby white strobe - mute after 1 bar" Path="Specials">
-   <Speed FadeIn="0" FadeOut="0" Duration="6472"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1160,7 +1160,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">10</Step>
   </Function>
   <Function ID="164" Type="Chaser" Name="Flash Pixel Bar Dimmer 100 Every 4 Beats" Path="Pixel Bar Chasers">
-   <Speed FadeIn="0" FadeOut="404" Duration="1618"/>
+   <Speed FadeIn="0" FadeOut="250" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1168,7 +1168,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">149</Step>
   </Function>
   <Function ID="165" Type="Chaser" Name="Fade Pixel Bar Dimmer Every 16 Beats" Path="Pixel Bar Chasers">
-   <Speed FadeIn="3236" FadeOut="3236" Duration="6472"/>
+   <Speed FadeIn="2000" FadeOut="2000" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1211,7 +1211,7 @@
    <Step Number="0">143</Step>
   </Function>
   <Function ID="176" Type="Chaser" Name="Alternate 1/4" Path="Global Dimmer Chases ">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1246,7 +1246,7 @@
    <Step Number="1">174</Step>
   </Function>
   <Function ID="184" Type="Chaser" Name="Blink 1/4" Path="Global Dimmer Chases ">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1273,7 +1273,7 @@
    <FixtureVal ID="4">6,204,8,0,10,0,11,255,17,39,18,0,19,83,21,95,22,255,25,0</FixtureVal>
   </Function>
   <Function ID="189" Type="Chaser" Name="Set Piece 1 Club Holle" Path="Set Piece Club Holle">
-   <Speed FadeIn="0" FadeOut="0" Duration="3236"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1448,7 +1448,7 @@
    <FixtureVal ID="4">6,175,7,0,8,0,10,0,11,232,17,39,18,0,19,26,21,12,22,18,25,0</FixtureVal>
   </Function>
   <Function ID="210" Type="Chaser" Name="Set Piece Finding Nemo - Cycle Kaleidoscopes" Path="Set Piece Finding Nemo">
-   <Speed FadeIn="0" FadeOut="0" Duration="12944"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1471,7 +1471,7 @@
    <Step Number="10">312</Step>
   </Function>
   <Function ID="212" Type="Chaser" Name="BEYE Move to Positions Randomly (on the phrase)" Path="BEYE Movements">
-   <Speed FadeIn="0" FadeOut="0" Duration="1618"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1494,7 +1494,7 @@
    <Step Number="1" FadeIn="0" Hold="10" FadeOut="0">170</Step>
   </Function>
   <Function ID="215" Type="Chaser" Name="PIX Flash every 4 Phrases" Path="PIX Effect Flash">
-   <Speed FadeIn="0" FadeOut="0" Duration="12944"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1518,7 +1518,7 @@
    <FixtureVal ID="2">0,0</FixtureVal>
   </Function>
   <Function ID="220" Type="Chaser" Name="Set Piece Finding Nemo - Techno Derbies" Path="Techno Derbies">
-   <Speed FadeIn="0" FadeOut="0" Duration="6472"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1566,7 +1566,7 @@
    <Step Number="4" FadeIn="0" Hold="0" FadeOut="5000">91</Step>
   </Function>
   <Function ID="226" Type="Chaser" Name="Set Piece A Galaxy Far Away" Path="Set Piece A Galaxy Far Far Away">
-   <Speed FadeIn="0" FadeOut="0" Duration="6472"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1643,7 +1643,7 @@
    <FixtureVal ID="4">5,255,6,202,12,255</FixtureVal>
   </Function>
   <Function ID="236" Type="Chaser" Name="PIX Effect Kitt pingpong slow" Path="Pix Effect Kitt">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1657,7 +1657,7 @@
    <Step Number="7" FadeIn="0" Hold="447" FadeOut="0">147</Step>
   </Function>
   <Function ID="237" Type="Chaser" Name="PIX Effect Kitt pingpong fast" Path="Pix Effect Kitt">
-   <Speed FadeIn="0" FadeOut="0" Duration="202"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="125"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1836,7 +1836,7 @@
    </Axis>
   </Function>
   <Function ID="247" Type="Chaser" Name="Set Piece Viva Hollandia" Path="Set Piece Viva Hollandia">
-   <Speed FadeIn="0" FadeOut="0" Duration="3236"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1935,7 +1935,7 @@
    <FixtureVal ID="0">0,0,6,0</FixtureVal>
   </Function>
   <Function ID="263" Type="Chaser" Name="Set Piece Nightrider " Path="Set Piece Nightrider">
-   <Speed FadeIn="0" FadeOut="0" Duration="3236"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1972,7 +1972,7 @@
    <Step Number="10">312</Step>
   </Function>
   <Function ID="266" Type="Chaser" Name="Beye Pulsate Dimmer to the beat" Path="BEYE Dimmer Chases">
-   <Speed FadeIn="0" FadeOut="50" Duration="404"/>
+   <Speed FadeIn="0" FadeOut="50" Duration="250"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="PerStep" Duration="Common"/>
@@ -2004,7 +2004,7 @@
    <Step Number="12">132</Step>
   </Function>
   <Function ID="271" Type="Chaser" Name="Beye Pulsate Dimmer to the beat (2)" Path="BEYE Dimmer Chases">
-   <Speed FadeIn="0" FadeOut="50" Duration="404"/>
+   <Speed FadeIn="0" FadeOut="50" Duration="250"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="PerStep" Duration="Common"/>
@@ -2024,14 +2024,14 @@
    <FixtureVal ID="4">6,136,7,255,8,178,12,0,13,0,15,255,16,0,17,205,18,193,19,0</FixtureVal>
   </Function>
   <Function ID="275" Type="Chaser" Name="PIX Flash every 1 Phrases" Path="PIX Effect Flash">
-   <Speed FadeIn="0" FadeOut="0" Duration="3236"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">214</Step>
   </Function>
   <Function ID="276" Type="Chaser" Name="PIX - Cycle colors Randomly on the beat" Path="Secondary Color Chases">
-   <Speed FadeIn="0" FadeOut="0" Duration="3236"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2105,7 +2105,7 @@
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">286</Step>
   </Function>
   <Function ID="288" Type="Chaser" Name="Set Piece Nanalan" Path="Set Piece Nanalan">
-   <Speed FadeIn="0" FadeOut="0" Duration="12944"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2216,7 +2216,7 @@
    <Step Number="8">312</Step>
   </Function>
   <Function ID="302" Type="Chaser" Name="PIX10 Spot Flash Every Phrase" Path="PIX 10 Discobol chasers">
-   <Speed FadeIn="0" FadeOut="0" Duration="3236"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
@@ -2355,7 +2355,7 @@
    <FixtureVal ID="3">2,255,3,255,4,255,8,255,9,255,10,255,14,255,15,255,16,255,20,255,21,255,22,255,26,255,27,255,28,255,32,255,33,255,34,255,38,255,39,255,40,255,44,255,45,255,46,255</FixtureVal>
   </Function>
   <Function ID="322" Type="Chaser" Name="Set Piece White Disco" Path="Set Piece White Disco">
-   <Speed FadeIn="3236" FadeOut="3236" Duration="6472"/>
+   <Speed FadeIn="2000" FadeOut="2000" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -2390,7 +2390,7 @@
    <Step Number="3">166</Step>
   </Function>
   <Function ID="326" Type="Chaser" Name="Police Siren (blink BEYE red on the beat) " Path="Set Piece Fuck the Police">
-   <Speed FadeIn="100" FadeOut="100" Duration="809"/>
+   <Speed FadeIn="100" FadeOut="100" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="PerStep"/>
@@ -2405,7 +2405,7 @@
    <Step Number="4">326</Step>
   </Function>
   <Function ID="328" Type="Chaser" Name="Set Piece - Fuck the Police" Path="Set Piece Fuck the Police">
-   <Speed FadeIn="0" FadeOut="0" Duration="12944"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2723,8 +2723,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="presetIndex" Value="Rainbow"/>
+   <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="358" Type="Scene" Name="PS10W Disco AutoStrobe" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2783,7 +2783,7 @@
    <Step Number="1">214</Step>
   </Function>
   <Function ID="365" Type="Chaser" Name="Effect - Pixel bar cyan purple heartbeat" Path="Effect - Pixel bar heartbeats">
-   <Speed FadeIn="0" FadeOut="0" Duration="202"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="125"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2796,7 +2796,7 @@
    <Step Number="1">85</Step>
   </Function>
   <Function ID="367" Type="Chaser" Name="Effect - Pixel bar cyan purple heartbeat every 2 beats" Path="Effect - Pixel bar heartbeats">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2858,7 +2858,7 @@
    <Property Name="orientation" Value="Horizontal Reversed"/>
   </Function>
   <Function ID="374" Type="Chaser" Name="Set Piece Snowpierecer" Path="Set Piece Snowpiercer">
-   <Speed FadeIn="0" FadeOut="0" Duration="12944"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
@@ -3109,7 +3109,7 @@
    <Step Number="6">392</Step>
   </Function>
   <Function ID="410" Type="Chaser" Name="Effect - BAR Reach every four beats" Path="Effect - Bar Reach ">
-   <Speed FadeIn="0" FadeOut="0" Duration="1618"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -3123,7 +3123,7 @@
    <Step Number="3">148</Step>
   </Function>
   <Function ID="412" Type="Chaser" Name="Effect - Scan Beams Green every 4 bars" Path="Effect - Bar Reach ">
-   <Speed FadeIn="0" FadeOut="0" Duration="809"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -3155,7 +3155,7 @@
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">281</Step>
   </Function>
   <Function ID="417" Type="Chaser" Name="Set Piece Neo" Path="Set Piece NEO">
-   <Speed FadeIn="0" FadeOut="0" Duration="6472"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -3343,7 +3343,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="10000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm>SquareTrue</Algorithm>
@@ -3377,7 +3377,7 @@
    <FixtureVal ID="8">5,0</FixtureVal>
   </Function>
   <Function ID="442" Type="Chaser" Name="Phantom 7 Pulsate Beamer dimmer to beat (50%)" Path="Phantoms">
-   <Speed FadeIn="0" FadeOut="50" Duration="1618"/>
+   <Speed FadeIn="0" FadeOut="50" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="PerStep" Duration="Common"/>
@@ -3396,6 +3396,8 @@
    <Step Number="8">456</Step>
    <Step Number="9">438</Step>
    <Step Number="10">387</Step>
+   <Step Number="11">450</Step>
+   <Step Number="12">476</Step>
   </Function>
   <Function ID="444" Type="Scene" Name="New Scene 444">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3516,6 +3518,208 @@
   <Function ID="458" Type="Scene" Name="Phantom 7 Gobo Clover" Path="Phantoms">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">8,63,10,0</FixtureVal>
+  </Function>
+  <Function ID="459" Type="Collection" Name="Set Piece - Twin Flames" Path="Set Piece - When the sun goes down">
+   <Step Number="0">434</Step>
+   <Step Number="1">448</Step>
+   <Step Number="2">435</Step>
+   <Step Number="3">438</Step>
+   <Step Number="4">387</Step>
+   <Step Number="5">450</Step>
+   <Step Number="6">429</Step>
+   <Step Number="7">430</Step>
+   <Step Number="8">460</Step>
+   <Step Number="9">468</Step>
+   <Step Number="10">470</Step>
+  </Function>
+  <Function ID="460" Type="EFX" Name="Phantom 7,8 Twin Flame Around dancefloor">
+   <Fixture>
+    <ID>8</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>9</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line2</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>1</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="461" Type="Scene" Name="Phantom 8 Color Green-Purple" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,234,7,111</FixtureVal>
+  </Function>
+  <Function ID="462" Type="Scene" Name="Phantom 8 Color Purple-Red" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,234,7,105</FixtureVal>
+  </Function>
+  <Function ID="463" Type="Scene" Name="Phantom 8 Color-Red-Blue" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,233,7,98</FixtureVal>
+  </Function>
+  <Function ID="464" Type="Scene" Name="Phantom 8 Color-Blue-Green" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,233,7,92</FixtureVal>
+  </Function>
+  <Function ID="465" Type="Scene" Name="Phantom 8 Color-Green-Yellow" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,233,7,84</FixtureVal>
+  </Function>
+  <Function ID="466" Type="Scene" Name="Phantom 8 Color-Yellow-Red" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,233,7,76</FixtureVal>
+  </Function>
+  <Function ID="467" Type="Scene" Name="Phantom 8 Color-Red-White" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,233,7,69</FixtureVal>
+  </Function>
+  <Function ID="468" Type="Scene" Name="Phantom 8 Color-Rotate Slowly" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">5,233,7,128</FixtureVal>
+  </Function>
+  <Function ID="469" Type="Scene" Name="Phantom 8 Color-Rotate Slowly (Copy)" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">7,128</FixtureVal>
+   <FixtureVal ID="8">7,128</FixtureVal>
+  </Function>
+  <Function ID="470" Type="Chaser" Name="Phantoms Static Gobo (random) " Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">471</Step>
+   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">472</Step>
+   <Step Number="2" FadeIn="0" Hold="4294967294" FadeOut="0">473</Step>
+   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0">475</Step>
+   <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0">474</Step>
+  </Function>
+  <Function ID="471" Type="Scene" Name="Phantom 7,8 Gobo Arrows" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">8,16,10,0</FixtureVal>
+   <FixtureVal ID="9">8,16,10,0</FixtureVal>
+  </Function>
+  <Function ID="472" Type="Scene" Name="Phantom 7,8 Gobo Clover" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">8,63,10,0</FixtureVal>
+   <FixtureVal ID="9">8,63,10,0</FixtureVal>
+  </Function>
+  <Function ID="473" Type="Scene" Name="Phantom 7,8 Gobo Flower" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">5,0,8,34,10,0</FixtureVal>
+   <FixtureVal ID="9">5,0,8,34,10,0</FixtureVal>
+  </Function>
+  <Function ID="474" Type="Scene" Name="Phantom 7,8 Gobo Stripes" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">8,26,10,0</FixtureVal>
+   <FixtureVal ID="9">8,26,10,0</FixtureVal>
+  </Function>
+  <Function ID="475" Type="Scene" Name="Phantom 7,8 Gobo none" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">5,0,8,0,10,0</FixtureVal>
+   <FixtureVal ID="9">8,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="476" Type="Scene" Name="Phantom 8 Gobo none" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">8,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="477" Type="Collection" Name="Set Piece Bluerays" Path="Set Piece - Sunrays">
+   <Step Number="0">387</Step>
+   <Step Number="1">397</Step>
+   <Step Number="2">480</Step>
+   <Step Number="3">482</Step>
+   <Step Number="4">215</Step>
+   <Step Number="5">321</Step>
+  </Function>
+  <Function ID="478" Type="RGBMatrix" Name="Betopper Ocean">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>5</FixtureGroup>
+   <Property Name="presetIndex" Value="Ocean"/>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="presetSize" Value="5"/>
+  </Function>
+  <Function ID="479" Type="Chaser" Name="Betopper Raise Lower Slow">
+   <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="60000" FadeOut="0">397</Step>
+   <Step Number="1" FadeIn="0" Hold="60000" FadeOut="0">335</Step>
+  </Function>
+  <Function ID="480" Type="EFX" Name="BAR waiver slowly relative to reached position">
+   <Fixture>
+    <ID>7</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>0</Width>
+   <Height>60</Height>
+   <Rotation>1</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>70</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="481" Type="Scene" Name="BAR Full Blue" Path="BAR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">2,0,3,0,4,255,5,0,6,0,7,0,8,255,9,0,10,0,11,0,12,255,13,0,14,0,15,0,16,255,17,0,18,0,19,0,20,255,21,0,22,0,23,0,24,255,25,0,26,0,27,0,28,255,29,0,30,0,31,0,32,255,33,0,34,0,35,0,36,255,37,0,38,0,39,0,40,255,41,0</FixtureVal>
+  </Function>
+  <Function ID="482" Type="Chaser" Name="BAR - Sometimes Blue rays">
+   <Speed FadeIn="10000" FadeOut="10000" Duration="10005"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="20">399</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="20">481</Step>
+   <Step Number="2" FadeIn="10000" Hold="10000" FadeOut="10000">399</Step>
+   <Step Number="3" FadeIn="10000" Hold="10000" FadeOut="10000">481</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">398</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -4020,6 +4224,34 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="170" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Twin Flames" ID="82" Icon="">
+      <WindowState Visible="False" X="10" Y="50" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4286545791</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="459"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="186" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Set Piece Sunrays" ID="83" Icon="">
+      <WindowState Visible="False" X="10" Y="335" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="477"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="138" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
     </SoloFrame>
     <CueList Caption="Cue list" ID="38">
@@ -4723,7 +4955,7 @@
      <Tap>
       <Input Universe="0" Channel="250" LowerValue="1" UpperValue="3"/>
      </Tap>
-     <Time>809</Time>
+     <Time>500</Time>
      <Function FadeIn="0" FadeOut="0" Duration="10">139</Function>
      <Function FadeIn="0" FadeOut="0" Duration="9">163</Function>
      <Function FadeIn="8" FadeOut="8" Duration="9">322</Function>
