@@ -2545,8 +2545,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="direction" Value="Left"/>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="40"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="343" Type="RGBMatrix" Name="Police Bar 5">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
@@ -2560,8 +2560,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="tailfade" Value="No"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="No"/>
   </Function>
   <Function ID="344" Type="Collection" Name="Set Piece Fuck the Police Bar 2" Path="Set Piece  Fuck the Police">
    <Step Number="0">387</Step>
@@ -3232,8 +3232,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>6</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="20"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="425" Type="Collection" Name="Set Piece Red Orange Chase">
    <Step Number="0">424</Step>
@@ -3668,8 +3668,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>5</FixtureGroup>
    <Property Name="presetSize" Value="5"/>
-   <Property Name="orientation" Value="Horizontal"/>
    <Property Name="presetIndex" Value="Ocean"/>
+   <Property Name="orientation" Value="Horizontal"/>
   </Function>
   <Function ID="479" Type="Chaser" Name="Betopper Raise Lower Slow">
    <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
@@ -3911,6 +3911,33 @@
    <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0">512</Step>
    <Step Number="5" FadeIn="0" Hold="4294967294" FadeOut="0">507</Step>
   </Function>
+  <Function ID="518" Type="Collection" Name="Activity - Phantom 8 on Discoball" Path="Activity - Phantom">
+   <Step Number="0">434</Step>
+   <Step Number="1">448</Step>
+   <Step Number="2">435</Step>
+   <Step Number="3">438</Step>
+   <Step Number="4">387</Step>
+   <Step Number="5">450</Step>
+   <Step Number="6">470</Step>
+   <Step Number="7">521</Step>
+  </Function>
+  <Function ID="519" Type="Collection" Name="Activity - Phantom 7 on Discoball" Path="Activity - Phantom">
+   <Step Number="0">434</Step>
+   <Step Number="1">435</Step>
+   <Step Number="2">438</Step>
+   <Step Number="3">387</Step>
+   <Step Number="4">429</Step>
+   <Step Number="5">470</Step>
+   <Step Number="6">520</Step>
+  </Function>
+  <Function ID="520" Type="Scene" Name="Phantom 7 Position Discoball" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,125,1,52,2,124</FixtureVal>
+  </Function>
+  <Function ID="521" Type="Scene" Name="Phantom 8 Position Discoball" Path="Phantoms">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">0,141,1,76</FixtureVal>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -3941,7 +3968,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="35" Width="1175" Height="960"/>
+    <WindowState Visible="False" X="0" Y="95" Width="1175" Height="960"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -4390,7 +4417,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="260" Y="40" Width="155" Height="230"/>
+     <WindowState Visible="False" X="260" Y="40" Width="155" Height="290"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -4439,6 +4466,20 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="170" LowerValue="30" UpperValue="28" MonitorValue="28" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     </Button>
+     <Button Caption="Phantom 7 on Discoball" ID="21" Icon="">
+      <WindowState Visible="False" X="15" Y="220" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="519"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="162" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="Betopper Movement" ID="9">
@@ -4497,7 +4538,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="260" Y="290" Width="155" Height="195"/>
+     <WindowState Visible="False" X="260" Y="365" Width="155" Height="195"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
