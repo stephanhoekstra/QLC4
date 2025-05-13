@@ -4068,6 +4068,18 @@
    <Step Number="7" FadeIn="0" Hold="40952" FadeOut="0">538</Step>
    <Step Number="8" FadeIn="0" Hold="40952" FadeOut="0">464</Step>
   </Function>
+  <Function ID="546" Type="Collection" Name="Activity - Phantoms on Discoball" Path="Activity - Phantom">
+   <Step Number="0">387</Step>
+   <Step Number="1">434</Step>
+   <Step Number="2">435</Step>
+   <Step Number="3">438</Step>
+   <Step Number="4">429</Step>
+   <Step Number="5">470</Step>
+   <Step Number="6">520</Step>
+   <Step Number="7">448</Step>
+   <Step Number="8">450</Step>
+   <Step Number="9">521</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -4472,7 +4484,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="260" Y="40" Width="155" Height="290"/>
+     <WindowState Visible="True" X="260" Y="40" Width="315" Height="320"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -4481,7 +4493,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Twin Flames" ID="82" Icon="">
-      <WindowState Visible="True" X="15" Y="50" Width="125" Height="40"/>
+      <WindowState Visible="True" X="10" Y="100" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -4495,7 +4507,7 @@
       <Input Universe="0" Channel="186" LowerValue="30" UpperValue="28" MonitorValue="28" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Phantom on DJ and sunset" ID="80" Icon="">
-      <WindowState Visible="True" X="10" Y="105" Width="125" Height="40"/>
+      <WindowState Visible="True" X="10" Y="155" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -4509,7 +4521,7 @@
       <Input Universe="0" Channel="178" LowerValue="30" UpperValue="28" MonitorValue="28" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Phantoms Flashing to beat" ID="84" Icon="">
-      <WindowState Visible="True" X="10" Y="160" Width="125" Height="40"/>
+      <WindowState Visible="True" X="10" Y="210" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -4522,8 +4534,8 @@
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="170" LowerValue="30" UpperValue="28" MonitorValue="28" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
-     <Button Caption="Phantom 7 on Discoball" ID="21" Icon="">
-      <WindowState Visible="True" X="15" Y="220" Width="125" Height="40"/>
+     <Button Caption="Discoball" ID="21" Icon="">
+      <WindowState Visible="True" X="10" Y="50" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -4531,10 +4543,10 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="519"/>
+      <Function ID="546"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="162" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="185" LowerValue="106" UpperValue="106" MonitorValue="110" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="Betopper Movement" ID="9">
@@ -4545,7 +4557,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="420" Y="40" Width="180" Height="120"/>
+     <WindowState Visible="True" X="670" Y="45" Width="180" Height="120"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -4576,7 +4588,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="420" Y="165" Width="180" Height="195"/>
+     <WindowState Visible="True" X="670" Y="165" Width="180" Height="195"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -4593,7 +4605,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="260" Y="365" Width="155" Height="195"/>
+     <WindowState Visible="True" X="260" Y="370" Width="145" Height="205"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -4666,7 +4678,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="420" Y="365" Width="155" Height="195"/>
+     <WindowState Visible="True" X="410" Y="370" Width="145" Height="205"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
