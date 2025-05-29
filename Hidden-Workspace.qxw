@@ -3669,9 +3669,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>5</FixtureGroup>
-   <Property Name="orientation" Value="Horizontal"/>
    <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="presetSize" Value="5"/>
+   <Property Name="orientation" Value="Horizontal"/>
   </Function>
   <Function ID="479" Type="Chaser" Name="Betopper Raise Lower Slow">
    <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
