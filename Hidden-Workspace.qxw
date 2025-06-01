@@ -2754,8 +2754,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Rainbow"/>
    <Property Name="presetSize" Value="5"/>
+   <Property Name="presetIndex" Value="Rainbow"/>
   </Function>
   <Function ID="358" Type="Scene" Name="PS10W Disco AutoStrobe" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3715,8 +3715,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>5</FixtureGroup>
    <Property Name="orientation" Value="Horizontal"/>
-   <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="presetSize" Value="5"/>
+   <Property Name="presetIndex" Value="Ocean"/>
   </Function>
   <Function ID="479" Type="Chaser" Name="Betopper Raise Lower Slow">
    <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
@@ -4663,10 +4663,20 @@
    <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="30000" FadeOut="0">627</Step>
-   <Step Number="1" FadeIn="0" Hold="10000" FadeOut="0">618</Step>
-   <Step Number="2" FadeIn="0" Hold="120000" FadeOut="0">639</Step>
+   <SpeedModes FadeIn="Default" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="120000" FadeOut="0">650</Step>
+   <Step Number="1" FadeIn="0" Hold="30000" FadeOut="0">627</Step>
+   <Step Number="2" FadeIn="0" Hold="10000" FadeOut="0">618</Step>
+   <Step Number="3" FadeIn="0" Hold="120000" FadeOut="0">639</Step>
+   <Step Number="4" FadeIn="0" Hold="10000" FadeOut="0">651</Step>
+   <Step Number="5" FadeIn="0" Hold="20000" FadeOut="10000">652</Step>
+   <Step Number="6" FadeIn="0" Hold="3000" FadeOut="0">649</Step>
+   <Step Number="7" FadeIn="0" Hold="3000" FadeOut="0">649</Step>
+   <Step Number="8" FadeIn="0" Hold="3000" FadeOut="0">649</Step>
+   <Step Number="9" FadeIn="0" Hold="3000" FadeOut="0">649</Step>
+   <Step Number="10" FadeIn="0" Hold="3000" FadeOut="0">649</Step>
+   <Step Number="11" FadeIn="0" Hold="3000" FadeOut="0">649</Step>
+   <Step Number="12" FadeIn="0" Hold="3000" FadeOut="0">649</Step>
   </Function>
   <Function ID="623" Type="Scene" Name="PIX Kitt 4 White A" Path="PIC Effect Kitt">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -4729,6 +4739,7 @@
    <Step Number="8" FadeIn="0" Hold="30000" FadeOut="0">640</Step>
    <Step Number="9" FadeIn="0" Hold="30000" FadeOut="0">613</Step>
    <Step Number="10" FadeIn="0" Hold="30000" FadeOut="0">641</Step>
+   <Step Number="11" FadeIn="0" Hold="60000" FadeOut="0">648</Step>
   </Function>
   <Function ID="633" Type="Chaser" Name="PIX Flash every 16" Path="PIX Effect Flash">
    <Speed FadeIn="0" FadeOut="0" Duration="6848"/>
@@ -4821,8 +4832,8 @@
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>7</FixtureGroup>
    <Property Name="orientation" Value="Vertical"/>
-   <Property Name="offset" Value="0"/>
    <Property Name="blockSize" Value="4"/>
+   <Property Name="offset" Value="0"/>
   </Function>
   <Function ID="643" Type="RGBMatrix" Name="LED PIX-144AB Single KITT Alternate 2" BlendMode="Additive">
    <Speed FadeIn="0" FadeOut="0" Duration="205"/>
@@ -4838,6 +4849,71 @@
    <FixtureGroup>7</FixtureGroup>
    <Property Name="orientation" Value="Vertical"/>
    <Property Name="blockSize" Value="1"/>
+  </Function>
+  <Function ID="644" Type="Scene" Name="PIX A BRIGHT LEFT" Path="PIX">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">24,255,30,255,36,255,42,255</FixtureVal>
+  </Function>
+  <Function ID="645" Type="Scene" Name="PIX A BRIGHT  RIGHT" Path="PIX">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,6,255,12,255,18,255</FixtureVal>
+  </Function>
+  <Function ID="646" Type="Scene" Name="PIX B BRIGHT RIGHT" Path="PIX">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">24,255,30,255,36,255,42,255</FixtureVal>
+  </Function>
+  <Function ID="647" Type="Scene" Name="PIX B BRIGHT LEFT" Path="PIX">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,255,6,255,12,255,18,255,24,0,30,0,36,0,42,0</FixtureVal>
+  </Function>
+  <Function ID="648" Type="Chaser" Name="PIX Kwart O Clock" Path="Pixel Bar Chasers">
+   <Speed FadeIn="0" FadeOut="312" Duration="118"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">644</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">649</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">645</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">649</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">646</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">649</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">647</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">649</Step>
+   <Step Number="8" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+   <Step Number="9" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+   <Step Number="10" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+   <Step Number="11" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+   <Step Number="12" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+   <Step Number="13" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+   <Step Number="14" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+   <Step Number="15" FadeIn="0" Hold="240" FadeOut="796">649</Step>
+  </Function>
+  <Function ID="649" Type="Scene" Name="PIX NOOP" Path="PIX Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="650" Type="Chaser" Name="PIX Kwart O Clock (Fast)" Path="Pixel Bar Chasers">
+   <Speed FadeIn="0" FadeOut="100" Duration="105"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Common" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="86" FadeOut="0">644</Step>
+   <Step Number="1" FadeIn="0" Hold="86" FadeOut="0">649</Step>
+   <Step Number="2" FadeIn="0" Hold="86" FadeOut="0">645</Step>
+   <Step Number="3" FadeIn="0" Hold="86" FadeOut="0">649</Step>
+   <Step Number="4" FadeIn="0" Hold="86" FadeOut="0">646</Step>
+   <Step Number="5" FadeIn="0" Hold="86" FadeOut="0">649</Step>
+   <Step Number="6" FadeIn="0" Hold="86" FadeOut="0">647</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">649</Step>
+  </Function>
+  <Function ID="651" Type="Scene" Name="PIX Factory Setting 1" Path="PIX">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,5,149,6,255,11,156,12,255,17,165,18,255,23,155,24,255,29,159,30,255,35,150,36,255,41,162,42,255,47,118</FixtureVal>
+   <FixtureVal ID="6">0,255,5,149,6,255,11,156,12,255,17,165,18,255,23,155,24,255,29,159,30,255,35,150,36,255,41,162,42,255,47,118</FixtureVal>
+  </Function>
+  <Function ID="652" Type="Scene" Name="PIX Strobe Some Random" Path="PIX">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,254,1,152,6,131,7,166,12,255,13,113,18,255,19,98,24,255,25,163,30,255,31,102,36,255,37,111,42,255,43,177</FixtureVal>
+   <FixtureVal ID="6">0,254,1,152,6,131,7,166,12,255,13,113,18,255,19,98,24,255,25,163,30,255,31,102,36,255,37,111,42,255,43,177</FixtureVal>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -6138,7 +6214,7 @@
      <Function FadeIn="0" FadeOut="0" Duration="6">176</Function>
     </SpeedDial>
     <CueList Caption="Cue list" ID="44">
-     <WindowState Visible="False" X="90" Y="105" Width="435" Height="270"/>
+     <WindowState Visible="False" X="70" Y="45" Width="460" Height="335"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -6146,7 +6222,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Chaser>633</Chaser>
+     <Chaser>622</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next/>
      <Previous/>
