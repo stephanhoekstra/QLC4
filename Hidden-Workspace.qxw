@@ -661,8 +661,8 @@
   </Function>
   <Function ID="79" Type="Scene" Name="Techno Derby Red Wash" Path="Techno Derby Washes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,11,1,3</FixtureVal>
-   <FixtureVal ID="2">0,11,1,3</FixtureVal>
+   <FixtureVal ID="1">0,11</FixtureVal>
+   <FixtureVal ID="2">0,11</FixtureVal>
   </Function>
   <Function ID="80" Type="Scene" Name="Techno Derby Blue Wash" Path="Techno Derby Washes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2764,8 +2764,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="presetIndex" Value="Rainbow"/>
+   <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="358" Type="Scene" Name="PS10W Disco AutoStrobe" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3725,8 +3725,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>5</FixtureGroup>
    <Property Name="orientation" Value="Horizontal"/>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="presetIndex" Value="Ocean"/>
+   <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="479" Type="Chaser" Name="Betopper Raise Lower Slow">
    <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
@@ -5148,6 +5148,7 @@
    <FixtureVal ID="8">4,244</FixtureVal>
    <FixtureVal ID="9">4,244</FixtureVal>
   </Function>
+  <Function ID="687" Type="Collection" Name="Activity - Techno Derby Base" Path="Activity - Techno Derby"/>
   <Function ID="688" Type="Chaser" Name="Phantoms Slice to the beat" Path="Phantoms">
    <Speed FadeIn="0" FadeOut="0" Duration="3608"/>
    <Direction>Forward</Direction>
@@ -5171,6 +5172,81 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,39,1,255</FixtureVal>
    <FixtureVal ID="9">0,85,1,0</FixtureVal>
+  </Function>
+  <Function ID="691" Type="Collection" Name="Activity - Techno Derby Red" Path="Activity - Techno Derby">
+   <Step Number="0">692</Step>
+   <Step Number="1">79</Step>
+  </Function>
+  <Function ID="692" Type="Collection" Name="Activity - Techno Derby Slow Base" Path="Activity - Techno Derby">
+   <Step Number="0">687</Step>
+   <Step Number="1">223</Step>
+   <Step Number="2">693</Step>
+  </Function>
+  <Function ID="693" Type="Chaser" Name="Kill Techno Derbies after timeout (60s)" Path="Techno Derbies">
+   <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="60000" FadeOut="0">149</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">10</Step>
+  </Function>
+  <Function ID="694" Type="Collection" Name="Activity - Techno Derby Slow Blue" Path="Activity - Techno Derby">
+   <Step Number="0">692</Step>
+   <Step Number="1">80</Step>
+  </Function>
+  <Function ID="695" Type="Collection" Name="Activity - Techno Derby Slow Multicolor" Path="Activity - Techno Derby">
+   <Step Number="0">692</Step>
+   <Step Number="1">696</Step>
+  </Function>
+  <Function ID="696" Type="Scene" Name="Techno Derby Multicolor Wash" Path="Techno Derby Washes">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,207,1,3</FixtureVal>
+   <FixtureVal ID="2">0,40,1,3</FixtureVal>
+  </Function>
+  <Function ID="697" Type="Collection" Name="Activity - Techno Derby Slow Green" Path="Activity - Techno Derby">
+   <Step Number="0">692</Step>
+   <Step Number="1">81</Step>
+  </Function>
+  <Function ID="698" Type="Collection" Name="Activity - Techno Derby White Wild Strobe" Path="Activity - Techno Derby">
+   <Step Number="0">699</Step>
+   <Step Number="1">9</Step>
+  </Function>
+  <Function ID="699" Type="Collection" Name="Activity - Techno Derby Wild Base" Path="Activity - Techno Derby">
+   <Step Number="0">687</Step>
+   <Step Number="1">19</Step>
+   <Step Number="2">700</Step>
+  </Function>
+  <Function ID="700" Type="Chaser" Name="Kill Techno Derbies after timeout (10s)" Path="Techno Derbies">
+   <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0">149</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">10</Step>
+  </Function>
+  <Function ID="701" Type="Collection" Name="Activity - Techno Derby Flash Colors every 4 beats" Path="Activity - Techno Derby">
+   <Step Number="0">699</Step>
+   <Step Number="1">9</Step>
+  </Function>
+  <Function ID="702" Type="Scene" Name="Manual Effect - Techno Derbies Strobe Every other (1)" Path="Techno Derby">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">1,123</FixtureVal>
+   <FixtureVal ID="2">1,12</FixtureVal>
+  </Function>
+  <Function ID="703" Type="Scene" Name="Manual Effect - Techno Derbies Strobe Every other (2)" Path="Techno Derby">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,72,2,255,3,0</FixtureVal>
+   <FixtureVal ID="2">0,59,1,255,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="704" Type="Scene" Name="Manual Effect - Techno Derbies Strobe Every other (3)" Path="Techno Derby">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,163,2,255,3,0</FixtureVal>
+   <FixtureVal ID="2">0,59,1,255,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="705" Type="Collection" Name="Activity - Techno Derby Red Strobe Every Other" Path="Activity - Techno Derby">
+   <Step Number="0">702</Step>
+   <Step Number="1">79</Step>
+   <Step Number="2">687</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -5544,7 +5620,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="260" Y="40" Width="295" Height="325"/>
+     <WindowState Visible="True" X="150" Y="40" Width="285" Height="220"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -5553,7 +5629,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Phantoms Slow" ID="82" Icon="">
-      <WindowState Visible="True" X="10" Y="100" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="85" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5567,7 +5643,7 @@
       <Input Universe="0" Channel="177" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Discoball" ID="21" Icon="">
-      <WindowState Visible="True" X="10" Y="50" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5581,7 +5657,7 @@
       <Input Universe="0" Channel="185" LowerValue="110" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Phantom 7 Mute" ID="24" Icon="">
-      <WindowState Visible="True" X="10" Y="270" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="175" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5595,7 +5671,7 @@
       <Input Universe="0" Channel="229" LowerValue="1" UpperValue="3"/>
      </Button>
      <Button Caption="Phantom 8 Mute" ID="25" Icon="">
-      <WindowState Visible="True" X="165" Y="270" Width="125" Height="40"/>
+      <WindowState Visible="True" X="150" Y="175" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5609,7 +5685,7 @@
       <Input Universe="0" Channel="230" LowerValue="1" UpperValue="3"/>
      </Button>
      <Button Caption="Static" ID="43" Icon="">
-      <WindowState Visible="True" X="155" Y="50" Width="125" Height="40"/>
+      <WindowState Visible="True" X="150" Y="40" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5623,7 +5699,7 @@
       <Input Universe="0" Channel="186" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Phantoms Slice" ID="86" Icon="">
-      <WindowState Visible="True" X="165" Y="220" Width="125" Height="40"/>
+      <WindowState Visible="True" X="150" Y="130" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5637,7 +5713,7 @@
       <Input Universe="0" Channel="162" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="6"/>
      </Button>
      <Button Caption="Phantoms Flashing to beat" ID="89" Icon="">
-      <WindowState Visible="True" X="10" Y="220" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="130" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5659,7 +5735,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="780" Y="45" Width="180" Height="120"/>
+     <WindowState Visible="True" X="800" Y="45" Width="180" Height="120"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -5667,20 +5743,6 @@
      <Mixing>False</Mixing>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Slow Rays" ID="28" Icon="">
-      <WindowState Visible="True" X="10" Y="55" Width="125" Height="40"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4291611852</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="477"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="188" LowerValue="1" UpperValue="26" UpperParams="6"/>
-     </Button>
     </SoloFrame>
     <SoloFrame Caption="Betopper Colors" ID="37">
      <Appearance>
@@ -5707,7 +5769,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="260" Y="370" Width="145" Height="205"/>
+     <WindowState Visible="True" X="150" Y="265" Width="140" Height="205"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -5716,7 +5778,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Reds" ID="16" Icon="">
-      <WindowState Visible="True" X="10" Y="85" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="80" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5730,7 +5792,7 @@
       <Input Universe="0" Channel="145" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Blues" ID="19" Icon="">
-      <WindowState Visible="True" X="10" Y="155" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="160" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5744,7 +5806,7 @@
       <Input Universe="0" Channel="129" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Greens" ID="20" Icon="">
-      <WindowState Visible="True" X="10" Y="120" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="120" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5758,7 +5820,7 @@
       <Input Universe="0" Channel="137" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Whites" ID="22" Icon="">
-      <WindowState Visible="True" X="10" Y="50" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5780,7 +5842,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="410" Y="370" Width="145" Height="205"/>
+     <WindowState Visible="True" X="290" Y="265" Width="145" Height="205"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -5789,7 +5851,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Reds" ID="0" Icon="">
-      <WindowState Visible="True" X="10" Y="85" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="80" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5803,7 +5865,7 @@
       <Input Universe="0" Channel="146" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Blues" ID="2" Icon="">
-      <WindowState Visible="True" X="10" Y="155" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="160" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5817,7 +5879,7 @@
       <Input Universe="0" Channel="130" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Greens" ID="3" Icon="">
-      <WindowState Visible="True" X="10" Y="120" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="120" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5831,7 +5893,7 @@
       <Input Universe="0" Channel="138" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Whites" ID="4" Icon="">
-      <WindowState Visible="True" X="10" Y="50" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5853,7 +5915,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="50" Y="370" Width="200" Height="200"/>
+     <WindowState Visible="True" X="5" Y="230" Width="140" Height="210"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -5861,7 +5923,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Global Cycle Reds" ID="11" Icon="">
-      <WindowState Visible="True" X="15" Y="85" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="80" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5875,7 +5937,7 @@
       <Input Universe="0" Channel="144" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="10" MonitorParams="6"/>
      </Button>
      <Button Caption="Global Cycle Greens" ID="8" Icon="">
-      <WindowState Visible="True" X="15" Y="120" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="120" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5889,7 +5951,7 @@
       <Input Universe="0" Channel="136" LowerValue="46" UpperValue="34" MonitorValue="34" LowerParams="6" UpperParams="10" MonitorParams="6"/>
      </Button>
      <Button Caption="Global Cycle Blues" ID="7" Icon="">
-      <WindowState Visible="True" X="15" Y="155" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="160" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5903,7 +5965,7 @@
       <Input Universe="0" Channel="128" LowerValue="94" UpperValue="82" MonitorValue="82" LowerParams="6" UpperParams="10" MonitorParams="6"/>
      </Button>
      <Button Caption="Global Cycle Whites" ID="6" Icon="">
-      <WindowState Visible="True" X="15" Y="50" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5925,7 +5987,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="40" Y="50" Width="200" Height="200"/>
+     <WindowState Visible="True" X="5" Y="40" Width="140" Height="185"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -5933,7 +5995,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Global Cycle Static Activities" ID="14" Icon="">
-      <WindowState Visible="True" X="15" Y="45" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5947,7 +6009,7 @@
       <Input Universe="0" Channel="184" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="10" MonitorParams="6"/>
      </Button>
      <Button Caption="Global Cycle Slow Activities" ID="29" Icon="">
-      <WindowState Visible="True" X="15" Y="90" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="85" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5961,7 +6023,7 @@
       <Input Universe="0" Channel="176" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="10" MonitorParams="6"/>
      </Button>
      <Button Caption="Global Random Mute" ID="30" Icon="">
-      <WindowState Visible="True" X="20" Y="155" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="130" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -5983,7 +6045,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="560" Y="505" Width="200" Height="200"/>
+     <WindowState Visible="True" X="440" Y="475" Width="140" Height="205"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -5992,7 +6054,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Reds" ID="35" Icon="">
-      <WindowState Visible="True" X="10" Y="85" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="80" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6006,7 +6068,7 @@
       <Input Universe="0" Channel="147" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Greens" ID="36" Icon="">
-      <WindowState Visible="True" X="10" Y="120" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="120" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6020,7 +6082,7 @@
       <Input Universe="0" Channel="139" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Blue" ID="38" Icon="">
-      <WindowState Visible="True" X="10" Y="155" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="160" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6034,7 +6096,7 @@
       <Input Universe="0" Channel="131" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="White Strobing" ID="39" Icon="">
-      <WindowState Visible="True" X="10" Y="50" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6056,7 +6118,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="560" Y="40" Width="195" Height="235"/>
+     <WindowState Visible="True" X="440" Y="40" Width="140" Height="220"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -6065,7 +6127,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Activity PIX - Static" ID="33" Icon="">
-      <WindowState Visible="True" X="5" Y="50" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6079,7 +6141,7 @@
       <Input Universe="0" Channel="187" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="Activity PIX - Slow" ID="45" Icon="">
-      <WindowState Visible="True" X="5" Y="95" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="85" Width="125" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6093,7 +6155,7 @@
       <Input Universe="0" Channel="179" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
      </Button>
      <Button Caption="White Strobing" ID="59" Icon="">
-      <WindowState Visible="True" X="5" Y="190" Width="125" Height="35"/>
+      <WindowState Visible="True" X="5" Y="130" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6104,10 +6166,10 @@
       <Function ID="629"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="155" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="12" MonitorParams="6"/>
+      <Input Universe="0" Channel="155" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="9" UpperParams="12" MonitorParams="6"/>
      </Button>
      <Button Caption="Activity PIX - Mute" ID="80" Icon="">
-      <WindowState Visible="True" X="155" Y="195" Width="25" Height="25"/>
+      <WindowState Visible="True" X="50" Y="180" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6129,7 +6191,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="560" Y="300" Width="200" Height="200"/>
+     <WindowState Visible="True" X="440" Y="265" Width="140" Height="205"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -6137,7 +6199,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Activity PIX - Intense" ID="47" Icon="">
-      <WindowState Visible="True" X="15" Y="110" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="80" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6151,7 +6213,7 @@
       <Input Universe="0" Channel="163" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity PIX - Medium" ID="64" Icon="">
-      <WindowState Visible="True" X="15" Y="55" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6173,7 +6235,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="560" Y="780" Width="200" Height="95"/>
+     <WindowState Visible="True" X="440" Y="685" Width="140" Height="80"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -6182,7 +6244,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Activity PIX - Mute" ID="41" Icon="">
-      <WindowState Visible="True" X="15" Y="45" Width="25" Height="25"/>
+      <WindowState Visible="True" X="110" Y="50" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6196,7 +6258,7 @@
       <Input Universe="0" Channel="231" LowerValue="1" UpperValue="3"/>
      </Button>
      <Button Caption="Activity PIX - Medium" ID="78" Icon="">
-      <WindowState Visible="True" X="45" Y="45" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="40" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6218,7 +6280,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="560" Y="880" Width="200" Height="110"/>
+     <WindowState Visible="True" X="440" Y="770" Width="140" Height="85"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -6227,7 +6289,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Activity PIX - Intense" ID="79" Icon="">
-      <WindowState Visible="True" X="45" Y="55" Width="125" Height="40"/>
+      <WindowState Visible="True" X="5" Y="40" Width="100" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6241,7 +6303,7 @@
       <Input Universe="0" Channel="163" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity PIX - Mute" ID="84" Icon="">
-      <WindowState Visible="True" X="10" Y="55" Width="25" Height="25"/>
+      <WindowState Visible="True" X="110" Y="50" Width="25" Height="25"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -6263,7 +6325,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="60" Y="595" Width="95" Height="280"/>
+     <WindowState Visible="True" X="5" Y="445" Width="140" Height="280"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -6271,7 +6333,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Fogger" ID="74" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
-      <WindowState Visible="True" X="25" Y="75" Width="60" Height="200"/>
+      <WindowState Visible="True" X="35" Y="60" Width="60" Height="200"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -6289,6 +6351,121 @@
       </Playback>
      </Slider>
     </Frame>
+    <SoloFrame Caption="Derbies" ID="73">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278190080</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="585" Y="40" Width="140" Height="430"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Activity Derbies Slow Red" ID="90" Icon="">
+      <WindowState Visible="True" X="5" Y="40" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="691"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="188" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+     </Button>
+     <Button Caption="Activity Techno Derbies - Mute" ID="28" Icon="">
+      <WindowState Visible="True" X="55" Y="390" Width="25" Height="25"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="10"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="232" LowerValue="1" UpperValue="3"/>
+     </Button>
+     <Button Caption="Activity Derbies Slow Green" ID="91" Icon="">
+      <WindowState Visible="True" X="5" Y="85" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="697"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="180" LowerValue="38" UpperValue="34" MonitorValue="34" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+     </Button>
+     <Button Caption="Activity Derbies Slow Blue" ID="92" Icon="">
+      <WindowState Visible="True" X="5" Y="130" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="694"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="172" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+     </Button>
+     <Button Caption="Activity Derbies Slow Multicolor" ID="93" Icon="">
+      <WindowState Visible="True" X="5" Y="175" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="695"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="164" LowerValue="110" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+     </Button>
+     <Button Caption="Activity Derbies White Strobe" ID="94" Icon="">
+      <WindowState Visible="True" X="5" Y="340" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="698"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="132" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="9" UpperParams="12" MonitorParams="12"/>
+     </Button>
+     <Button Caption="Activity Derbies Red Strobe Every Other" ID="95" Icon="">
+      <WindowState Visible="True" X="5" Y="220" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="705"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="156" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="9" UpperParams="15" MonitorParams="15"/>
+     </Button>
+    </SoloFrame>
    </Frame>
    <Frame Caption="Virtual Buttons" ID="17">
     <Appearance>
