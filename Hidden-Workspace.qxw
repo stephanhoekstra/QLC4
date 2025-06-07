@@ -117,6 +117,16 @@
    <Address>27</Address>
    <Channels>13</Channels>
   </Fixture>
+  <Fixture>
+   <Manufacturer>Stairville</Manufacturer>
+   <Model>AF-40 DMX</Model>
+   <Mode>Normal</Mode>
+   <ID>10</ID>
+   <Name>AF-40 DMX</Name>
+   <Universe>0</Universe>
+   <Address>1</Address>
+   <Channels>1</Channels>
+  </Fixture>
   <FixtureGroup ID="0">
    <Name>Techno Derbies</Name>
    <Size X="2" Y="2"/>
@@ -2582,9 +2592,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="40"/>
    <Property Name="direction" Value="Left"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="343" Type="RGBMatrix" Name="Police Bar 5">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
@@ -2598,8 +2608,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="tailfade" Value="No"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="tailfade" Value="No"/>
   </Function>
   <Function ID="344" Type="Collection" Name="Set Piece Fuck the Police Bar 2" Path="Set Piece  Fuck the Police">
    <Step Number="0">387</Step>
@@ -2754,8 +2764,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Rainbow"/>
    <Property Name="presetSize" Value="5"/>
+   <Property Name="presetIndex" Value="Rainbow"/>
   </Function>
   <Function ID="358" Type="Scene" Name="PS10W Disco AutoStrobe" Path="PS10W Spot">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3279,8 +3289,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>6</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="20"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="425" Type="Collection" Name="Set Piece Red Orange Chase">
    <Step Number="0">424</Step>
@@ -3714,9 +3724,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>5</FixtureGroup>
-   <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="orientation" Value="Horizontal"/>
    <Property Name="presetSize" Value="5"/>
+   <Property Name="presetIndex" Value="Ocean"/>
   </Function>
   <Function ID="479" Type="Chaser" Name="Betopper Raise Lower Slow">
    <Speed FadeIn="0" FadeOut="0" Duration="60000"/>
@@ -4825,8 +4835,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>7</FixtureGroup>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="offset" Value="0"/>
+   <Property Name="orientation" Value="Vertical"/>
    <Property Name="blockSize" Value="4"/>
   </Function>
   <Function ID="643" Type="RGBMatrix" Name="LED PIX-144AB Single KITT Alternate 2" BlendMode="Additive">
@@ -5626,6 +5636,20 @@
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="162" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="6"/>
      </Button>
+     <Button Caption="Phantoms Flashing to beat" ID="89" Icon="">
+      <WindowState Visible="True" X="10" Y="220" Width="125" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4291611852</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="486"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="0" Channel="161" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="15"/>
+     </Button>
     </SoloFrame>
     <SoloFrame Caption="Betopper Movement" ID="9">
      <Appearance>
@@ -6231,6 +6255,40 @@
       <Input Universe="0" Channel="231" LowerValue="1" UpperValue="3"/>
      </Button>
     </SoloFrame>
+    <Frame Caption="Fogger" ID="88">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278190080</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="60" Y="595" Width="95" Height="280"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Slider Caption="Fogger" ID="74" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+      <WindowState Visible="True" X="25" Y="75" Width="60" Height="200"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4278190080</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Input Universe="0" Channel="48"/>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="10">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+    </Frame>
    </Frame>
    <Frame Caption="Virtual Buttons" ID="17">
     <Appearance>
