@@ -2592,9 +2592,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
+   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="40"/>
    <Property Name="direction" Value="Left"/>
-   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="343" Type="RGBMatrix" Name="Police Bar 5">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
@@ -2608,8 +2608,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="No"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="344" Type="Collection" Name="Set Piece Fuck the Police Bar 2" Path="Set Piece  Fuck the Police">
    <Step Number="0">387</Step>
@@ -3289,8 +3289,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>6</FixtureGroup>
-   <Property Name="taillength" Value="20"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="20"/>
   </Function>
   <Function ID="425" Type="Collection" Name="Set Piece Red Orange Chase">
    <Step Number="0">424</Step>
@@ -4835,9 +4835,9 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>7</FixtureGroup>
-   <Property Name="offset" Value="0"/>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="blockSize" Value="4"/>
+   <Property Name="orientation" Value="Vertical"/>
+   <Property Name="offset" Value="0"/>
   </Function>
   <Function ID="643" Type="RGBMatrix" Name="LED PIX-144AB Single KITT Alternate 2" BlendMode="Additive">
    <Speed FadeIn="0" FadeOut="0" Duration="205"/>
@@ -4851,8 +4851,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>7</FixtureGroup>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="blockSize" Value="1"/>
+   <Property Name="orientation" Value="Vertical"/>
   </Function>
   <Function ID="644" Type="Scene" Name="PIX A BRIGHT LEFT" Path="PIX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -5654,7 +5654,7 @@
       <Function ID="546"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="185" LowerValue="110" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="185" LowerValue="106" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="15" MonitorParams="6"/>
      </Button>
      <Button Caption="Phantom 7 Mute" ID="24" Icon="">
       <WindowState Visible="True" X="5" Y="175" Width="125" Height="40"/>
@@ -6065,7 +6065,7 @@
       <Function ID="561"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="147" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="147" LowerValue="10" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="15" MonitorParams="6"/>
      </Button>
      <Button Caption="Greens" ID="36" Icon="">
       <WindowState Visible="True" X="5" Y="120" Width="125" Height="35"/>
@@ -6079,7 +6079,7 @@
       <Function ID="658"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="139" LowerValue="46" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="139" LowerValue="42" UpperValue="42" MonitorValue="42" LowerParams="6" UpperParams="15" MonitorParams="6"/>
      </Button>
      <Button Caption="Blue" ID="38" Icon="">
       <WindowState Visible="True" X="5" Y="160" Width="125" Height="35"/>
@@ -6093,7 +6093,7 @@
       <Function ID="562"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="131" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="131" LowerValue="90" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="15" MonitorParams="6"/>
      </Button>
      <Button Caption="White Strobing" ID="39" Icon="">
       <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
@@ -6107,7 +6107,7 @@
       <Function ID="629"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="155" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="155" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="15" MonitorParams="6"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="PIX" ID="40">
@@ -6138,7 +6138,7 @@
       <Function ID="607"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="187" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="187" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="15" MonitorParams="6"/>
      </Button>
      <Button Caption="Activity PIX - Slow" ID="45" Icon="">
       <WindowState Visible="True" X="5" Y="85" Width="125" Height="40"/>
@@ -6152,7 +6152,7 @@
       <Function ID="577"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="179" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="179" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="15" MonitorParams="6"/>
      </Button>
      <Button Caption="White Strobing" ID="59" Icon="">
       <WindowState Visible="True" X="5" Y="130" Width="125" Height="35"/>
@@ -6166,7 +6166,7 @@
       <Function ID="629"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="155" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="9" UpperParams="12" MonitorParams="6"/>
+      <Input Universe="0" Channel="155" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="9" UpperParams="12" MonitorParams="6"/>
      </Button>
      <Button Caption="Activity PIX - Mute" ID="80" Icon="">
       <WindowState Visible="True" X="50" Y="180" Width="25" Height="25"/>
@@ -6210,7 +6210,7 @@
       <Function ID="620"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="163" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="15"/>
+      <Input Universe="0" Channel="163" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity PIX - Medium" ID="64" Icon="">
       <WindowState Visible="True" X="5" Y="40" Width="125" Height="35"/>
@@ -6224,7 +6224,7 @@
       <Function ID="631"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="171" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="6"/>
+      <Input Universe="0" Channel="171" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="6"/>
      </Button>
     </Frame>
     <SoloFrame Caption="PIX MUTE MEDIUM" ID="66">
@@ -6269,7 +6269,7 @@
       <Function ID="631"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="171" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+      <Input Universe="0" Channel="171" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="10" MonitorParams="6"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="PIX MUTE INTENSE" ID="83">
@@ -6300,7 +6300,7 @@
       <Function ID="620"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="163" LowerValue="30" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="15"/>
+      <Input Universe="0" Channel="163" LowerValue="24" UpperValue="24" MonitorValue="24" LowerParams="10" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity PIX - Mute" ID="84" Icon="">
       <WindowState Visible="True" X="110" Y="50" Width="25" Height="25"/>
@@ -6379,7 +6379,7 @@
       <Function ID="691"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="188" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+      <Input Universe="0" Channel="188" LowerValue="10" UpperValue="10" MonitorValue="10" LowerParams="6" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity Techno Derbies - Mute" ID="28" Icon="">
       <WindowState Visible="True" X="55" Y="390" Width="25" Height="25"/>
@@ -6407,7 +6407,7 @@
       <Function ID="697"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="180" LowerValue="38" UpperValue="34" MonitorValue="34" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+      <Input Universe="0" Channel="180" LowerValue="34" UpperValue="34" MonitorValue="34" LowerParams="6" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity Derbies Slow Blue" ID="92" Icon="">
       <WindowState Visible="True" X="5" Y="130" Width="125" Height="40"/>
@@ -6421,7 +6421,7 @@
       <Function ID="694"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="172" LowerValue="94" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+      <Input Universe="0" Channel="172" LowerValue="90" UpperValue="90" MonitorValue="90" LowerParams="6" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity Derbies Slow Multicolor" ID="93" Icon="">
       <WindowState Visible="True" X="5" Y="175" Width="125" Height="40"/>
@@ -6435,7 +6435,7 @@
       <Function ID="695"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="164" LowerValue="110" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="15" MonitorParams="15"/>
+      <Input Universe="0" Channel="164" LowerValue="106" UpperValue="106" MonitorValue="106" LowerParams="6" UpperParams="15" MonitorParams="15"/>
      </Button>
      <Button Caption="Activity Derbies White Strobe" ID="94" Icon="">
       <WindowState Visible="True" X="5" Y="340" Width="125" Height="40"/>
@@ -6449,7 +6449,7 @@
       <Function ID="698"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="132" LowerValue="2" UpperValue="6" MonitorValue="6" LowerParams="9" UpperParams="12" MonitorParams="12"/>
+      <Input Universe="0" Channel="132" LowerValue="6" UpperValue="6" MonitorValue="6" LowerParams="9" UpperParams="12" MonitorParams="12"/>
      </Button>
      <Button Caption="Activity Derbies Red Strobe Every Other" ID="95" Icon="">
       <WindowState Visible="True" X="5" Y="220" Width="125" Height="40"/>
@@ -6463,7 +6463,7 @@
       <Function ID="705"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
-      <Input Universe="0" Channel="156" LowerValue="14" UpperValue="10" MonitorValue="10" LowerParams="9" UpperParams="15" MonitorParams="15"/>
+      <Input Universe="0" Channel="156" LowerValue="10" UpperValue="10" MonitorValue="10" LowerParams="9" UpperParams="15" MonitorParams="15"/>
      </Button>
     </SoloFrame>
    </Frame>
